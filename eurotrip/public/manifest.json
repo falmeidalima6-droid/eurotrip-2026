@@ -1,0 +1,33 @@
+{
+  "name": "Eurotrip 2026 — Fernanda + Marcos",
+  "short_name": "Eurotrip 2026",
+  "description": "Companheiro de viagem offline para a Eurotrip de 04 a 17/10/2026",
+  "start_url": "/hoje/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6F3EC",
+  "theme_color": "#16213E",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Agora",
+      "short_name": "Agora",
+      "description": "Ver o que está acontecendo agora",
+      "url": "/hoje/agora/",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Emergência",
+      "short_name": "Emergência",
+      "description": "Informações de emergência",
+      "url": "/mais/emergencia/",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

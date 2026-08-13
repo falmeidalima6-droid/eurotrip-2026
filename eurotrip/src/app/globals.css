@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #16213e;
+  --color-ink-soft: #5b6478;
+  --color-paper: #f6f3ec;
+  --color-paper-raised: #ffffff;
+  --color-brass: #c89b3c;
+  --color-brass-soft: #e8d9ac;
+  --color-alert: #b23a2e;
+  --color-warn: #c9862c;
+  --color-success: #3f6b4c;
+  --color-line: #ddd6c4;
+}
+
+@theme inline {
+  --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-paper: var(--color-paper);
+  --color-paper-raised: var(--color-paper-raised);
+  --color-brass: var(--color-brass);
+  --color-brass-soft: var(--color-brass-soft);
+  --color-alert: var(--color-alert);
+  --color-warn: var(--color-warn);
+  --color-success: var(--color-success);
+  --color-line: var(--color-line);
+}
+
+html,
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+}
+
+.font-ticket {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Perfuração de "ticket" entre seções — motivo visual assinatura do app */
+.ticket-perforation {
+  position: relative;
+}
+.ticket-perforation::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0.75rem 0;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--color-line) 0,
+    var(--color-line) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+/* Foco visível para acessibilidade */
+:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
