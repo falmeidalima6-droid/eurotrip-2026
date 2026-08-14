@@ -1,4 +1,16 @@
-// Eurotrip 2026 — Service Worker (gerado automaticamente a cada build)
+/* eslint-disable @typescript-eslint/no-require-imports */
+// Roda ANTES do `next build` (hook "prebuild" do npm).
+// Gera public/sw.js já com o número de versão certo deste build, para que,
+// quando o Next.js copiar a pasta public/ para out/, o arquivo já esteja
+// correto — sem precisar "consertar" depois (foi isso que causava uma
+// corrida entre esse ajuste e a cópia do Next, fazendo às vezes a versão
+// antiga "__BUILD_VERSION__" ir parar no site publicado).
+const fs = require("fs");
+const path = require("path");
+
+const versao = `eurotrip-${Date.now()}`;
+
+const conteudoSW = `// Eurotrip 2026 — Service Worker (gerado automaticamente a cada build)
 // Estratégia: telas (HTML) usam "network-first" — sempre busca a versão mais
 // nova quando há internet, e só usa a guardada se estiver offline. Isso faz
 // o app atualizar sozinho a cada nova publicação, sem precisar de nenhum
@@ -6,9 +18,9 @@
 // o nome deles já muda sozinho a cada build (são seguros de guardar direto).
 // Tiles de mapa (OpenStreetMap) usam stale-while-revalidate.
 
-const CACHE_VERSION = "eurotrip-1786679705154";
-const APP_CACHE = `${CACHE_VERSION}-app`;
-const TILES_CACHE = `${CACHE_VERSION}-tiles`;
+const CACHE_VERSION = "${versao}";
+const APP_CACHE = \`\${CACHE_VERSION}-app\`;
+const TILES_CACHE = \`\${CACHE_VERSION}-tiles\`;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -120,3 +132,8 @@ async function staleWhileRevalidate(request, nomeCache) {
     .catch(() => undefined);
   return cacheado || (await buscaDeFundo) || new Response("", { status: 504 });
 }
+`;
+
+const publicSwPath = path.join(__dirname, "..", "public", "sw.js");
+fs.writeFileSync(publicSwPath, conteudoSW);
+console.log(`public/sw.js gerado com a versão: ${versao}`);
