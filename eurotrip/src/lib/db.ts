@@ -55,6 +55,12 @@ export interface ConfiguracaoItem {
   valor: string;
 }
 
+export interface ItemPersonalizado {
+  id?: number;
+  categoria: string;
+  texto: string;
+}
+
 export interface Anexo {
   id?: number;
   referenciaId: string; // id do hotel ou transporte
@@ -74,6 +80,7 @@ class EurotripDB extends Dexie {
   planosAtivos!: Table<PlanoAtivo, string>;
   configuracoes!: Table<ConfiguracaoItem, string>;
   anexos!: Table<Anexo, number>;
+  itensPersonalizados!: Table<ItemPersonalizado, number>;
 
   constructor() {
     super("eurotrip2026");
@@ -90,6 +97,9 @@ class EurotripDB extends Dexie {
     this.version(2).stores({
       anexos: "++id, referenciaId",
     });
+    this.version(3).stores({
+      itensPersonalizados: "++id, categoria",
+    });
   }
 }
 
@@ -98,7 +108,7 @@ export const db = typeof window !== "undefined" ? new EurotripDB() : (null as un
 // -------- Backup / Restore --------
 export async function exportarBackup(): Promise<string> {
   if (!db) return "{}";
-  const [checklist, anotacoes, gastos, listaCompras, eventoOverrides, ingressoOverrides, planosAtivos, configuracoes, anexos] =
+  const [checklist, anotacoes, gastos, listaCompras, eventoOverrides, ingressoOverrides, planosAtivos, configuracoes, anexos, itensPersonalizados] =
     await Promise.all([
       db.checklist.toArray(),
       db.anotacoes.toArray(),
@@ -109,6 +119,7 @@ export async function exportarBackup(): Promise<string> {
       db.planosAtivos.toArray(),
       db.configuracoes.toArray(),
       db.anexos.toArray(),
+      db.itensPersonalizados.toArray(),
     ]);
 
   const anexosSerializados = await Promise.all(
@@ -132,6 +143,7 @@ export async function exportarBackup(): Promise<string> {
       planosAtivos,
       configuracoes,
       anexos: anexosSerializados,
+      itensPersonalizados,
     },
     null,
     2
@@ -143,7 +155,7 @@ export async function importarBackup(json: string): Promise<void> {
   const dados = JSON.parse(json);
   await db.transaction(
     "rw",
-    [db.checklist, db.anotacoes, db.gastos, db.listaCompras, db.eventoOverrides, db.ingressoOverrides, db.planosAtivos, db.configuracoes, db.anexos],
+    [db.checklist, db.anotacoes, db.gastos, db.listaCompras, db.eventoOverrides, db.ingressoOverrides, db.planosAtivos, db.configuracoes, db.anexos, db.itensPersonalizados],
     async () => {
       if (dados.checklist) await db.checklist.bulkPut(dados.checklist);
       if (dados.anotacoes) await db.anotacoes.bulkPut(dados.anotacoes);
@@ -153,6 +165,7 @@ export async function importarBackup(json: string): Promise<void> {
       if (dados.ingressoOverrides) await db.ingressoOverrides.bulkPut(dados.ingressoOverrides);
       if (dados.planosAtivos) await db.planosAtivos.bulkPut(dados.planosAtivos);
       if (dados.configuracoes) await db.configuracoes.bulkPut(dados.configuracoes);
+      if (dados.itensPersonalizados) await db.itensPersonalizados.bulkPut(dados.itensPersonalizados);
       if (dados.anexos) {
         for (const a of dados.anexos) {
           if (!a.blobBase64) continue;
