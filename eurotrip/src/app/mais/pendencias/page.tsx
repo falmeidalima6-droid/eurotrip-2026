@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import VoltarMais from "@/components/VoltarMais";
 import { ingressos as ingressosBase } from "@/data/ingressos";
+import { checklistDefs } from "@/data/checklistDefs";
 import { db } from "@/lib/db";
 import { enviarSync } from "@/lib/supabaseSync";
 import { Check } from "lucide-react";
@@ -13,9 +15,14 @@ const URGENCIA_INFO = {
   verde: { emoji: "🟢", label: "Pode decidir perto da viagem", cor: "border-success/40 bg-success/5" },
 };
 
+// Categorias de checklist que fazem sentido resolver ANTES da viagem
+// (a categoria "Diário"/antes-de-sair-do-hotel não entra aqui, é do dia a dia).
+const CATEGORIAS_PRE_VIAGEM = checklistDefs.filter((g) => g.categoria === "Documentos" || g.categoria === "Bagagem");
+
 export default function PendenciasPage() {
   const [comprados, setComprados] = useState<Record<string, boolean>>({});
   const [emergenciaVazia, setEmergenciaVazia] = useState(true);
+  const [checklistMarcado, setChecklistMarcado] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     if (!db) return;
@@ -25,6 +32,11 @@ export default function PendenciasPage() {
       setComprados(mapa);
     });
     db.configuracoes.get("emergencia:contato1").then((r) => setEmergenciaVazia(!r?.valor));
+    db.checklist.toArray().then((rows) => {
+      const mapa: Record<string, boolean> = {};
+      rows.forEach((r) => (mapa[r.id] = r.marcado));
+      setChecklistMarcado(mapa);
+    });
   }, []);
 
   async function alternar(id: string) {
@@ -32,6 +44,13 @@ export default function PendenciasPage() {
     setComprados((c) => ({ ...c, [id]: novo }));
     if (db) await db.ingressoOverrides.put({ ingressoId: id, comprado: novo });
     enviarSync(`ingresso:${id}`, "ingresso", { comprado: novo });
+  }
+
+  async function alternarChecklist(categoria: string, item: string) {
+    const id = `${categoria}:${item}`;
+    const novo = !checklistMarcado[id];
+    setChecklistMarcado((m) => ({ ...m, [id]: novo }));
+    if (db) await db.checklist.put({ id, categoria, texto: item, marcado: novo });
   }
 
   const pendentes = ingressosBase.filter((i) => !comprados[i.id]);
@@ -75,6 +94,38 @@ export default function PendenciasPage() {
           );
         })}
         {ordenados.length === 0 && <p className="text-sm text-success">✅ Todos os ingressos foram marcados como comprados.</p>}
+      </section>
+
+      <section className="space-y-2">
+        <p className="text-xs font-medium text-ink-soft uppercase">Checklist antes da viagem</p>
+        {CATEGORIAS_PRE_VIAGEM.map((grupo) => {
+          const faltando = grupo.itens.filter((item) => !checklistMarcado[`${grupo.categoria}:${item}`]);
+          if (faltando.length === 0) return null;
+          return (
+            <div key={grupo.categoria} className="rounded-2xl border border-line bg-paper-raised p-4">
+              <p className="font-medium text-sm mb-2">{grupo.categoria}</p>
+              <ul className="space-y-1.5">
+                {faltando.map((item) => (
+                  <li key={item}>
+                    <button
+                      onClick={() => alternarChecklist(grupo.categoria, item)}
+                      className="flex items-center gap-2.5 w-full text-left"
+                    >
+                      <span className="flex items-center justify-center w-5 h-5 rounded border border-line shrink-0" />
+                      <span className="text-sm">{item}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+        {CATEGORIAS_PRE_VIAGEM.every((g) => g.itens.every((item) => checklistMarcado[`${g.categoria}:${item}`])) && (
+          <p className="text-sm text-success">✅ Checklist de documentos e bagagem completo.</p>
+        )}
+        <Link href="/mais/checklist" className="text-xs text-ink-soft underline">
+          Ver checklist completo (inclui o do dia a dia)
+        </Link>
       </section>
 
       {emergenciaVazia && (

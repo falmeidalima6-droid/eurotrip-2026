@@ -58,6 +58,7 @@ export const day08: DiaRoteiro = {
       horarioFinal: "12:30",
       status: "futuro",
       confirmado: true,
+      planoB: "🧳 Mesma questão da chegada: do hotel até o vaporetto tem pontes com escada. Considerem sair com mais margem de tempo e, se decidirem por ajuda paga (carregador/táxi aquático) na chegada, o mesmo vale pra volta.",
     },
     {
       id: "d08-e05",

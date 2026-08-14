@@ -93,6 +93,7 @@ export const day07: DiaRoteiro = {
       numeroReserva: "72077190186930 (Hoteis.com)",
       observacoes: "Check-in a partir das 14h. Checkout referência: 10h30. Tel: +39 041 2688128. Recepção 8h–20h; avisar com 72h de antecedência.",
       links: [{ label: "Mapa", url: "https://maps.google.com/?q=Hotel+Leone+Fondamenta+Cannaregio+1250+Venice" }],
+      planoB: "🧳 Bagagem em Veneza: a região tem várias pontes com escada, nada favorável a mala grande com rodinha. Opções sem custo extra: avisar o Hotel Leone com antecedência para ajuda com a bagagem, e dividir o peso entre os dois (Marcos com a mais pesada). Opção paga: carregador avulso ou táxi aquático privado até perto do hotel, se preferirem evitar o esforço físico.",
     },
     {
       id: "d07-e07",

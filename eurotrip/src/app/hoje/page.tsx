@@ -9,14 +9,23 @@ import { CATEGORIA_EMOJI } from "@/lib/categorias";
 import RelogioDuplo from "@/components/RelogioDuplo";
 import Semaforo from "@/components/Semaforo";
 import PrepararAmanha from "@/components/PrepararAmanha";
-import { MapPin, ChevronRight } from "lucide-react";
+import ResumoPendencias from "@/components/ResumoPendencias";
+import OQueOAppOferece from "@/components/OQueOAppOferece";
+import { MapPin, ChevronRight, Search } from "lucide-react";
 
 export default function HojePage() {
   const { dia, amanha, estado, diasParaComeco } = useHoje();
 
   return (
     <div className="px-4 pt-4 pb-6 space-y-5">
-      <header className="text-center space-y-1 pt-2">
+      <header className="text-center space-y-1 pt-2 relative">
+        <Link
+          href="/mais/busca"
+          aria-label="Buscar"
+          className="absolute right-0 top-2 p-2 rounded-full bg-paper-raised border border-line"
+        >
+          <Search size={16} className="text-ink-soft" />
+        </Link>
         <h1 className="font-display text-2xl font-bold tracking-tight">{TRIP_INFO.titulo}</h1>
         <p className="text-ink-soft text-sm">{TRIP_INFO.viajantes}</p>
         <p className="font-ticket text-xs text-brass">04/10 → 17/10</p>
@@ -39,6 +48,8 @@ export default function HojePage() {
       {dia && (
         <>
           <RelogioDuplo pais={dia.pais} />
+
+          <ResumoPendencias />
 
           <Link
             href="/hoje/agora"
@@ -78,6 +89,8 @@ export default function HojePage() {
               <p className="font-medium">{amanha.titulo}</p>
             </section>
           )}
+
+          <OQueOAppOferece />
         </>
       )}
 

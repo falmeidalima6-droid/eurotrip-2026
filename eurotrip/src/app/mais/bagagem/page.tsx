@@ -8,7 +8,10 @@ import { AlertTriangle } from "lucide-react";
 const REGRAS = [
   { empresa: "Air France (AF443, Rio → Paris)", regra: "1 mala despachada por adulto (confirmado no voucher Decolar)." },
   { empresa: "Air France (AF1404, Paris → Roma)", regra: "⚠️ A CONFIRMAR — franquia não detalhada nos e-mails recebidos." },
-  { empresa: "EasyJet (Veneza → Paris)", regra: "⚠️ A CONFIRMAR — franquia não detalhada nos e-mails recebidos." },
+  {
+    empresa: "EasyJet (Veneza → Paris)",
+    regra: "✅ Confirmado (reserva KD1TZF3): cada um leva só 1 mochila pequena sob o assento (45x36x20cm) — mala de cabine grande NÃO está incluída. Em compensação, já têm 2 malas despachadas de 23kg garantidas nesse voo. Decisão: usar as malas despachadas para tudo que passar do tamanho da mochila, sem comprar a mala de cabine grande extra.",
+  },
   {
     empresa: "Vueling/Iberia IB5225 (Paris → Barcelona)",
     regra: "1 mala despachada por passageiro (confirmado por e-mail).",
