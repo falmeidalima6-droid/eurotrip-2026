@@ -22,7 +22,7 @@ export default function HojePage() {
         <Link
           href="/mais/busca"
           aria-label="Buscar"
-          className="absolute right-0 top-2 p-2 rounded-full bg-paper-raised border border-line"
+          className="absolute right-0 top-10 p-2 rounded-full bg-paper-raised border border-line"
         >
           <Search size={16} className="text-ink-soft" />
         </Link>
