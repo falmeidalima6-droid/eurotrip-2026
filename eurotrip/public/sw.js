@@ -1,10 +1,16 @@
 // Eurotrip 2026 — Service Worker
-// Estratégia: pré-cachear todo o app (gerado como site estático) no install,
-// para funcionar 100% offline depois do primeiro carregamento. Tiles de mapa
-// (OpenStreetMap) usam stale-while-revalidate: mostram a versão salva na hora
-// e atualizam em segundo plano quando há internet.
+// Estratégia: telas (HTML) usam "network-first" — sempre busca a versão mais
+// nova quando há internet, e só usa a guardada se estiver offline. Isso faz
+// o app atualizar sozinho a cada nova publicação, sem precisar de nenhum
+// truque manual. Arquivos estáticos (JS/CSS/ícones) usam cache-first, porque
+// o nome deles já muda sozinho a cada build (são seguros de guardar direto).
+// Tiles de mapa (OpenStreetMap) usam stale-while-revalidate.
+//
+// __BUILD_VERSION__ é substituído automaticamente a cada build por
+// scripts/generate-sw-manifest.js — é isso que faz o navegador perceber que
+// existe uma versão nova do Service Worker e buscar tudo de novo.
 
-const CACHE_VERSION = "eurotrip-v1";
+const CACHE_VERSION = "__BUILD_VERSION__";
 const APP_CACHE = `${CACHE_VERSION}-app`;
 const TILES_CACHE = `${CACHE_VERSION}-tiles`;
 
@@ -13,7 +19,7 @@ self.addEventListener("install", (event) => {
     (async () => {
       const cache = await caches.open(APP_CACHE);
       try {
-        const resposta = await fetch("/precache-manifest.json");
+        const resposta = await fetch("/precache-manifest.json", { cache: "reload" });
         const arquivos = await resposta.json();
         await Promise.allSettled(
           arquivos.map(async (url) => {
@@ -58,11 +64,37 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Mesma origem: cache-first (app shell), com fallback de navegação para /hoje/
-  if (url.origin === self.location.origin) {
-    event.respondWith(cacheFirst(request));
+  if (url.origin !== self.location.origin) return;
+
+  // Telas (navegação/HTML): sempre tenta buscar a versão mais nova primeiro.
+  const ehNavegacao =
+    request.mode === "navigate" || (request.headers.get("accept") || "").includes("text/html");
+  if (ehNavegacao) {
+    event.respondWith(networkFirst(request));
+    return;
   }
+
+  // Arquivos estáticos (JS/CSS/ícones/manifest): cache-first, são seguros e rápidos.
+  event.respondWith(cacheFirst(request));
 });
+
+async function networkFirst(request) {
+  const cache = await caches.open(APP_CACHE);
+  try {
+    const resposta = await fetch(request, { cache: "no-store" });
+    if (resposta.ok) cache.put(request, resposta.clone());
+    return resposta;
+  } catch {
+    const cacheado = await cache.match(request, { ignoreSearch: true });
+    if (cacheado) return cacheado;
+    const fallback = await cache.match("/hoje/");
+    if (fallback) return fallback;
+    return new Response("Offline e sem versão salva desta página.", {
+      status: 503,
+      headers: { "Content-Type": "text/plain; charset=utf-8" },
+    });
+  }
+}
 
 async function cacheFirst(request) {
   const cache = await caches.open(APP_CACHE);
@@ -74,11 +106,7 @@ async function cacheFirst(request) {
     if (resposta.ok) cache.put(request, resposta.clone());
     return resposta;
   } catch {
-    if (request.mode === "navigate") {
-      const fallback = await cache.match("/hoje/");
-      if (fallback) return fallback;
-    }
-    return new Response("Offline e sem versão salva desta página.", {
+    return new Response("Offline e sem versão salva deste arquivo.", {
       status: 503,
       headers: { "Content-Type": "text/plain; charset=utf-8" },
     });
