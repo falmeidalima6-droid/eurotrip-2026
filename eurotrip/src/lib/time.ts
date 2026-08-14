@@ -46,6 +46,10 @@ export interface EventoComputado extends TripEvent {
 export function computarEventosDoDia(dia: DiaRoteiro): EventoComputado[] {
   const agora = agoraNoFuso(dia.pais);
   const agoraMin = agora.getHours() * 60 + agora.getMinutes();
+  const hojeStr = dataDeHoje(dia.pais);
+  const diaEhHoje = dia.data === hojeStr;
+  const diaJaPassou = dia.data < hojeStr;
+  const diaEhFuturo = dia.data > hojeStr;
   const eventos = dia.eventos;
   const resultado: EventoComputado[] = [];
   let abandonoAtivado = false;
@@ -60,28 +64,34 @@ export function computarEventosDoDia(dia: DiaRoteiro): EventoComputado[] {
 
     if (ev.status === "a-confirmar" && !ev.confirmado) {
       status = "a-confirmar";
-    }
-
-    // Efeito dominó: se um evento anterior tinha horário de abandono e foi ultrapassado,
-    // pula automaticamente eventos sem horário fixo (voo/trem/reserva) que viriam depois dele.
-    if (abandonoAtivado && !temHorarioFixo(ev)) {
-      status = "pulado";
-      resultado.push({ ...ev, statusComputado: status });
-      continue;
-    }
-
-    if (inicioMin !== undefined) {
-      if (fimMin !== undefined && agoraMin > fimMin) {
-        status = "concluido";
-      } else if (agoraMin >= inicioMin && (fimMin === undefined || agoraMin <= fimMin)) {
-        status = "agora";
-      } else if (agoraMin < inicioMin) {
-        status = "futuro";
+    } else if (diaJaPassou) {
+      // Dia inteiro já ficou no passado: tudo concluído, sem comparar horário.
+      status = "concluido";
+    } else if (diaEhFuturo) {
+      // Dia inteiro ainda está por vir: nada é "concluído" ou "agora" ainda.
+      status = "futuro";
+    } else if (diaEhHoje) {
+      // Efeito dominó: se um evento anterior tinha horário de abandono e foi ultrapassado,
+      // pula automaticamente eventos sem horário fixo (voo/trem/reserva) que viriam depois dele.
+      if (abandonoAtivado && !temHorarioFixo(ev)) {
+        status = "pulado";
+        resultado.push({ ...ev, statusComputado: status });
+        continue;
       }
-    }
 
-    if (abandonoMin !== undefined && agoraMin > abandonoMin && status !== "concluido") {
-      abandonoAtivado = true;
+      if (inicioMin !== undefined) {
+        if (fimMin !== undefined && agoraMin > fimMin) {
+          status = "concluido";
+        } else if (agoraMin >= inicioMin && (fimMin === undefined || agoraMin <= fimMin)) {
+          status = "agora";
+        } else if (agoraMin < inicioMin) {
+          status = "futuro";
+        }
+      }
+
+      if (abandonoMin !== undefined && agoraMin > abandonoMin && status !== "concluido") {
+        abandonoAtivado = true;
+      }
     }
 
     resultado.push({ ...ev, statusComputado: status });
