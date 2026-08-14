@@ -38,6 +38,8 @@ export default function HojePage() {
         </div>
       )}
 
+      <ResumoPendencias />
+
       {estado === "depois" && (
         <div className="rounded-2xl bg-ink text-paper p-5 text-center">
           <p className="text-lg font-medium">Viagem concluída 🎉</p>
@@ -48,8 +50,6 @@ export default function HojePage() {
       {dia && (
         <>
           <RelogioDuplo pais={dia.pais} />
-
-          <ResumoPendencias />
 
           <Link
             href="/hoje/agora"
@@ -89,8 +89,6 @@ export default function HojePage() {
               <p className="font-medium">{amanha.titulo}</p>
             </section>
           )}
-
-          <OQueOAppOferece />
         </>
       )}
 
@@ -102,6 +100,8 @@ export default function HojePage() {
           Ver primeiro dia do roteiro ({amanha.titulo})
         </Link>
       )}
+
+      <OQueOAppOferece />
     </div>
   );
 }
