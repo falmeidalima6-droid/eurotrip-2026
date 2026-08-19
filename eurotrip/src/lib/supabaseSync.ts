@@ -28,7 +28,7 @@ export async function syncConfigurado(): Promise<boolean> {
 }
 
 /** Envia uma atualização — silencioso se não estiver configurado ou sem internet. */
-export async function enviarSync(chaveRegistro: string, tipo: "ingresso" | "plano" | "gasto", valor: unknown) {
+export async function enviarSync(chaveRegistro: string, tipo: "ingresso" | "plano" | "gasto" | "evento", valor: unknown) {
   try {
     if (typeof navigator !== "undefined" && !navigator.onLine) return;
     const supabase = await obterCliente();
@@ -46,7 +46,7 @@ export async function enviarSync(chaveRegistro: string, tipo: "ingresso" | "plan
 
 export interface RegistroSync {
   chave: string;
-  tipo: "ingresso" | "plano" | "gasto";
+  tipo: "ingresso" | "plano" | "gasto" | "evento";
   valor: Record<string, unknown>;
   atualizado_em: string;
 }
@@ -82,6 +82,11 @@ export async function puxarSync(): Promise<{ ok: boolean; mensagem: string }> {
           void _id;
           await db.gastos.add(resto as never);
         }
+      } else if (registro.tipo === "evento" && registro.chave.startsWith("evento-override:")) {
+        const eventoId = registro.chave.replace("evento-override:", "");
+        await db.eventoOverrides.put({ eventoId, ...(registro.valor as object) } as never);
+      } else if (registro.tipo === "evento" && registro.chave.startsWith("evento-novo:")) {
+        await db.eventosPersonalizados.put(registro.valor as never);
       }
     }
     return { ok: true, mensagem: `${(data || []).length} registros sincronizados.` };

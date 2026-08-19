@@ -35,9 +35,25 @@ export interface ItemCompra {
 export interface EventoOverride {
   eventoId: string; // chave primária
   status?: string;
+  tituloEditado?: string;
   observacoesEditadas?: string;
   horarioEditado?: string;
   enderecoEditado?: string;
+  cancelado?: boolean;
+  atualizadoEm?: string;
+}
+
+export interface EventoPersonalizado {
+  id: string; // chave primária, ex: custom-<timestamp>
+  data: string; // YYYY-MM-DD
+  cidade: string;
+  pais: "Brasil" | "Italia" | "Franca" | "Espanha" | "Portugal";
+  titulo: string;
+  categoria: string;
+  horarioInicial?: string;
+  endereco?: string;
+  observacoes?: string;
+  criadoEm: string;
 }
 
 export interface IngressoOverride {
@@ -81,6 +97,7 @@ class EurotripDB extends Dexie {
   configuracoes!: Table<ConfiguracaoItem, string>;
   anexos!: Table<Anexo, number>;
   itensPersonalizados!: Table<ItemPersonalizado, number>;
+  eventosPersonalizados!: Table<EventoPersonalizado, string>;
 
   constructor() {
     super("eurotrip2026");
@@ -100,6 +117,9 @@ class EurotripDB extends Dexie {
     this.version(3).stores({
       itensPersonalizados: "++id, categoria",
     });
+    this.version(4).stores({
+      eventosPersonalizados: "id, data",
+    });
   }
 }
 
@@ -108,7 +128,7 @@ export const db = typeof window !== "undefined" ? new EurotripDB() : (null as un
 // -------- Backup / Restore --------
 export async function exportarBackup(): Promise<string> {
   if (!db) return "{}";
-  const [checklist, anotacoes, gastos, listaCompras, eventoOverrides, ingressoOverrides, planosAtivos, configuracoes, anexos, itensPersonalizados] =
+  const [checklist, anotacoes, gastos, listaCompras, eventoOverrides, ingressoOverrides, planosAtivos, configuracoes, anexos, itensPersonalizados, eventosPersonalizados] =
     await Promise.all([
       db.checklist.toArray(),
       db.anotacoes.toArray(),
@@ -120,6 +140,7 @@ export async function exportarBackup(): Promise<string> {
       db.configuracoes.toArray(),
       db.anexos.toArray(),
       db.itensPersonalizados.toArray(),
+      db.eventosPersonalizados.toArray(),
     ]);
 
   const anexosSerializados = await Promise.all(
@@ -144,6 +165,7 @@ export async function exportarBackup(): Promise<string> {
       configuracoes,
       anexos: anexosSerializados,
       itensPersonalizados,
+      eventosPersonalizados,
     },
     null,
     2
@@ -155,7 +177,7 @@ export async function importarBackup(json: string): Promise<void> {
   const dados = JSON.parse(json);
   await db.transaction(
     "rw",
-    [db.checklist, db.anotacoes, db.gastos, db.listaCompras, db.eventoOverrides, db.ingressoOverrides, db.planosAtivos, db.configuracoes, db.anexos, db.itensPersonalizados],
+    [db.checklist, db.anotacoes, db.gastos, db.listaCompras, db.eventoOverrides, db.ingressoOverrides, db.planosAtivos, db.configuracoes, db.anexos, db.itensPersonalizados, db.eventosPersonalizados],
     async () => {
       if (dados.checklist) await db.checklist.bulkPut(dados.checklist);
       if (dados.anotacoes) await db.anotacoes.bulkPut(dados.anotacoes);
@@ -166,6 +188,7 @@ export async function importarBackup(json: string): Promise<void> {
       if (dados.planosAtivos) await db.planosAtivos.bulkPut(dados.planosAtivos);
       if (dados.configuracoes) await db.configuracoes.bulkPut(dados.configuracoes);
       if (dados.itensPersonalizados) await db.itensPersonalizados.bulkPut(dados.itensPersonalizados);
+      if (dados.eventosPersonalizados) await db.eventosPersonalizados.bulkPut(dados.eventosPersonalizados);
       if (dados.anexos) {
         for (const a of dados.anexos) {
           if (!a.blobBase64) continue;

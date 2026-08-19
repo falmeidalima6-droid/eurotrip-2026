@@ -12,15 +12,6 @@ export const ingressos: Ingresso[] = [
     observacoes: "Buscar horário ~09h do dia 14/10. Prioridade máxima — organiza o resto do dia.",
   },
   {
-    id: "i02",
-    nome: "Palácio da Pena",
-    cidade: "Sintra",
-    urgencia: "vermelho",
-    dataNecessaria: "2026-10-16",
-    comprado: false,
-    observacoes: "Buscar 09h30 ou 10h00 do dia 16/10. Não deixar para decidir no dia.",
-  },
-  {
     id: "i03",
     nome: "Torre Eiffel",
     cidade: "Paris",
@@ -51,9 +42,10 @@ export const ingressos: Ingresso[] = [
     id: "i07",
     nome: "Quinta da Regaleira",
     cidade: "Sintra",
-    urgencia: "laranja",
+    urgencia: "vermelho",
     dataNecessaria: "2026-10-16",
     comprado: false,
+    observacoes: "Sistema exige horário de entrada marcado — buscar 10h00 (abertura) do dia 16/10.",
   },
   {
     id: "i08",
@@ -81,5 +73,14 @@ export const ingressos: Ingresso[] = [
     dataNecessaria: "2026-10-07",
     comprado: false,
     observacoes: "⚠️ NÃO confirmada oficialmente ainda — apenas mencionada num e-mail de planejamento, sem comprovante. Verificar diretamente com o Vaticano. Se não se confirmar, plano B é Museus Vaticanos + Capela Sistina.",
+  },
+  {
+    id: "i11",
+    nome: "Mosteiro dos Jerónimos (+ Torre de Belém, se possível combinado)",
+    cidade: "Lisboa",
+    urgencia: "laranja",
+    dataNecessaria: "2026-10-16",
+    comprado: false,
+    observacoes: "Visita marcada para a tarde de 16/10, logo após Sintra. Comprar ingresso combinado Jerónimos + Torre de Belém se disponível — economiza tempo de fila.",
   },
 ];

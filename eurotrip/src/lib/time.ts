@@ -33,7 +33,7 @@ export function dataDeHoje(pais: TripEvent["pais"] = "Italia"): string {
 }
 
 export interface EventoComputado extends TripEvent {
-  statusComputado: "concluido" | "agora" | "proximo" | "futuro" | "pulado" | "a-confirmar";
+  statusComputado: "concluido" | "agora" | "proximo" | "futuro" | "pulado" | "a-confirmar" | "cancelado";
   minutosParaSair?: number;
 }
 

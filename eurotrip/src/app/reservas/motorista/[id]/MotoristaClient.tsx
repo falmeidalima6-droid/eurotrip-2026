@@ -42,3 +42,4 @@ export default function MotoristaClient({ id }: { id: string }) {
     </div>
   );
 }
+

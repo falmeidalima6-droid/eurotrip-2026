@@ -11,10 +11,8 @@ import { day09 } from "./days/day09";
 import { day10 } from "./days/day10";
 import { day11 } from "./days/day11";
 import { day12 } from "./days/day12";
-import { day13, day13PlanoB } from "./days/day13";
+import { day13 } from "./days/day13";
 import { day14 } from "./days/day14";
-
-export { day13PlanoB };
 
 export const TRIP_INFO = {
   titulo: "EUROTRIP 2026",

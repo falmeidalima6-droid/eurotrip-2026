@@ -2,10 +2,10 @@
 
 import { EventoComputado } from "@/lib/time";
 import { CATEGORIA_EMOJI, STATUS_LABEL, STATUS_COLOR } from "@/lib/categorias";
-import { AlertTriangle, MapPin, FileText, ChevronDown } from "lucide-react";
+import { AlertTriangle, MapPin, FileText, ChevronDown, Pencil } from "lucide-react";
 import { useState } from "react";
 
-export default function EventCard({ evento }: { evento: EventoComputado }) {
+export default function EventCard({ evento, onEditar }: { evento: EventoComputado; onEditar?: () => void }) {
   const [expandido, setExpandido] = useState(evento.statusComputado === "agora" || evento.statusComputado === "proximo");
   const destaque = evento.statusComputado === "agora";
   const proximo = evento.statusComputado === "proximo";
@@ -42,6 +42,15 @@ export default function EventCard({ evento }: { evento: EventoComputado }) {
         </div>
         <ChevronDown size={18} className={`mt-1 shrink-0 text-ink-soft transition-transform ${expandido ? "rotate-180" : ""}`} />
       </button>
+
+      {onEditar && (
+        <button
+          onClick={onEditar}
+          className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-ink-soft"
+        >
+          <Pencil size={12} /> Editar
+        </button>
+      )}
 
       {evento.alerta && (
         <div className="mt-3 flex items-start gap-2 rounded-lg bg-alert/10 text-alert text-sm p-2">

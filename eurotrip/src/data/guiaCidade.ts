@@ -124,6 +124,6 @@ export const guiasCidade: GuiaCidade[] = [
     gorjeta: "Mesma norma de Portugal — não obrigatória.",
     agua: "Torneira é potável.",
     golpes: ["Nenhum golpe elaborado reportado com frequência — atenção padrão basta."],
-    particularidades: ["Palácio da Pena e Quinta da Regaleira ficam cheios rápido — comprar ingresso com horário marcado antecipadamente é essencial (já no app)."],
+    particularidades: ["Quinta da Regaleira fica cheia rápido — desde 2024 o sistema exige horário de entrada marcado, comprar com antecedência (já no app)."],
   },
 ];
