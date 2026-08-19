@@ -14,10 +14,12 @@ import {
   AlertOctagon,
   BookHeart,
   Landmark,
+  Users,
 } from "lucide-react";
 
 const ITENS = [
   { href: "/mais/pendencias", label: "Painel de pendências", icon: ListChecks, destaque: true },
+  { href: "/mais/familia", label: "Compartilhamento Família", icon: Users },
   { href: "/mais/busca", label: "Busca", icon: Search },
   { href: "/mais/guia-cidade", label: "Guia rápido da cidade", icon: Landmark },
   { href: "/mais/documentos", label: "Documentos", icon: FileText },

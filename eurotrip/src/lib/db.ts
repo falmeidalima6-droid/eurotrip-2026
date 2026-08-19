@@ -56,6 +56,15 @@ export interface EventoPersonalizado {
   criadoEm: string;
 }
 
+export interface FotoPendente {
+  id?: number;
+  data: string; // YYYY-MM-DD do dia da viagem
+  nomeArquivo: string;
+  blob: Blob;
+  status: "pendente" | "enviando" | "erro";
+  criadoEm: string;
+}
+
 export interface IngressoOverride {
   ingressoId: string; // chave primária
   comprado: boolean;
@@ -98,6 +107,7 @@ class EurotripDB extends Dexie {
   anexos!: Table<Anexo, number>;
   itensPersonalizados!: Table<ItemPersonalizado, number>;
   eventosPersonalizados!: Table<EventoPersonalizado, string>;
+  fotosPendentes!: Table<FotoPendente, number>;
 
   constructor() {
     super("eurotrip2026");
@@ -119,6 +129,9 @@ class EurotripDB extends Dexie {
     });
     this.version(4).stores({
       eventosPersonalizados: "id, data",
+    });
+    this.version(5).stores({
+      fotosPendentes: "++id, data, status",
     });
   }
 }
