@@ -162,6 +162,16 @@ function ConteudoFamilia() {
         <p className="text-ink-soft text-sm">{TRIP_INFO.viajantes}</p>
       </header>
 
+      <div className="text-center">
+        <p className="text-xs font-medium text-brass">
+          {new Date(diaSelecionado + "T00:00:00").toLocaleDateString("pt-BR", { day: "2-digit", month: "long", year: "numeric" })}
+          {diaRoteiro ? ` — ${diaRoteiro.cidade} ${BANDEIRAS[diaRoteiro.pais]}` : localizacao?.cidade ? ` — ${localizacao.cidade}` : ""}
+        </p>
+        {!diaRoteiro && (
+          <p className="text-[11px] text-ink-soft mt-0.5">Fora do período oficial da viagem (04/10 a 17/10)</p>
+        )}
+      </div>
+
       {diaSelecionado === hojeISO() && localizacao && (
         <section className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2">
           <p className="text-xs font-medium text-success flex items-center gap-1.5">🟢 ONDE ESTAMOS</p>

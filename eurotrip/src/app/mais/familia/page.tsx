@@ -116,7 +116,6 @@ export default function FamiliaPainelPage() {
   }
 
   async function atualizarLocalizacao() {
-    if (!dia) return;
     setEnviandoLocalizacao(true);
     try {
       let lat: number | undefined;
@@ -134,9 +133,9 @@ export default function FamiliaPainelPage() {
       }
       await registrarLocalizacao({
         data: dataHoje,
-        cidade: dia.cidade,
-        pais: dia.pais,
-        local_texto: textoLocal || dia.cidade,
+        cidade: dia?.cidade || "",
+        pais: dia?.pais || "",
+        local_texto: textoLocal || dia?.cidade || "Sem descrição",
         lat,
         lng,
       });
@@ -147,8 +146,7 @@ export default function FamiliaPainelPage() {
   }
 
   async function marcarEstamosBem() {
-    if (!dia) return;
-    await registrarEstamosBem(dia.cidade);
+    await registrarEstamosBem(dia?.cidade || "");
     avisar("Avisado à família ✅");
   }
 
@@ -280,7 +278,7 @@ export default function FamiliaPainelPage() {
         />
         <button
           onClick={atualizarLocalizacao}
-          disabled={enviandoLocalizacao || !dia}
+          disabled={enviandoLocalizacao}
           className="w-full flex items-center justify-center gap-2 rounded-full bg-ink text-paper font-medium py-2.5 disabled:opacity-50"
         >
           {enviandoLocalizacao ? <Loader2 size={16} className="animate-spin" /> : <MapPin size={16} />}
@@ -290,8 +288,7 @@ export default function FamiliaPainelPage() {
 
       <button
         onClick={marcarEstamosBem}
-        disabled={!dia}
-        className="w-full flex items-center justify-center gap-2 rounded-2xl bg-success text-white font-medium py-3 disabled:opacity-50"
+        className="w-full flex items-center justify-center gap-2 rounded-2xl bg-success text-white font-medium py-3"
       >
         <Heart size={16} /> Estamos bem
       </button>
