@@ -1,0 +1,20 @@
+name: Manter Supabase ativa
+
+# Roda a cada 5 dias automaticamente (bem antes do limite de 7 dias de
+# inatividade do plano gratuito), além de poder ser disparado manualmente
+# pela aba "Actions" do GitHub a qualquer momento.
+on:
+  schedule:
+    - cron: "0 12 */5 * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fazer uma consulta simples na Supabase
+        run: |
+          curl -s -o /dev/null -w "Status: %{http_code}\n" \
+            "https://znbkfwkmdsohatoenwbx.supabase.co/rest/v1/familia_config?select=chave&limit=1" \
+            -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpuYmtmd2ttZHNvaGF0b2Vud2J4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2NTUwNzQsImV4cCI6MjEwMjIzMTA3NH0.X0DTlnrwdgW7fPX8y0Tmp16jV1v88wMJppusxHbWuSc" \
+            -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpuYmtmd2ttZHNvaGF0b2Vud2J4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2NTUwNzQsImV4cCI6MjEwMjIzMTA3NH0.X0DTlnrwdgW7fPX8y0Tmp16jV1v88wMJppusxHbWuSc"
