@@ -28,6 +28,12 @@ import {
 import { urlMiniatura, urlExibicao } from "@/lib/cloudinary";
 import { MapPin, Heart, ExternalLink, Lock } from "lucide-react";
 
+function formatarDataExtensa(iso: string): string {
+  const [ano, mes, dia] = iso.split("-").map(Number);
+  const d = new Date(ano, mes - 1, dia);
+  return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "long" });
+}
+
 function hojeISO(): string {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -169,6 +175,18 @@ function ConteudoFamilia() {
         </p>
         {!diaRoteiro && (
           <p className="text-[11px] text-ink-soft mt-0.5">Fora do período oficial da viagem (04/10 a 17/10)</p>
+        )}
+      </div>
+
+      <div className="rounded-2xl bg-ink text-paper px-4 py-2.5 flex items-center justify-between">
+        <span className="font-medium text-sm">
+          {formatarDataExtensa(diaSelecionado)}
+          {diaRoteiro ? ` — ${diaRoteiro.cidade} ${BANDEIRAS[diaRoteiro.pais]}` : diaSelecionado === hojeISO() ? " (fora do período da viagem)" : ""}
+        </span>
+        {diaSelecionado !== hojeISO() && (
+          <button onClick={() => setDiaSelecionado(hojeISO())} className="text-xs underline text-paper/80 shrink-0 ml-2">
+            ir para hoje
+          </button>
         )}
       </div>
 
