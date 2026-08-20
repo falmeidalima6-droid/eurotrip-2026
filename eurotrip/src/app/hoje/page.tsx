@@ -11,7 +11,7 @@ import Semaforo from "@/components/Semaforo";
 import PrepararAmanha from "@/components/PrepararAmanha";
 import ResumoPendencias from "@/components/ResumoPendencias";
 import OQueOAppOferece from "@/components/OQueOAppOferece";
-import { MapPin, ChevronRight, Search } from "lucide-react";
+import { MapPin, ChevronRight, Search, Users } from "lucide-react";
 
 export default function HojePage() {
   const { dia, amanha, estado, diasParaComeco } = useHoje();
@@ -39,6 +39,16 @@ export default function HojePage() {
       )}
 
       <ResumoPendencias />
+
+      <Link
+        href="/mais/familia"
+        className="flex items-center justify-between rounded-2xl bg-brass/10 border border-brass/30 p-4"
+      >
+        <span className="font-medium flex items-center gap-2">
+          <Users size={18} className="text-brass" /> Compartilhamento Família
+        </span>
+        <ChevronRight size={18} className="text-ink-soft" />
+      </Link>
 
       {estado === "depois" && (
         <div className="rounded-2xl bg-ink text-paper p-5 text-center">

@@ -3,20 +3,30 @@
 import { createClient, SupabaseClient } from "@supabase/supabase-js";
 import { db } from "./db";
 
+// A Área Família precisa funcionar em QUALQUER celular (família toda),
+// não só no celular de Fernanda/Marcos — por isso a URL e a chave pública
+// (anon) ficam fixas aqui, em vez de dependerem da configuração local do
+// app privado. A chave "anon" é feita para ser pública; ela não dá acesso
+// a nada que as regras de segurança (RLS) da Supabase não permitam.
+const SUPABASE_URL_PADRAO = "https://znbkfwkmdsohatoenwbx.supabase.co";
+const SUPABASE_ANON_KEY_PADRAO =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpuYmtmd2ttZHNvaGF0b2Vud2J4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY2NTUwNzQsImV4cCI6MjEwMjIzMTA3NH0.X0DTlnrwdgW7fPX8y0Tmp16jV1v88wMJppusxHbWuSc";
+
 let cliente: SupabaseClient | null = null;
-let urlAtual = "";
-let chaveAtual = "";
 
 async function obterCliente(): Promise<SupabaseClient | null> {
-  if (!db) return null;
-  const url = (await db.configuracoes.get("supabase-url"))?.valor;
-  const chave = (await db.configuracoes.get("supabase-anon-key"))?.valor;
-  if (!url || !chave) return null;
-  if (!cliente || url !== urlAtual || chave !== chaveAtual) {
-    cliente = createClient(url, chave);
-    urlAtual = url;
-    chaveAtual = chave;
+  if (cliente) return cliente;
+  // Se o app privado já tiver uma config própria salva localmente, respeita
+  // ela; senão (caso comum: celular de um familiar), usa a padrão fixa acima.
+  let url = SUPABASE_URL_PADRAO;
+  let chave = SUPABASE_ANON_KEY_PADRAO;
+  if (db) {
+    const urlLocal = (await db.configuracoes.get("supabase-url"))?.valor;
+    const chaveLocal = (await db.configuracoes.get("supabase-anon-key"))?.valor;
+    if (urlLocal) url = urlLocal;
+    if (chaveLocal) chave = chaveLocal;
   }
+  cliente = createClient(url, chave);
   return cliente;
 }
 
