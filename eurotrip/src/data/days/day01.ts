@@ -19,7 +19,7 @@ export const day01: DiaRoteiro = {
       horarioFinal: "18:00",
       status: "futuro",
       confirmado: true,
-      observacoes: "Objetivo do dia: embarcar com tranquilidade, sem pressa.",
+      observacoes: "Objetivo do dia: embarcar com tranquilidade, sem pressa. Taquara/Jacarepaguá → Galeão são ~30km, normalmente 45min-1h de carro. ⚠️ Atenção: domingo à tarde/início da noite costuma ter trânsito pesado de volta das praias pela Linha Amarela/Av. das Américas — vale sair mais perto das 17h30 do que das 18h00 para ter folga.",
       levar: ["Passaportes", "Seguro viagem", "Cartões", "Revolut", "Dinheiro em euros", "Carregadores", "Power bank carregado", "Fones", "Casacos acessíveis"],
     },
     {
