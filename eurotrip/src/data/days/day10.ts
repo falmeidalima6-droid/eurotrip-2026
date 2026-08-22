@@ -96,6 +96,24 @@ export const day10: DiaRoteiro = {
       observacoes: "Voo Schengen — sem nova imigração de entrada.",
     },
     {
+      id: "d10-e06b",
+      data: "2026-10-13",
+      cidade: "Barcelona",
+      pais: "Espanha",
+      categoria: "transfer",
+      titulo: "Táxi/Uber → hotel (Poblenou)",
+      horarioInicial: "13:15",
+      duracaoPrevista: "20-40 min (varia com trânsito)",
+      status: "futuro",
+      confirmado: true,
+      observacoes:
+        "O aeroporto fica longe do hotel (~13km) e não tem transporte público direto até o Poblenou sem trocar de linha (metrô + troca levaria 50-60 min). Com malas e só 30 min de folga até o check-in, táxi/Uber é a opção certa aqui — táxi oficial de Barcelona usa taxímetro (não é tarifa fixa), esperado ~€26-45 até o Poblenou. Se pedirem Uber com antecedência (assim que pousar), ganham tempo na fila do táxi do aeroporto.",
+      alerta: "⚠️ A janela de 30 min até o check-in é apertada — se pegarem trânsito ou fila de táxi, o check-in pode atrasar um pouco. Sem problema, só não é hora de se apressar demais.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Barcelona+El+Prat+Airport&destination=Calle+Ramon+Turo+196+Barcelona&travelmode=driving" },
+      ],
+    },
+    {
       id: "d10-e07",
       data: "2026-10-13",
       cidade: "Barcelona",
@@ -135,6 +153,10 @@ export const day10: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes: "Só exteriores — a prioridade de ingresso é para a Sagrada Família amanhã.",
+      dicaMetro: "🚇 Direto e simples: estação Poblenou ou Llacuna (Linha 4, laranja) até Passeig de Gràcia — mesma linha o dia inteiro, sem trocar, ~11-15 min.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Calle+Ramon+Turo+196+Barcelona&destination=Passeig+de+Gracia+Barcelona&travelmode=transit" },
+      ],
     },
     {
       id: "d10-e10",
@@ -182,6 +204,7 @@ export const day10: DiaRoteiro = {
       status: "futuro",
       confirmado: false,
       observacoes: "Sugestões: Julius Poblenou (Ramon Turró 160) ou 4uatre Lounge.",
+      dicaMetro: "🚇 Do Bairro Gótico de volta pro Poblenou: estação Jaume I (Linha 4, mesma linha da ida) direto até Poblenou/Llacuna — sem trocar de linha, ~15-18 min.",
     },
     {
       id: "d10-e14",
