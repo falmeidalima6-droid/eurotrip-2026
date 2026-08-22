@@ -29,8 +29,13 @@ export const day06: DiaRoteiro = {
       categoria: "caminhada",
       titulo: "Caminhar até o porto",
       horarioInicial: "08:45",
+      duracaoPrevista: "10-15 min",
       status: "futuro",
       confirmado: true,
+      observacoes: "São ~100 degraus de escada (ou a estrada, uns 17 min contornando) da Piazza Tasso até o porto Marina Piccola. Alternativa mais leve: elevador na Villa Comunale (~€1/pessoa) até o nível do mar, depois 5 min a pé até o porto.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=40.6263,14.3757&destination=40.6244,14.3778&travelmode=walking" },
+      ],
     },
     {
       id: "d06-e03",
@@ -70,7 +75,8 @@ export const day06: DiaRoteiro = {
       titulo: "Ferry Positano → Amalfi",
       status: "futuro",
       confirmado: false,
-      observacoes: "Final da manhã. ⚠️ A CONFIRMAR: horário exato.",
+      observacoes:
+        "Final da manhã. ⚠️ A CONFIRMAR: horário exato — em outubro os ferries entre Positano e Amalfi rodam bem menos que no verão (poucas saídas por dia, não é serviço de hora em hora). Recomendado: comprar o bilhete direto no quiosque do porto de Positano ao chegar de manhã (não precisa comprar com antecedência), mirando sair perto de 11h30-12h para ter manhã livre em Positano e ainda almoçar em Amalfi com calma. Travessia leva uns 15-30 min.",
     },
     {
       id: "d06-e06",
@@ -92,6 +98,7 @@ export const day06: DiaRoteiro = {
       status: "futuro",
       confirmado: false,
       observacoes: "Meio da tarde.",
+      alerta: "⚠️ O ferry de volta Positano→Sorrento (17h05) já está pago e reservado — ao sair de Amalfi, deixem folga de sobra, já que os ferries de outubro rodam com menos frequência. Recomendado pegar o ferry de volta a Amalfi→Positano até no máximo ~15h30-16h00, para não arriscar perder a reserva das 17h05.",
     },
     {
       id: "d06-e08",
