@@ -40,9 +40,16 @@ export const day05: DiaRoteiro = {
       categoria: "caminhada",
       titulo: "Saída para Roma Termini",
       horarioInicial: "06:00",
+      duracaoPrevista: "25–30 min (metrô) ou ~15 min (táxi/Uber)",
       status: "futuro",
       confirmado: true,
       destino: "Roma Termini",
+      alerta: "⚠️ São 3,3 km até Termini — NÃO dá a pé com malas nessa janela de tempo. Escolham metrô ou táxi/Uber antes de sair do hotel.",
+      dicaMetro:
+        "🚕 Recomendado, dado o horário crítico (trem às 07h00, sem margem pra imprevisto): táxi/Uber direto do hotel até Roma Termini, ~15 min sem trocas nem escadas com bagagem. 🚇 Alternativa mais barata: Linha A (metrô abre 05h30) direto de Ottaviano-San Pietro até Termini, sem trocar de linha, 6 estações (~12-15 min de trem) — mas soma-se caminhada até a estação + espera + trecho dentro da própria Termini até a plataforma do Frecciarossa, ficando justo às 06h50-06h55.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9109,12.4644&destination=41.9010,12.5015&travelmode=transit" },
+      ],
     },
     {
       id: "d05-e04",
@@ -89,6 +96,11 @@ export const day05: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes: "Sugestão: Piazza del Plebiscito, Galleria Umberto, Via Toledo, almoço com pizza napolitana.",
+      dicaMetro:
+        "🚇 A pé são ~2km/25-30 min até a Piazza del Plebiscito — tranquilo dentro da janela de 4h30 que vocês têm. Se preferirem economizar tempo/pernas: Metrô Linha 1, estação Garibaldi (dentro da própria Napoli Centrale) até Toledo (~5 min) — a própria estação Toledo é considerada uma das mais bonitas do mundo, vale a visita.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=40.8524,14.2721&destination=40.8384,14.2488&travelmode=walking" },
+      ],
     },
     {
       id: "d05-e05b",
@@ -157,6 +169,7 @@ export const day05: DiaRoteiro = {
       horarioInicial: "17:00",
       status: "futuro",
       confirmado: false,
+      observacoes: "Hotel fica bem perto do centro — só uns 4 min a pé (400m) até a Piazza Tasso.",
     },
     {
       id: "d05-e10",
