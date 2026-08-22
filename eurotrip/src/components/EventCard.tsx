@@ -122,6 +122,18 @@ export default function EventCard({ evento, onEditar }: { evento: EventoComputad
             </p>
           )}
           <div className="flex flex-wrap gap-2 pt-1">
+            {evento.links &&
+              evento.links.map((l) => (
+                <a
+                  key={l.url}
+                  href={l.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-medium bg-ink text-paper rounded-full px-3 py-1.5"
+                >
+                  <MapPin size={12} /> {l.label}
+                </a>
+              ))}
             {evento.coordenada && (
               <a
                 href={`https://maps.google.com/?q=${evento.coordenada.lat},${evento.coordenada.lng}`}
