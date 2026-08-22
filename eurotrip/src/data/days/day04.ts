@@ -30,8 +30,13 @@ export const day04: DiaRoteiro = {
       categoria: "caminhada",
       titulo: "Saída do hotel → Praça São Pedro",
       horarioInicial: "07:45",
+      duracaoPrevista: "10–12 min",
       status: "futuro",
       confirmado: true,
+      observacoes: "Distância curta (~1km) — hotel fica bem perto do Vaticano, dá pra ir tranquilamente a pé.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9109,12.4644&destination=41.9022,12.4539&travelmode=walking" },
+      ],
     },
     {
       id: "d04-e03",
@@ -90,10 +95,17 @@ export const day04: DiaRoteiro = {
       categoria: "passeio",
       titulo: "Castel Sant'Angelo (externo) → Ponte Sant'Angelo → margens do Tibre → Trastevere",
       horarioInicial: "15:00",
+      duracaoPrevista: "35–40 min a pé (com paradas)",
       status: "futuro",
       confirmado: false,
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9022,12.4539&destination=41.8896,12.4694&travelmode=walking" },
+      ],
       opcaoAlternativaTitulo: "Opção 2: Museus Vaticanos + Capela Sistina",
-      opcaoAlternativaDescricao: "Substituir a tarde inteira pelos Museus Vaticanos e Capela Sistina. Tempo previsto: 3–5 horas.",
+      opcaoAlternativaDescricao:
+        "Substituir a tarde inteira pelos Museus Vaticanos e Capela Sistina. Tempo previsto: 3–5 horas. ⚠️ Entrada fica do lado OPOSTO do Vaticano — são 15-20 min a pé contornando a muralha a partir da Praça São Pedro, não dá pra atravessar por dentro sem tour guiado. Última entrada geralmente ~1h antes do fechamento — confirmar horário de funcionamento perto da data.",
+      dicaMetro:
+        "🚇 Se optarem pelos Museus Vaticanos: da Praça São Pedro, contornar a muralha pela Via di Porta Angelica → Piazza del Risorgimento → Viale Vaticano até a entrada (Viale Vaticano). A pé são uns 15-20 min contornando por fora.",
     },
     {
       id: "d04-e08",
@@ -106,6 +118,12 @@ export const day04: DiaRoteiro = {
       status: "futuro",
       confirmado: false,
       observacoes: "Trastevere: bairro mais agradável para terminar o dia.",
+      alerta: "🚕 Volta ao hotel à noite: Trastevere NÃO tem estação de metrô. A pé são uns 30-35 min (2km) — tranquilo se estiverem dispostos, mas é bastante depois de um dia inteiro andando. O mais prático é pedir um Uber/táxi (~10-15 min de carro). Alternativa mais barata: ônibus 23 ou 271, que cruzam o rio e param perto da estação Ottaviano, mas exige checar o ponto certo e o intervalo entre ônibus à noite.",
+      dicaMetro: "🚕 Recomendado à noite: Uber/táxi direto do restaurante até o hotel — mais simples e seguro do que tentar achar o ônibus certo depois do jantar.",
+      links: [
+        { label: "Rota a pé (se preferirem)", url: "https://www.google.com/maps/dir/?api=1&origin=41.8896,12.4694&destination=41.9109,12.4644&travelmode=walking" },
+        { label: "Rota de ônibus/transporte", url: "https://www.google.com/maps/dir/?api=1&origin=41.8896,12.4694&destination=41.9109,12.4644&travelmode=transit" },
+      ],
     },
   ],
 };
