@@ -28,11 +28,18 @@ export const day03: DiaRoteiro = {
       cidade: "Roma",
       pais: "Italia",
       categoria: "caminhada",
-      titulo: "Saída do hotel → Coliseu",
+      titulo: "Ir para o Coliseu (de metrô)",
       horarioInicial: "07:45",
-      duracaoPrevista: "25–30 min",
+      duracaoPrevista: "20–25 min",
       status: "futuro",
       confirmado: true,
+      observacoes:
+        "⚠️ A pé são 6,4 km — mais de 1h de caminhada, não vale a pena logo de manhã. O metrô (com 1 troca) é bem mais rápido.",
+      dicaMetro:
+        "🚇 Compre o bilhete BIT (€1,50, vale 100 min) numa tabacaria ou máquina — ou use cartão/celular contactless direto na catraca. Entrem na estação Ottaviano-San Pietro (Linha A, laranja), a mais próxima do hotel. Peguem direção Anagnina até Termini, troquem para a Linha B (azul) direção Laurentina, e desçam em Colosseo — a saída já deixa vocês de frente pro Coliseu.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9109,12.4644&destination=41.8902,12.4922&travelmode=transit" },
+      ],
     },
     {
       id: "d03-e03",
@@ -48,7 +55,6 @@ export const day03: DiaRoteiro = {
       prioridade: "alta",
       horarioAbandono: "11:00",
       observacoes: "Ingresso desejado: Full Experience + Arena (se houver, visita guiada em português). ⚠️ A CONFIRMAR: compra do ingresso.",
-      dicaMetro: "🚇 Opção de metrô (em vez de caminhar): compre o bilhete BIT (€1,50, vale 100 min) numa tabacaria ou máquina — ou use cartão/celular contactless direto na catraca. Entrem na estação Ottaviano-San Pietro (Linha A, laranja) — é a mais próxima do hotel. Peguem a Linha A direção Anagnina. Desçam na estação Termini e troquem para a Linha B (azul), direção Laurentina. Desçam na estação Colosseo — a saída já deixa vocês de frente pro Coliseu, sem precisar adivinhar saída.",
       levar: ["Ingresso do Coliseu", "Documento", "Água"],
     },
     {
@@ -73,6 +79,7 @@ export const day03: DiaRoteiro = {
       horarioInicial: "13:00",
       status: "futuro",
       confirmado: false,
+      observacoes: "O hotel fica longe da região do Coliseu/Fórum (~35-40 min de metrô só de ida) — não vale a pena pensar em pausa no hotel nesse horário, o tempo não fecha.",
     },
     {
       id: "d03-e06",
@@ -151,6 +158,11 @@ export const day03: DiaRoteiro = {
       horarioInicial: "18:30",
       status: "futuro",
       confirmado: true,
+      dicaMetro:
+        "🚇 Ótima notícia — é rápido! Da Piazza del Popolo, a estação Flaminio (Linha A) fica bem ali. Peguem direção Battistini, só 2 estações (Lepanto, Ottaviano) — uns 5-6 min de trem, sem trocar de linha.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9107,12.4763&destination=41.9109,12.4644&travelmode=transit" },
+      ],
     },
     {
       id: "d03-e13",
