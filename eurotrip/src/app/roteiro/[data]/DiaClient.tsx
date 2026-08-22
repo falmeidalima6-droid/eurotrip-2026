@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
-import { getDiaPorData, BANDEIRAS } from "@/data/trip";
+import { getDiaPorData, BANDEIRAS, dias } from "@/data/trip";
 import { computarEventosDoDia } from "@/lib/time";
 import { DiaRoteiro, TripEvent } from "@/data/types";
 import EventCard from "@/components/EventCard";
 import EditarEventoModal, { DadosEdicaoEvento } from "@/components/EditarEventoModal";
 import { db, EventoOverride, EventoPersonalizado } from "@/lib/db";
 import { enviarSync } from "@/lib/supabaseSync";
-import { ArrowLeft, CloudRain, BatteryLow, RotateCcw, Plus } from "lucide-react";
+import { ArrowLeft, ArrowRight, CloudRain, BatteryLow, RotateCcw, Plus } from "lucide-react";
 
 export default function DiaClient({ data }: { data: string }) {
   const [plano, setPlano] = useState<"normal" | "chuva" | "cansaco">("normal");
@@ -19,6 +19,9 @@ export default function DiaClient({ data }: { data: string }) {
   const [editando, setEditando] = useState<{ tipo: "existente" | "novo"; id: string } | null>(null);
 
   const diaBase = getDiaPorData(data);
+  const idxDia = dias.findIndex((d) => d.data === data);
+  const diaAnterior = idxDia > 0 ? dias[idxDia - 1] : null;
+  const proximoDia = idxDia >= 0 && idxDia < dias.length - 1 ? dias[idxDia + 1] : null;
   const dia = diaBase;
 
   useEffect(() => {
@@ -219,6 +222,25 @@ export default function DiaClient({ data }: { data: string }) {
       >
         <Plus size={15} /> Adicionar atividade a este dia
       </button>
+
+      <div className="flex gap-2">
+        {diaAnterior && (
+          <Link
+            href={`/roteiro/${diaAnterior.data}`}
+            className="flex-1 flex items-center justify-center gap-1.5 rounded-2xl bg-paper-raised border border-line text-sm font-medium py-3"
+          >
+            <ArrowLeft size={15} /> {diaAnterior.cidade}
+          </Link>
+        )}
+        {proximoDia && (
+          <Link
+            href={`/roteiro/${proximoDia.data}`}
+            className="flex-1 flex items-center justify-center gap-1.5 rounded-2xl bg-ink text-paper text-sm font-medium py-3"
+          >
+            {proximoDia.cidade} <ArrowRight size={15} />
+          </Link>
+        )}
+      </div>
 
       {editando?.tipo === "existente" && eventoEditando && (
         <EditarEventoModal

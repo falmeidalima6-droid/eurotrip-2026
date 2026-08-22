@@ -33,10 +33,10 @@ export const ingressos: Ingresso[] = [
     id: "i05",
     nome: "Louvre",
     cidade: "Paris",
-    urgencia: "laranja",
+    urgencia: "verde",
     dataNecessaria: "2026-10-12",
-    comprado: false,
-    observacoes: "Horário de entrada (09h ou 10h30) depende do ingresso comprado.",
+    comprado: true,
+    observacoes: "✅ Comprado — 12/10 às 09h00.",
   },
   {
     id: "i07",

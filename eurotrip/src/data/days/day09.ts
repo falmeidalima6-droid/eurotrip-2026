@@ -43,10 +43,11 @@ export const day09: DiaRoteiro = {
       horarioInicial: "09:00",
       duracaoPrevista: "2h30–3h",
       status: "futuro",
-      confirmado: false,
+      confirmado: true,
       horarioAbandono: "13:30",
       prioridade: "alta",
-      observacoes: "Louvre funciona 09h–18h às segundas. Decisão no próprio dia: Opção A (Louvre completo 09h-12h, sem Montmartre) ou Opção B (Louvre 09h-11h15/11h30 + Montmartre/Sacré-Cœur 12h-14h). Em qualquer opção, não sacrificar Arco do Triunfo, Torre Eiffel no pôr do sol nem o cruzeiro. 🎟️ Pendente de compra — buscar primeiro horário.",
+      numeroReserva: "Confirmado — 09h00",
+      observacoes: "✅ COMPRADO: entrada às 09h00. Louvre funciona 09h–18h às segundas. Decisão no próprio dia: Opção A (Louvre completo 09h-12h, sem Montmartre) ou Opção B (Louvre 09h-11h15/11h30 + Montmartre/Sacré-Cœur 12h-14h). Em qualquer opção, não sacrificar Arco do Triunfo, Torre Eiffel no pôr do sol nem o cruzeiro.",
       opcaoAlternativaTitulo: "Opção B — Montmartre (12h00–14h00)",
       dicaMetro: "🚇 Do hotel (estação Faidherbe-Chaligny, Linha 8) até o Louvre: peguem a Linha 8 (verde-água) direção Balard, desçam na estação Bastille, troquem para a Linha 1 (amarela) direção La Défense, desçam na estação Palais Royal-Musée du Louvre — essa estação se conecta direto com o museu, sigam as placas. Se for pra Montmartre em vez disso: da Faidherbe-Chaligny, Linha 8 direção Balard até République, troquem para a Linha 2 (azul) direção Porte Dauphine, desçam na estação Anvers e subam a pé (ou de funicular) até o Sacré-Cœur.",
       opcaoAlternativaDescricao: "Caso reduzam o tempo no Louvre: Sacré-Cœur, Place du Tertre, ruas de Montmartre, mirantes. Não acrescentar outras atrações — sentir o bairro sem comprometer o ponto alto da tarde (Torre Eiffel). ⚠️ Horário de abandono: se às 15h30 ainda estiverem no Louvre, o plano Montmartre é cancelado automaticamente.",
@@ -73,6 +74,9 @@ export const day09: DiaRoteiro = {
       horarioFinal: "13:30",
       status: "futuro",
       confirmado: false,
+      opcaoAlternativaTitulo: "💤 Opção: pausa no hotel (banho + descanso)",
+      opcaoAlternativaDescricao:
+        "Se preferirem trocar o almoço na rua por um banho e uma horinha de descanso no meio do dia: da estação Concorde (Linha 8, direção Créteil/Pointe du Lac) até Faidherbe-Chaligny são cerca de 13 estações, sem trocar de linha, uns 20-25 min. Para voltar pra tarde: Faidherbe-Chaligny (Linha 8, direção Balard) de volta até Concorde ou direto até École Militaire, se for pular a Notre-Dame. Essa pausa consome ~1h a 1h30 de deslocamento total — só compensa se realmente quiserem o descanso, não é o plano padrão.",
     },
     {
       id: "d09-e06",
@@ -86,6 +90,7 @@ export const day09: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes: "Entrada gratuita. Substitui Sainte-Chapelle como roteiro principal (Sainte-Chapelle fica como alternativa).",
+      dicaMetro: "🚇 Do almoço (região de Concorde/Tuileries) até Notre-Dame: a pé são uns 30-35 min pela Rue de Rivoli, ou de metrô — Linha 1 (direção Château de Vincennes) de Concorde até Châtelet (5 estações), depois 5 min a pé até a Île de la Cité.",
     },
     {
       id: "d09-e07",
@@ -108,6 +113,10 @@ export const day09: DiaRoteiro = {
       horarioInicial: "15:45",
       status: "futuro",
       confirmado: true,
+      dicaMetro: "🚇 Trocadéro fica nas Linhas 6 e 9, sem conexão direta com o hotel. Ida: Faidherbe-Chaligny (Linha 8, direção Balard) até La Motte-Picquet–Grenelle (12 estações), trocar para a Linha 6 (direção Charles de Gaulle–Étoile), descer em Trocadéro (2 estações) — uns 30 min no total.",
+      opcaoAlternativaTitulo: "💤 Opção: pausa no hotel antes da noite",
+      opcaoAlternativaDescricao:
+        "Se quiserem descansar antes da Torre Eiffel à noite: de Trocadéro, mesmo caminho ao contrário — Linha 6 (direção Charles de Gaulle–Étoile) até La Motte-Picquet–Grenelle, trocar Linha 8 (direção Créteil/Pointe du Lac) até Faidherbe-Chaligny. Pra voltar mais tarde: Faidherbe-Chaligny (Linha 8, direção Balard) direto até École Militaire, sem trocar — a mesma linha que leva à Torre Eiffel. Vale a pena se o dia estiver pesado; só reduz a folga antes do horário do ingresso (18h00).",
     },
     {
       id: "d09-e09",
@@ -172,6 +181,7 @@ export const day09: DiaRoteiro = {
       horarioInicial: "22:30",
       status: "futuro",
       confirmado: true,
+      dicaMetro: "🚇 Do embarque do cruzeiro (Port de la Bourdonnais, perto da Torre Eiffel/École Militaire): Linha 8 direção Créteil/Pointe du Lac, direto até Faidherbe-Chaligny, sem trocar de linha — uns 25-30 min.",
       alerta: "⚠️ Amanhã o voo para Barcelona é às 10h10 — deixar tudo praticamente pronto hoje à noite (roupas, documentos, eletrônicos, carregadores, nécessaire, bagagem despachada).",
     },
   ],
