@@ -48,6 +48,9 @@ export const day11: DiaRoteiro = {
       horarioAbandono: "12:00",
       observacoes: "🎟️ PENDÊNCIA PRIORITÁRIA — comprar para um dos primeiros horários da manhã. Uma das atrações arquitetônicas mais importantes da viagem — não economizar tempo aqui.",
       dicaMetro: "🚇 Do hotel (região de Ramon Turró, Poblenou): entrem na estação Poblenou ou Llacuna (Linha L4, amarela). Peguem a L4 direção Trinitat Nova. Desçam na estação Verdaguer e troquem para a Linha L5 (azul), direção Cornellà Centre. Desçam na estação Sagrada Família — a saída já é praticamente na porta da basílica. Bilhete: T-Casual (10 viagens, compensa se forem usar bastante) ou avulso ~€2,40.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Calle+Ramon+Turo+196+Barcelona&destination=Sagrada+Familia+Barcelona&travelmode=transit" },
+      ],
     },
     {
       id: "d11-e05",
@@ -72,7 +75,8 @@ export const day11: DiaRoteiro = {
       horarioFinal: "18:30",
       status: "futuro",
       confirmado: false,
-      observacoes: "Sem atração definida ainda — a preencher conforme vocês decidirem (Parc Güell, El Born e Hospital de Sant Pau foram removidos do roteiro a pedido de vocês).",
+      observacoes:
+        "Sem atração definida ainda (Parc Güell, El Born e Hospital de Sant Pau foram removidos do roteiro a pedido de vocês). Dica prática: se o Flamenco for no Tablao Cordobés/La Rambla, vale terminar a tarde livre por ali perto (Bairro Gótico, Plaça Catalunya) — evita ir e voltar duas vezes na mesma região.",
     },
     {
       id: "d11-e07",
@@ -87,7 +91,10 @@ export const day11: DiaRoteiro = {
       status: "futuro",
       confirmado: false,
       prioridade: "media",
-      observacoes: "🎟️ Pendente — buscar sessão por volta de 19h–20h.",
+      endereco: "La Rambla, 35, Barcelona (sugestão: Tablao Flamenco Cordobés)",
+      observacoes:
+        "🎟️ Pendente — sugestão concreta: Tablao Flamenco Cordobés, um dos tablaos mais tradicionais de Barcelona (desde 1970), fica na própria Rambla. Tem sessão às ~19h15, que bate quase certinho com o horário que vocês já reservaram. Outra opção no mesmo estilo e horário: Palau Dalmases, no Born (sessão 18h45), mais intimista e um pouco mais barato.",
+      dicaMetro: "🚇 Fica entre as estações Liceu e Drassanes (Linha L3, verde) — bem central, fácil de chegar de qualquer parte da cidade.",
     },
     {
       id: "d11-e08",
@@ -112,6 +119,7 @@ export const day11: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       alerta: "⚠️ Não deixar para arrumar as malas no dia seguinte.",
+      dicaMetro: "🚇 Da região da Rambla/Bairro Gótico: Linha L3 até Catalunya, trocar para a Linha L4 direto até Poblenou/Llacuna — mesma combinação de linhas do dia anterior.",
     },
   ],
 };
