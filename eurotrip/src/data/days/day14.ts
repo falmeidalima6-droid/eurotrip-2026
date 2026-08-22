@@ -35,6 +35,23 @@ export const day14: DiaRoteiro = {
       empresa: "Hotel Mundial",
     },
     {
+      id: "d14-e02b",
+      data: "2026-10-17",
+      cidade: "Lisboa",
+      pais: "Portugal",
+      categoria: "transfer",
+      titulo: "Táxi/Uber → Aeroporto de Lisboa",
+      horarioInicial: "06:15",
+      duracaoPrevista: "15-20 min",
+      status: "futuro",
+      confirmado: true,
+      observacoes:
+        "⚠️ O metrô de Lisboa só abre às 6h30 — muito em cima da hora pro checkout de vocês, e ainda precisaria de 1 troca (Martim Moniz → Alameda → Aeroporto). Táxi/Uber direto é a escolha certa aqui: sem espera, sem troca, ~15-20 min até o aeroporto.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Praca+Martim+Moniz+2+Lisboa&destination=Aeroporto+Humberto+Delgado+Lisboa&travelmode=driving" },
+      ],
+    },
+    {
       id: "d14-e03",
       data: "2026-10-17",
       cidade: "Lisboa",
