@@ -201,10 +201,10 @@ export const day09: DiaRoteiro = {
       horarioInicial: "20:30",
       duracaoPrevista: "1h",
       status: "futuro",
-      confirmado: false,
+      confirmado: true,
       prioridade: "media",
       endereco: "Port de la Bourdonnais",
-      observacoes: "🎟️ Pendente de compra. Cruzeiro simples, sem jantar. Trajeto: Torre Eiffel → Île Saint-Louis → retorno. De out-mar, saídas aproximadamente a cada hora entre 10h30 e 22h.",
+      observacoes: "✅ COMPRADO — sem horário marcado (ingresso aberto, embarcam em qualquer saída disponível). Sugestão: ~20h30, mas dá pra ajustar conforme o resto do dia. Saídas aproximadamente a cada hora entre 10h30 e 22h. Cruzeiro simples, sem jantar. Trajeto: Torre Eiffel → Île Saint-Louis → retorno.",
     },
     {
       id: "d09-e13",

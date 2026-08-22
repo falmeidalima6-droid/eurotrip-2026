@@ -62,8 +62,8 @@ export const ingressos: Ingresso[] = [
     cidade: "Paris",
     urgencia: "verde",
     dataNecessaria: "2026-10-12",
-    comprado: false,
-    observacoes: "Bateaux Parisiens, saída Port de la Bourdonnais, ~20h30, sem jantar.",
+    comprado: true,
+    observacoes: "✅ Comprado — Bateaux Parisiens, Port de la Bourdonnais. Sem horário marcado (ingresso aberto), sugestão ~20h30, sem jantar.",
   },
   {
     id: "i10",

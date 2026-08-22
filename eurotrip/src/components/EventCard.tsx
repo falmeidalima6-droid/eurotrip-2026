@@ -10,6 +10,10 @@ export default function EventCard({ evento, onEditar }: { evento: EventoComputad
   const destaque = evento.statusComputado === "agora";
   const proximo = evento.statusComputado === "proximo";
 
+  const temAlternativa = !!evento.opcaoAlternativaTitulo;
+  const naoRecomendado = temAlternativa && /não recomendado|nao recomendado/i.test(evento.opcaoAlternativaTitulo || "");
+  const temDetalhesExtras = !!(evento.dicaMetro || evento.observacoes || temAlternativa || (evento.links && evento.links.length > 0));
+
   return (
     <div
       className={`rounded-2xl border p-4 transition-colors ${
@@ -39,6 +43,11 @@ export default function EventCard({ evento, onEditar }: { evento: EventoComputad
           <p className={`font-medium mt-1 ${evento.statusComputado === "concluido" || evento.statusComputado === "pulado" ? "line-through text-ink-soft" : ""}`}>
             {evento.titulo}
           </p>
+          {!expandido && temDetalhesExtras && (
+            <p className={`text-xs mt-1 flex items-center gap-1 ${naoRecomendado ? "text-alert font-medium" : "text-ink-soft"}`}>
+              {naoRecomendado ? "⚠️ Tem um alerta importante aqui — toque para ver" : "ℹ️ Tem detalhes e opções — toque para ver"}
+            </p>
+          )}
         </div>
         <ChevronDown size={18} className={`mt-1 shrink-0 text-ink-soft transition-transform ${expandido ? "rotate-180" : ""}`} />
       </button>
