@@ -31,6 +31,9 @@ export const day13: DiaRoteiro = {
       horarioInicial: "07:15",
       status: "futuro",
       confirmado: true,
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Praca+Martim+Moniz+2+Lisboa&destination=Rossio+Train+Station+Lisboa&travelmode=walking" },
+      ],
     },
     {
       id: "d13-e03",
@@ -60,6 +63,9 @@ export const day13: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes: "Chegar com folga antes da abertura (10h) evita fila logo na entrada.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Sintra+Train+Station&destination=Quinta+da+Regaleira&travelmode=walking" },
+      ],
     },
     {
       id: "d13-e05",
@@ -112,6 +118,10 @@ export const day13: DiaRoteiro = {
       horarioFinal: "13:35",
       status: "futuro",
       confirmado: true,
+      observacoes: "A Linha Verde do metrô liga Rossio a Cais do Sodré direto, sem trocar — mas a pé (~1,2km, 15 min) também é tranquilo e evita escadas com a movimentação do metrô na hora do dia.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Rossio+Lisboa&destination=Cais+do+Sodre+Lisboa&travelmode=walking" },
+      ],
     },
     {
       id: "d13-e09",
@@ -125,6 +135,9 @@ export const day13: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       dicaMetro: "Bilhete: cartão Viva Viagem carregado com zapping ou passe. Linha de Cascais, sentido Cascais, saltar em Belém.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Cais+do+Sodre+Train+Station+Lisboa&destination=Belem+Train+Station+Lisboa&travelmode=transit" },
+      ],
     },
     {
       id: "d13-e10",
@@ -177,6 +190,9 @@ export const day13: DiaRoteiro = {
       horarioFinal: "17:20",
       status: "futuro",
       confirmado: true,
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Belem+Train+Station+Lisboa&destination=Cais+do+Sodre+Train+Station+Lisboa&travelmode=transit" },
+      ],
     },
     {
       id: "d13-e14",
@@ -189,6 +205,9 @@ export const day13: DiaRoteiro = {
       horarioFinal: "17:45",
       status: "futuro",
       confirmado: true,
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Cais+do+Sodre+Lisboa&destination=Praca+Martim+Moniz+2+Lisboa&travelmode=transit" },
+      ],
     },
     {
       id: "d13-e15",
