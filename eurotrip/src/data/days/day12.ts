@@ -79,6 +79,23 @@ export const day12: DiaRoteiro = {
       confirmado: true,
     },
     {
+      id: "d12-e05b",
+      data: "2026-10-15",
+      cidade: "Lisboa",
+      pais: "Portugal",
+      categoria: "transfer",
+      titulo: "Metrô ou táxi → Hotel Mundial",
+      horarioInicial: "14:30",
+      duracaoPrevista: "20-30 min",
+      status: "futuro",
+      confirmado: true,
+      observacoes:
+        "🎉 Sorte boa: a estação de metrô da praça do próprio hotel se chama 'Martim Moniz' — mesmo nome! Linha Vermelha (Aeroporto) até Alameda, trocar para a Linha Verde (Martim Moniz) — só 1 troca, desce literalmente na praça do hotel. Bilhete único €1,90-1,92, sem sobretaxa de aeroporto. Alternativa com malas: táxi/Uber, ~15-20 min, mais simples se estiverem cansados.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Aeroporto+Humberto+Delgado+Lisboa&destination=Praca+Martim+Moniz+2+Lisboa&travelmode=transit" },
+      ],
+    },
+    {
       id: "d12-e06",
       data: "2026-10-15",
       cidade: "Lisboa",
