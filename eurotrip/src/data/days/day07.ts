@@ -76,7 +76,7 @@ export const day07: DiaRoteiro = {
       empresa: "Italo",
       origem: "Napoli Centrale",
       destino: "Venezia",
-      observacoes: "⚠️ A CONFIRMAR: estação de chegada exata em Veneza.",
+      observacoes: "✅ Estação de chegada confirmada: Venezia Santa Lucia (estação principal, dentro do centro histórico) — é o destino padrão dessa linha Italo Nápoles-Veneza. Só reconfirmar no bilhete perto da data, caso haja alguma alteração pontual de rota.",
     },
     {
       id: "d07-e06",
@@ -92,8 +92,8 @@ export const day07: DiaRoteiro = {
       empresa: "Hotel Leone",
       numeroReserva: "72077190186930 (Hoteis.com)",
       observacoes: "Check-in a partir das 14h. Checkout referência: 10h30. Tel: +39 041 2688128. Recepção 8h–20h; avisar com 72h de antecedência.",
-      links: [{ label: "Mapa", url: "https://maps.google.com/?q=Hotel+Leone+Fondamenta+Cannaregio+1250+Venice" }],
-      planoB: "🧳 Bagagem em Veneza: a região tem várias pontes com escada, nada favorável a mala grande com rodinha. Opções sem custo extra: avisar o Hotel Leone com antecedência para ajuda com a bagagem, e dividir o peso entre os dois (Marcos com a mais pesada). Opção paga: carregador avulso ou táxi aquático privado até perto do hotel, se preferirem evitar o esforço físico.",
+      links: [{ label: "Mapa", url: "https://maps.google.com/?q=Hotel+Leone+Fondamenta+Cannaregio+1250+Venice" }, { label: "Rota a pé da estação", url: "https://www.google.com/maps/dir/?api=1&origin=Venezia+Santa+Lucia&destination=Hotel+Leone+Fondamenta+Cannaregio+1250+Venezia&travelmode=walking" }],
+      planoB: "🧳 Boa notícia: da Santa Lucia até o Hotel Leone são só 6-10 min a pé, cruzando UMA única ponte (Ponte delle Guglie) — bem mais tranquilo do que outras partes de Veneza. Fora desse trecho específico, a cidade em geral tem várias pontes com escada; se decidirem se deslocar mais depois, opções sem custo: pedir ajuda da recepção do Hotel Leone, dividir o peso entre os dois. Opção paga: carregador avulso ou táxi aquático.",
     },
     {
       id: "d07-e07",
@@ -104,8 +104,12 @@ export const day07: DiaRoteiro = {
       titulo: "Grande Canal → Ponte Rialto → Praça São Marcos → Basílica (externa) → Ponte dos Suspiros → Riva degli Schiavoni",
       status: "futuro",
       confirmado: false,
+      observacoes: "Do hotel até a Ponte Rialto são uns 20-25 min a pé (ou vaporetto, que passa bem perto do hotel).",
       opcaoAlternativaTitulo: "Opcional",
       opcaoAlternativaDescricao: "Passeio de Vaporetto.",
+      links: [
+        { label: "Rota a pé até a Rialto", url: "https://www.google.com/maps/dir/?api=1&origin=Hotel+Leone+Fondamenta+Cannaregio+1250+Venezia&destination=Ponte+di+Rialto+Venezia&travelmode=walking" },
+      ],
     },
     {
       id: "d07-e08",
