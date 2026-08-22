@@ -53,12 +53,19 @@ export const day08: DiaRoteiro = {
       cidade: "Veneza",
       pais: "Italia",
       categoria: "transfer",
-      titulo: "Vaporetto → Piazzale Roma → ônibus → Aeroporto Marco Polo",
+      titulo: "Alilaguna (linha Laranja) → Aeroporto Marco Polo",
       horarioInicial: "12:15",
-      horarioFinal: "12:30",
+      duracaoPrevista: "~42 min de barco",
       status: "futuro",
       confirmado: true,
-      planoB: "🧳 Mesma questão da chegada: do hotel até o vaporetto tem pontes com escada. Considerem sair com mais margem de tempo e, se decidirem por ajuda paga (carregador/táxi aquático) na chegada, o mesmo vale pra volta.",
+      observacoes:
+        "✅ MELHOR OPÇÃO PARA AS MALAS: o Hotel Leone não tem porto próprio, mas o embarcadouro público 'Guglie' fica a poucos passos da porta do hotel (mesmo canal, sem ponte pra atravessar). A linha Alilaguna Laranja embarca ali e vai DIRETO até o aeroporto — sem trocar de barco, sem pegar ônibus, sem cruzar mais pontes. Bagagem inclusa no bilhete (~€13-21/pessoa). Sai a cada hora, aproximadamente.",
+      dicaMetro:
+        "🚌 Alternativa mais barata (mas com 1 ponte a mais): caminhar 10 min até o Piazzale Roma (mesma ponte da chegada, Ponte delle Guglie) e pegar o ônibus ATVO ou ACTV Aerobus direto pro aeroporto, ~20-25 min, ~€10-12/pessoa, bagagem inclusa.",
+      links: [
+        { label: "Ver embarcadouro Guglie no Maps", url: "https://www.google.com/maps/search/?api=1&query=Alilaguna+Guglie+stop+Venice" },
+      ],
+      planoB: "Se preferirem não lidar com barco nenhum: táxi aquático privado direto da porta do hotel até o aeroporto (~€100 para até 4 pessoas, ~30 min) — mais caro, mas porta-a-porta sem transferência nenhuma.",
     },
     {
       id: "d08-e05",
