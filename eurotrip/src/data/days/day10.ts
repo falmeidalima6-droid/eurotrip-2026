@@ -156,7 +156,10 @@ export const day10: DiaRoteiro = {
       dicaMetro: "🚇 Direto e simples: estação Poblenou ou Llacuna (Linha 4, laranja) até Passeig de Gràcia — mesma linha o dia inteiro, sem trocar, ~11-15 min.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Calle+Ramon+Turo+196+Barcelona&destination=Passeig+de+Gracia+Barcelona&travelmode=transit" },
+        { label: "🛍️ Lefties (roupas baratinhas)", url: "https://www.google.com/maps/search/?api=1&query=Lefties+near+Passeig+de+Gracia+Barcelona" },
       ],
+      opcaoAlternativaTitulo: "🛍️ Opção: comprinhas baratinhas na Lefties",
+      opcaoAlternativaDescricao: "Tem uma loja Lefties a só 7 min a pé da Passeig de Gràcia (3 min da estação Catalunya) — bem no caminho de vocês. Primark não tem loja central em Barcelona (só em Diagonal Mar/L'Illa), não vale o desvio.",
     },
     {
       id: "d10-e10",

@@ -107,6 +107,8 @@ export const day03: DiaRoteiro = {
         { label: "🚰 Nasoni (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=nasone+drinking+fountain+near+Piazza+Venezia+Roma" },
         { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+Piazza+Venezia+Roma" },
       ],
+      opcaoAlternativaTitulo: "🛍️ Opção: comprinhas baratinhas na Via del Corso",
+      opcaoAlternativaDescricao: "Vocês já passam bem perto — Via del Corso tem H&M (nº 442) e Zara (nº 64 e 189), bem no meio do caminho entre Piazza Venezia e Piazza di Spagna. Primark não tem loja no centro de Roma (só em shoppings afastados), não vale o desvio.",
     },
     {
       id: "d03-e08",

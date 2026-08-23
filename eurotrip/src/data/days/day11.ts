@@ -100,6 +100,7 @@ export const day11: DiaRoteiro = {
       links: [
         { label: "🚰 Font de Canaletes (água grátis, icônica da Rambla)", url: "https://www.google.com/maps/search/?api=1&query=Font+de+Canaletes+La+Rambla+Barcelona" },
         { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+La+Rambla+Barcelona" },
+        { label: "🛍️ Lefties (roupas baratinhas)", url: "https://www.google.com/maps/search/?api=1&query=Lefties+near+La+Rambla+Barcelona" },
       ],
     },
     {

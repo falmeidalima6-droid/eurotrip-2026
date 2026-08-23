@@ -136,7 +136,10 @@ export const day12: DiaRoteiro = {
       links: [
         { label: "🚰 Ponto de água por perto", url: "https://www.google.com/maps/search/?api=1&query=public+drinking+water+fountain+near+Praca+do+Comercio+Lisboa" },
         { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+Praca+do+Comercio+Lisboa" },
+        { label: "🛍️ Loja Normal (Rua do Ouro)", url: "https://www.google.com/maps/search/?api=1&query=Normal+Rua+do+Ouro+Lisboa" },
       ],
+      opcaoAlternativaTitulo: "🛍️ Opção: comprinhas baratinhas na Rua do Ouro",
+      opcaoAlternativaDescricao: "A loja Normal (cosméticos, casa, doces — tudo baratinho) fica na Rua do Ouro, entrada no topo da escadaria ao lado do Elevador de Santa Justa, bem no meio desse passeio. Primark não tem loja no centro de Lisboa (só em shopping), não vale o desvio.",
     },
     {
       id: "d12-e09",
