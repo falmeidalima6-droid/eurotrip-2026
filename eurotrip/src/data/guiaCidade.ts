@@ -29,6 +29,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Ônibus 64 (Termini↔Vaticano) e a Linha A do metrô nos fins de semana são pontos clássicos de batedores de carteira — mochila na frente.",
       "Muitas lojas pequenas fecham para o almoço (riposo), normalmente 13h-16h.",
+      "🚻 Banheiro público de graça é raro na Itália — o normal é usar o de bares/cafés (às vezes cobram €0,50-1 mesmo sem consumir) ou contar com museus/atrações que já estão no roteiro.",
     ],
   },
   {
@@ -52,6 +53,7 @@ export const guiasCidade: GuiaCidade[] = [
     golpes: ["Nenhum golpe específico frequente reportado — atenção padrão com pertences em áreas cheias basta."],
     particularidades: [
       "Alta temporada lota rápido — cheguem aos ferries com a antecedência recomendada (30 min).",
+      "🚻 Igual ao resto da Itália: banheiro grátis é raro, contem com bares (às vezes pagos) e as próprias atrações do roteiro.",
     ],
   },
   {
@@ -67,6 +69,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Boa notícia: como vocês estão hospedados na cidade, NÃO pagam a taxa de acesso ao centro histórico (essa taxa é só para quem visita sem pernoitar).",
       "Curiosidade: tudo flutua em Veneza — até a polícia e a ambulância andam de barco.",
+      "🚻 Igual ao resto da Itália: banheiro grátis é raro, contem com bares/cafés (às vezes pagos) e as atrações do roteiro.",
     ],
   },
   {
@@ -84,7 +87,10 @@ export const guiasCidade: GuiaCidade[] = [
       "Nota de dinheiro 'caída' no chão perto de vocês — é isca para distrair enquanto mexem no bolso/bolsa.",
       "Bilhete de metrô/atração vendido na rua com 'desconto' — comprem só em guichês oficiais.",
     ],
-    particularidades: ["Metrô nos horários de pico e estações muito turísticas são onde mais acontece furto — mochila na frente."],
+    particularidades: [
+      "Metrô nos horários de pico e estações muito turísticas são onde mais acontece furto — mochila na frente.",
+      "🚻 Boa notícia rara: Paris tem ~400 'sanisettes' — banheiros públicos grátis, autolimpantes, espalhados pela cidade, a maioria aberta 6h-22h (alguns 24h). Bem mais fácil que no resto da Europa.",
+    ],
   },
   {
     cidade: "Barcelona",
@@ -100,6 +106,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Batedores de carteira são o principal risco em Las Ramblas, Sagrada Família e praias, especialmente em grupo (um distrai, outro furta).",
       "Ingressos de atrações (Sagrada Família etc.) esgotam rápido — já resolvido no app, mas vale lembrar.",
+      "🚻 Banheiro público grátis é escasso — contem com cafés (o normal é pedir consumindo algo) ou as atrações do roteiro.",
     ],
   },
   {
@@ -115,6 +122,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Elétrico 28 é o ponto clássico de batedor de carteira em Lisboa — mochila na frente, celular guardado.",
       "Cidade é bem inclinada (muitas ladeiras) — vale usar metrô/elevadores para poupar as pernas.",
+      "🚻 Lisboa está reduzindo os banheiros públicos grátis ao longo dos anos, mas ainda tem alguns sem cancela — cafés e as atrações do roteiro são o mais confiável.",
     ],
   },
   {
@@ -124,6 +132,9 @@ export const guiasCidade: GuiaCidade[] = [
     gorjeta: "Mesma norma de Portugal — não obrigatória.",
     agua: "Torneira potável. Tem uma fonte histórica de água potável (Fonte dos Pisões) bem no caminho do centro até a Quinta da Regaleira — ótimo ponto de parada.",
     golpes: ["Nenhum golpe elaborado reportado com frequência — atenção padrão basta."],
-    particularidades: ["Quinta da Regaleira fica cheia rápido — desde 2024 o sistema exige horário de entrada marcado, comprar com antecedência (já no app)."],
+    particularidades: [
+      "Quinta da Regaleira fica cheia rápido — desde 2024 o sistema exige horário de entrada marcado, comprar com antecedência (já no app).",
+      "🚻 Igual ao resto de Portugal: banheiro grátis é limitado, cafés e a própria Regaleira/estação são as opções mais garantidas.",
+    ],
   },
 ];

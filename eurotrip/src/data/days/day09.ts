@@ -74,6 +74,7 @@ export const day09: DiaRoteiro = {
       confirmado: true,
       links: [
         { label: "🚰 Fontaine Wallace (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=Fontaine+Wallace+Jardin+des+Tuileries+Paris" },
+        { label: "🚻 Sanisette (banheiro público grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=sanisette+public+toilet+near+Jardin+des+Tuileries+Paris" },
       ],
     },
     {
