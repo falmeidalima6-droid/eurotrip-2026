@@ -91,7 +91,7 @@ export const guiasCidade: GuiaCidade[] = [
     emoji: "🇪🇸",
     transporte: ["Táxi oficial é preto e amarelo — ou usem Cabify/FreeNow/Uber. Nunca aceitem 'táxi' sem identificação."],
     gorjeta: "Não obrigatória — arredondar a conta já é gentileza suficiente.",
-    agua: "As 'fonts' (chafarizes públicos) em parques e praças são gratuitas e potáveis — tragam garrafa reutilizável.",
+    agua: "As 'fonts' (chafarizes públicos) em parques e praças são gratuitas e potáveis — Barcelona é a 2ª cidade da Europa em densidade de fontes públicas (atrás só de Zurique), tragam garrafa reutilizável.",
     golpes: [
       "Golpe do 'cocô de passarinho': alguém 'ajuda' a limpar suas costas enquanto rouba a carteira.",
       "Distração por esbarrão ou pedido de informação seguido de furto.",
@@ -110,7 +110,7 @@ export const guiasCidade: GuiaCidade[] = [
       "Metrô fecha por volta da 1h da manhã — depois disso, só táxi/Uber/Bolt.",
     ],
     gorjeta: "Não obrigatória — arredondar já é bem visto.",
-    agua: "Torneira é potável em Lisboa.",
+    agua: "Torneira potável. Lisboa é a 6ª cidade da Europa em densidade de fontes públicas grátis (~6 fontes/km²) — mapa colaborativo em pontooasis.pt.",
     golpes: ["Nenhum golpe elaborado muito reportado — o risco maior é furto simples em locais cheios."],
     particularidades: [
       "Elétrico 28 é o ponto clássico de batedor de carteira em Lisboa — mochila na frente, celular guardado.",
@@ -122,7 +122,7 @@ export const guiasCidade: GuiaCidade[] = [
     emoji: "🇵🇹",
     transporte: ["Trem sai do Rossio (Lisboa), ~40 min. Saiam de Lisboa antes das 9h — depois das 10h as filas nos palácios ficam longas."],
     gorjeta: "Mesma norma de Portugal — não obrigatória.",
-    agua: "Torneira é potável.",
+    agua: "Torneira potável. Tem uma fonte histórica de água potável (Fonte dos Pisões) bem no caminho do centro até a Quinta da Regaleira — ótimo ponto de parada.",
     golpes: ["Nenhum golpe elaborado reportado com frequência — atenção padrão basta."],
     particularidades: ["Quinta da Regaleira fica cheia rápido — desde 2024 o sistema exige horário de entrada marcado, comprar com antecedência (já no app)."],
   },

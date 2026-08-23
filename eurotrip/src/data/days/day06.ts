@@ -65,6 +65,9 @@ export const day06: DiaRoteiro = {
       titulo: "Positano — Santa Maria Assunta, Spiaggia Grande, ruelas, lojas, mirantes",
       status: "futuro",
       confirmado: false,
+      links: [
+        { label: "🚰 Ponto de água por perto", url: "https://www.google.com/maps/search/?api=1&query=public+drinking+water+fountain+Positano" },
+      ],
     },
     {
       id: "d06-e05",
@@ -87,6 +90,9 @@ export const day06: DiaRoteiro = {
       titulo: "Amalfi — Catedral, Piazza Duomo, Centro Histórico + almoço",
       status: "futuro",
       confirmado: false,
+      links: [
+        { label: "🚰 Ponto de água por perto", url: "https://www.google.com/maps/search/?api=1&query=public+drinking+water+fountain+Amalfi" },
+      ],
     },
     {
       id: "d06-e07",

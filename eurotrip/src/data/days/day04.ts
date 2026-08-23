@@ -100,6 +100,7 @@ export const day04: DiaRoteiro = {
       confirmado: false,
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9022,12.4539&destination=41.8896,12.4694&travelmode=walking" },
+        { label: "🚰 Nasoni (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=nasone+drinking+fountain+near+Castel+Sant%27Angelo+Roma" },
       ],
       opcaoAlternativaTitulo: "Opção 2: Museus Vaticanos + Capela Sistina",
       opcaoAlternativaDescricao:

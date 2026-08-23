@@ -62,9 +62,10 @@ export const day13: DiaRoteiro = {
       duracaoPrevista: "≈15-20 min a pé",
       status: "futuro",
       confirmado: true,
-      observacoes: "Chegar com folga antes da abertura (10h) evita fila logo na entrada.",
+      observacoes: "Chegar com folga antes da abertura (10h) evita fila logo na entrada. 🚰 Passam bem no meio do caminho pela Fonte dos Pisões — fonte histórica de água potável, boa parada rápida pra encher a garrafa.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Sintra+Train+Station&destination=Quinta+da+Regaleira&travelmode=walking" },
+        { label: "🚰 Fonte dos Pisões", url: "https://www.google.com/maps/search/?api=1&query=Fonte+dos+Pisoes+Sintra" },
       ],
     },
     {

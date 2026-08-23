@@ -50,6 +50,7 @@ export const day11: DiaRoteiro = {
       dicaMetro: "🚇 Do hotel (região de Ramon Turró, Poblenou): entrem na estação Poblenou ou Llacuna (Linha L4, amarela). Peguem a L4 direção Trinitat Nova. Desçam na estação Verdaguer e troquem para a Linha L5 (azul), direção Cornellà Centre. Desçam na estação Sagrada Família — a saída já é praticamente na porta da basílica. Bilhete: T-Casual (10 viagens, compensa se forem usar bastante) ou avulso ~€2,40.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Calle+Ramon+Turo+196+Barcelona&destination=Sagrada+Familia+Barcelona&travelmode=transit" },
+        { label: "🚰 Font (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=public+water+fountain+near+Sagrada+Familia+Barcelona" },
       ],
     },
     {
@@ -95,6 +96,9 @@ export const day11: DiaRoteiro = {
       observacoes:
         "🎟️ Pendente — sugestão concreta: Tablao Flamenco Cordobés, um dos tablaos mais tradicionais de Barcelona (desde 1970), fica na própria Rambla. Tem sessão às ~19h15, que bate quase certinho com o horário que vocês já reservaram. Outra opção no mesmo estilo e horário: Palau Dalmases, no Born (sessão 18h45), mais intimista e um pouco mais barato.",
       dicaMetro: "🚇 Fica entre as estações Liceu e Drassanes (Linha L3, verde) — bem central, fácil de chegar de qualquer parte da cidade.",
+      links: [
+        { label: "🚰 Font de Canaletes (água grátis, icônica da Rambla)", url: "https://www.google.com/maps/search/?api=1&query=Font+de+Canaletes+La+Rambla+Barcelona" },
+      ],
     },
     {
       id: "d11-e08",

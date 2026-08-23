@@ -103,6 +103,9 @@ export const day03: DiaRoteiro = {
       horarioInicial: "15:00",
       status: "futuro",
       confirmado: false,
+      links: [
+        { label: "🚰 Nasoni (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=nasone+drinking+fountain+near+Piazza+Venezia+Roma" },
+      ],
     },
     {
       id: "d03-e08",
