@@ -51,6 +51,7 @@ export const day11: DiaRoteiro = {
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Calle+Ramon+Turo+196+Barcelona&destination=Sagrada+Familia+Barcelona&travelmode=transit" },
         { label: "🚰 Font (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=public+water+fountain+near+Sagrada+Familia+Barcelona" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+Sagrada+Familia+Barcelona" },
       ],
     },
     {
@@ -98,6 +99,7 @@ export const day11: DiaRoteiro = {
       dicaMetro: "🚇 Fica entre as estações Liceu e Drassanes (Linha L3, verde) — bem central, fácil de chegar de qualquer parte da cidade.",
       links: [
         { label: "🚰 Font de Canaletes (água grátis, icônica da Rambla)", url: "https://www.google.com/maps/search/?api=1&query=Font+de+Canaletes+La+Rambla+Barcelona" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+La+Rambla+Barcelona" },
       ],
     },
     {

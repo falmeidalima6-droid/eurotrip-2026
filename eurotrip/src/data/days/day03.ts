@@ -105,6 +105,7 @@ export const day03: DiaRoteiro = {
       confirmado: false,
       links: [
         { label: "🚰 Nasoni (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=nasone+drinking+fountain+near+Piazza+Venezia+Roma" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+Piazza+Venezia+Roma" },
       ],
     },
     {

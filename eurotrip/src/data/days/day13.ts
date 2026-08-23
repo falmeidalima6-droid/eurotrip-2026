@@ -66,6 +66,7 @@ export const day13: DiaRoteiro = {
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Sintra+Train+Station&destination=Quinta+da+Regaleira&travelmode=walking" },
         { label: "🚰 Fonte dos Pisões", url: "https://www.google.com/maps/search/?api=1&query=Fonte+dos+Pisoes+Sintra" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+Sintra+centro" },
       ],
     },
     {
@@ -166,6 +167,10 @@ export const day13: DiaRoteiro = {
       confirmado: false,
       horarioAbandono: "16:30",
       observacoes: "🎟️ Outubro: aberto 10h-17h30 (última entrada 17h). Fechado às segundas — 16/10 é sexta, ok. Comprar ingresso combinado com Torre de Belém se possível.",
+      links: [
+        { label: "🚰 Ponto de água por perto", url: "https://www.google.com/maps/search/?api=1&query=public+drinking+water+fountain+near+Mosteiro+dos+Jeronimos+Lisboa" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+Mosteiro+dos+Jeronimos+Lisboa" },
+      ],
     },
     {
       id: "d13-e12",

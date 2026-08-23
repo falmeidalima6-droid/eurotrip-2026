@@ -67,6 +67,7 @@ export const day06: DiaRoteiro = {
       confirmado: false,
       links: [
         { label: "🚰 Ponto de água por perto", url: "https://www.google.com/maps/search/?api=1&query=public+drinking+water+fountain+Positano" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+Positano" },
       ],
     },
     {
@@ -92,6 +93,7 @@ export const day06: DiaRoteiro = {
       confirmado: false,
       links: [
         { label: "🚰 Ponto de água por perto", url: "https://www.google.com/maps/search/?api=1&query=public+drinking+water+fountain+Amalfi" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+Amalfi" },
       ],
     },
     {

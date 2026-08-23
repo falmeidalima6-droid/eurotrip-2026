@@ -133,6 +133,10 @@ export const day12: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes: "Sem ingresso obrigatório. Localização do Hotel Mundial é excelente para esse trajeto em sequência.",
+      links: [
+        { label: "🚰 Ponto de água por perto", url: "https://www.google.com/maps/search/?api=1&query=public+drinking+water+fountain+near+Praca+do+Comercio+Lisboa" },
+        { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+Praca+do+Comercio+Lisboa" },
+      ],
     },
     {
       id: "d12-e09",

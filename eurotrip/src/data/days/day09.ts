@@ -154,6 +154,7 @@ export const day09: DiaRoteiro = {
         { label: "Rota até o hotel", url: "https://www.google.com/maps/dir/?api=1&origin=48.8637,2.2870&destination=48.8467,2.3822&travelmode=transit" },
         { label: "Rota de volta à Eiffel", url: "https://www.google.com/maps/dir/?api=1&origin=48.8467,2.3822&destination=48.8584,2.2945&travelmode=transit" },
         { label: "🚰 Fontaine Wallace (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=Fontaine+Wallace+near+Trocadero+Paris" },
+        { label: "🚻 Sanisette (banheiro público grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=sanisette+public+toilet+near+Trocadero+Paris" },
       ],
     },
     {
