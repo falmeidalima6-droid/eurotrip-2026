@@ -115,7 +115,10 @@ export const day09: DiaRoteiro = {
         "🚇 Do almoço (Concorde/Tuileries) até Notre-Dame: a pé são uns 30-35 min pela Rue de Rivoli, ou de metrô — Linha 1 (direção Château de Vincennes) de Concorde até Châtelet (5 estações), depois 5 min a pé até a Île de la Cité.",
       links: [
         { label: "Rota até Notre-Dame", url: "https://www.google.com/maps/dir/?api=1&origin=48.8656,2.3212&destination=48.8530,2.3499&travelmode=walking" },
+        { label: "🛍️ Loja Normal (Rue de Rivoli 74)", url: "https://www.google.com/maps/search/?api=1&query=Normal+74+Rue+de+Rivoli+Paris" },
       ],
+      opcaoAlternativaTitulo: "🛍️ Opção: comprinhas baratinhas na Normal",
+      opcaoAlternativaDescricao: "A loja Normal (74 Rue de Rivoli, 75004) fica bem no meio desse trajeto a pé até Notre-Dame — dá pra entrar rapidinho sem sair do caminho.",
     },
     {
       id: "d09-e07",
