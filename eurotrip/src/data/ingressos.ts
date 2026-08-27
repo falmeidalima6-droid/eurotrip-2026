@@ -69,10 +69,10 @@ export const ingressos: Ingresso[] = [
     id: "i10",
     nome: "Audiência Papal",
     cidade: "Roma",
-    urgencia: "laranja",
+    urgencia: "verde",
     dataNecessaria: "2026-10-07",
-    comprado: false,
-    observacoes: "⚠️ NÃO confirmada oficialmente ainda — apenas mencionada num e-mail de planejamento, sem comprovante. Verificar diretamente com o Vaticano. Se não se confirmar, plano B é Museus Vaticanos + Capela Sistina.",
+    comprado: true,
+    observacoes: "✅ CONFIRMADA — solicitação nº 708373 aprovada na Prefettura della Casa Pontificia (2 bilhetes, Marcos + Fernanda), 07/10/2026, Audiência Geral. ⚠️ Os bilhetes físicos costumam ser retirados na véspera (06/10) na Prefeitura (Portão de Bronze, Vaticano) — confirmar horário de retirada mais perto da data.",
   },
   {
     id: "i11",
