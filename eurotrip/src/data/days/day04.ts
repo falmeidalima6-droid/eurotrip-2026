@@ -61,7 +61,7 @@ export const day04: DiaRoteiro = {
       confirmado: true,
       horarioAbandono: "11:30",
       numeroReserva: "Solicitação nº 708373",
-      observacoes: "✅ CONFIRMADA na Prefettura della Casa Pontificia — 2 bilhetes (Marcos + Fernanda), 07/10/2026, Audiência Geral. ⚠️ Retirar os bilhetes físicos na véspera (06/10) na Prefeitura, Portão de Bronze (Vaticano) — confirmar horário de retirada mais perto da data.",
+      observacoes: "✅ CONFIRMADA na Prefettura della Casa Pontificia — 2 bilhetes (Marcos + Fernanda), 07/10/2026, Audiência Geral. Bilhetes já retirados na véspera (ver dia 06/10) ou, se não deu tempo, ainda dá pra pegar hoje de manhã das 8h00 às 10h30 no mesmo lugar (Portone di Bronzo).",
       prioridade: "alta",
     },
     {
