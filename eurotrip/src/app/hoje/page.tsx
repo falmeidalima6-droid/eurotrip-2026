@@ -11,7 +11,7 @@ import Semaforo from "@/components/Semaforo";
 import PrepararAmanha from "@/components/PrepararAmanha";
 import ResumoPendencias from "@/components/ResumoPendencias";
 import OQueOAppOferece from "@/components/OQueOAppOferece";
-import { MapPin, ChevronRight, Search, Users } from "lucide-react";
+import { MapPin, ChevronRight, Search, Users, CalendarDays } from "lucide-react";
 
 export default function HojePage() {
   const { dia, amanha, estado, diasParaComeco } = useHoje();
@@ -37,6 +37,13 @@ export default function HojePage() {
           <p className="text-sm mt-1">dias até o embarque ✈️</p>
         </div>
       )}
+
+      <Link
+        href="/roteiro"
+        className="flex items-center justify-center gap-2 rounded-2xl bg-ink text-paper p-5 text-center font-display text-lg font-bold active:scale-[0.98] transition-transform shadow-sm"
+      >
+        <CalendarDays size={22} /> Ver roteiro completo
+      </Link>
 
       <ResumoPendencias />
 
