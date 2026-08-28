@@ -72,7 +72,7 @@ export const ingressos: Ingresso[] = [
     urgencia: "verde",
     dataNecessaria: "2026-10-07",
     comprado: true,
-    observacoes: "✅ CONFIRMADA — solicitação nº 708373 aprovada na Prefettura della Casa Pontificia (2 bilhetes, Marcos + Fernanda), 07/10/2026, Audiência Geral. ⚠️ Os bilhetes físicos costumam ser retirados na véspera (06/10) na Prefeitura (Portão de Bronze, Vaticano) — confirmar horário de retirada mais perto da data.",
+    observacoes: "✅ CONFIRMADA oficialmente — reserva nº 2189_UG_07.10/2026 (e-mail de 27/08/2026), 2 bilhetes (Fernanda + Marcos), 07/10/2026, Audiência Geral às 10h00. Retirada: véspera (06/10) 8h30-13h00 e 15h00-19h00, ou no próprio dia (07/10) a partir das 7h30 — Portone di Bronzo, Vaticano.",
   },
   {
     id: "i11",

@@ -183,7 +183,7 @@ export const day03: DiaRoteiro = {
       confirmado: true,
       prioridade: "alta",
       endereco: "Portone di Bronzo, Piazza San Pietro (colonata da direita), Vaticano",
-      observacoes: "Solicitação nº 708373 (2 bilhetes) já aprovada. Retirada oficial: das 15h00 às 19h30 na véspera (hoje, 06/10), ou das 8h00 às 10h30 na manhã do próprio dia (07/10) — como o hotel fica a uns 10 min a pé do Vaticano, dá pra encaixar facilmente entre o retorno ao hotel (18h30) e o jantar de aniversário (19h45). Apresentar o comprovante da solicitação ao Guarda Suíço no Portone di Bronzo.",
+      observacoes: "Solicitação já aprovada, reserva nº 2189_UG_07.10/2026 (2 bilhetes, e-mail oficial de 27/08/2026). Retirada oficial: das 8h30 às 13h00 e das 15h00 às 19h00 na véspera (hoje, 06/10), ou a partir das 7h30 na manhã do próprio dia (07/10) — como o hotel fica a uns 10 min a pé do Vaticano, dá pra encaixar facilmente entre o retorno ao hotel (18h30) e o jantar de aniversário (19h45). Apresentar o comprovante ao Guarda Suíço no Portone di Bronzo.",
       links: [
         { label: "Ver localização no Maps", url: "https://www.google.com/maps/search/?api=1&query=Portone+di+Bronzo+Piazza+San+Pietro+Vaticano" },
         { label: "Rota a pé do hotel", url: "https://www.google.com/maps/dir/?api=1&origin=41.9109,12.4644&destination=41.9022,12.4539&travelmode=walking" },
