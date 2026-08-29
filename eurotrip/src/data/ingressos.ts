@@ -6,10 +6,10 @@ export const ingressos: Ingresso[] = [
     id: "i01",
     nome: "Sagrada Família",
     cidade: "Barcelona",
-    urgencia: "vermelho",
+    urgencia: "verde",
     dataNecessaria: "2026-10-14",
-    comprado: false,
-    observacoes: "Buscar horário ~09h do dia 14/10. Prioridade máxima — organiza o resto do dia.",
+    comprado: true,
+    observacoes: "✅ Comprado — localizador 104626229, 2x General (€52 total), 14/10 09h00. Entrada nominal, sem alteração possível.",
   },
   {
     id: "i03",

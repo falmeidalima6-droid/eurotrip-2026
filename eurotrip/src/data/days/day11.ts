@@ -43,10 +43,11 @@ export const day11: DiaRoteiro = {
       horarioFinal: "11:00",
       duracaoPrevista: "1h30–2h",
       status: "futuro",
-      confirmado: false,
+      confirmado: true,
       prioridade: "alta",
       horarioAbandono: "12:00",
-      observacoes: "🎟️ PENDÊNCIA PRIORITÁRIA — comprar para um dos primeiros horários da manhã. Uma das atrações arquitetônicas mais importantes da viagem — não economizar tempo aqui.",
+      numeroReserva: "Localizador 104626229",
+      observacoes: "✅ COMPRADO — 2 ingressos General, €26 cada (€52 total), 14/10/2026 às 09h00, acesso pela C/ Marina. Entrada NOMINAL — apresentar documento (RG/passaporte) na entrada. Precisa baixar o app oficial 'Sagrada Família' antes de chegar, pra acessar o ingresso e a audioguia. ⚠️ SEM alteração possível: a política oficial não permite trocar horário/data (só em caso excepcional documentado, com 48h+ de antecedência) — e chegar atrasado também barra a entrada. Esse horário está travado.",
       dicaMetro: "🚇 Do hotel (região de Ramon Turró, Poblenou): entrem na estação Poblenou ou Llacuna (Linha L4, amarela). Peguem a L4 direção Trinitat Nova. Desçam na estação Verdaguer e troquem para a Linha L5 (azul), direção Cornellà Centre. Desçam na estação Sagrada Família — a saída já é praticamente na porta da basílica. Bilhete: T-Casual (10 viagens, compensa se forem usar bastante) ou avulso ~€2,40.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Calle+Ramon+Turo+196+Barcelona&destination=Sagrada+Familia+Barcelona&travelmode=transit" },
