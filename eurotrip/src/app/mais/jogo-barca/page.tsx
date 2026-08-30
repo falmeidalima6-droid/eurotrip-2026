@@ -24,6 +24,27 @@ export default function JogoBarcaPage() {
         </p>
       </section>
 
+      <section className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2">
+        <p className="font-medium flex items-center gap-2">
+          <AlertTriangle size={18} className="text-alert" /> Custos de alterar os voos já pagos (se precisar mexer)
+        </p>
+        <ul className="text-sm space-y-1.5 list-disc list-inside text-ink-soft">
+          <li><strong>EasyJet Veneza→Paris (EJU4874):</strong> NÃO dá pra redirecionar pra Barcelona (a easyJet não voa essa rota) — fica perdido (€278,94) se optarem por ir a Barcelona.</li>
+          <li><strong>Iberia/Vueling Paris→Barcelona (IB5225) e Barcelona→Lisboa (IB5634):</strong> alteração custa €45/pessoa (€90 por voo) + diferença de tarifa, sem reembolso. Só mexer aqui se o Plano B for realmente acionado — o ideal é reaproveitar os dois sem alteração nenhuma.</li>
+        </ul>
+      </section>
+
+      <section className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2">
+        <p className="font-medium flex items-center gap-2">
+          <Clock size={18} className="text-ink-soft" /> Prazo das hospedagens (ainda há folga)
+        </p>
+        <ul className="text-sm space-y-1.5 list-disc list-inside text-ink-soft">
+          <li>Hotel de Paris (Hôtel de Venise): cancelamento/alteração <strong>grátis até 9/10 às 12h00</strong> (horário de Paris)</li>
+          <li>Hotel de Barcelona (ILUNION): cancelamento/alteração <strong>grátis até 10/10 às 00h01</strong></li>
+        </ul>
+        <p className="text-xs text-ink-soft">Decidindo em setembro, sobra folga confortável até essas datas de outubro.</p>
+      </section>
+
       <section className="rounded-2xl bg-paper-raised border border-line p-4 space-y-3">
         <p className="font-medium flex items-center gap-2 text-success">
           <CheckCircle2 size={18} /> Se o jogo for 14h ou 16h15 — Plano A (simples)
