@@ -7,6 +7,8 @@ export const day08: DiaRoteiro = {
   pais: "Italia",
   titulo: "Última manhã em Veneza, rumo a Paris",
   emoji: "🇮🇹✈️🇫🇷",
+  linkExternoLabel: "⚽ Se decidirmos ver o Barça x Getafe em Barcelona, o itinerário muda a partir de hoje — ver Plano B",
+  linkExternoUrl: "/mais/jogo-barca",
   eventos: [
     {
       id: "d08-e01",

@@ -9,7 +9,7 @@ import EventCard from "@/components/EventCard";
 import EditarEventoModal, { DadosEdicaoEvento } from "@/components/EditarEventoModal";
 import { db, EventoOverride, EventoPersonalizado } from "@/lib/db";
 import { enviarSync } from "@/lib/supabaseSync";
-import { ArrowLeft, ArrowRight, CloudRain, BatteryLow, RotateCcw, Plus } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronRight, CloudRain, BatteryLow, RotateCcw, Plus } from "lucide-react";
 
 export default function DiaClient({ data }: { data: string }) {
   const [plano, setPlano] = useState<"normal" | "chuva" | "cansaco">("normal");
@@ -163,6 +163,16 @@ export default function DiaClient({ data }: { data: string }) {
           {BANDEIRAS[diaBase.pais]} {dia?.titulo}
         </h1>
       </header>
+
+      {diaBase.linkExternoUrl && (
+        <Link
+          href={diaBase.linkExternoUrl}
+          className="flex items-center justify-between rounded-2xl bg-brass/10 border border-brass/30 p-4"
+        >
+          <span className="font-medium text-sm">{diaBase.linkExternoLabel}</span>
+          <ChevronRight size={18} className="text-brass shrink-0" />
+        </Link>
+      )}
 
       {pronto && (temPlanoChuva || temPlanoCansaco) && (
         <div className="rounded-2xl bg-paper-raised border border-line p-3 space-y-2">

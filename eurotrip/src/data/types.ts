@@ -88,6 +88,8 @@ export interface DiaRoteiro {
   eventos: TripEvent[];
   planoChuva?: string;
   planoCansaco?: string;
+  linkExternoLabel?: string;
+  linkExternoUrl?: string;
 }
 
 export interface Hotel {
