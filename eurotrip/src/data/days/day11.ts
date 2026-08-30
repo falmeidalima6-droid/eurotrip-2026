@@ -80,6 +80,14 @@ export const day11: DiaRoteiro = {
       confirmado: false,
       observacoes:
         "Sem atração definida ainda (Parc Güell, El Born e Hospital de Sant Pau foram removidos do roteiro a pedido de vocês). Dica prática: se o Flamenco for no Tablao Cordobés/La Rambla, vale terminar a tarde livre por ali perto (Bairro Gótico, Plaça Catalunya) — evita ir e voltar duas vezes na mesma região.",
+      opcaoAlternativaTitulo: "⚽ Opção: Camp Nou Immersive Tour",
+      opcaoAlternativaDescricao:
+        "Como nenhum dos três times de futebol (PSG, Barcelona, Real Madrid) joga em casa durante a viagem de vocês, essa é a forma de 'quase' viver o clube: museu do FC Barcelona + sala imersiva 360° + mirante pra ver a obra do estádio de perto (o Camp Nou está em reforma, não dá pra entrar no gramado/vestiário ainda). ~€28-31/adulto. Horário 14/10: 10h-18h (última entrada 17h15) — cabe tranquilo na tarde livre. Fica em Les Corts, um pouco longe do resto do roteiro (~20-25 min de metrô do hotel).",
+      dicaMetro: "🚇 Da região do hotel (Poblenou): Linha L4 até Passeig de Gràcia, trocar Linha L3 (verde) direção Zona Universitària, descer em Palau Reial ou Les Corts — a entrada do museu fica pertinho da saída.",
+      links: [
+        { label: "Ver localização no Maps", url: "https://www.google.com/maps/search/?api=1&query=Camp+Nou+FC+Barcelona+Museum+Barcelona" },
+        { label: "Comprar ingresso oficial", url: "https://www.fcbarcelona.com/en/tickets-and-experiences/museum-and-tour" },
+      ],
     },
     {
       id: "d11-e07",
@@ -102,7 +110,11 @@ export const day11: DiaRoteiro = {
         { label: "🚰 Font de Canaletes (água grátis, icônica da Rambla)", url: "https://www.google.com/maps/search/?api=1&query=Font+de+Canaletes+La+Rambla+Barcelona" },
         { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+La+Rambla+Barcelona" },
         { label: "🛍️ Lefties (roupas baratinhas)", url: "https://www.google.com/maps/search/?api=1&query=Lefties+near+La+Rambla+Barcelona" },
+        { label: "🥭 Mercat de la Boqueria (mercado)", url: "https://www.google.com/maps/search/?api=1&query=Mercat+de+la+Boqueria+La+Rambla+91+Barcelona" },
       ],
+      opcaoAlternativaTitulo: "🥭 Antes do Flamenco: Mercat de la Boqueria",
+      opcaoAlternativaDescricao:
+        "O mercado mais famoso de Barcelona (La Rambla 91) fica literalmente no meio do caminho — bancas de frutas, sucos, presunto, doces, frutos do mar. Segunda a sábado, 8h-20h30 (fecha domingo — 14/10 é quarta, então está aberto). Entrada grátis, estação Liceu (mesma do Flamenco).",
     },
     {
       id: "d11-e08",

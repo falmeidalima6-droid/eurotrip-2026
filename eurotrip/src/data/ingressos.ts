@@ -45,7 +45,7 @@ export const ingressos: Ingresso[] = [
     urgencia: "vermelho",
     dataNecessaria: "2026-10-16",
     comprado: false,
-    observacoes: "Sistema exige horário de entrada marcado — buscar 10h00 (abertura) do dia 16/10.",
+    observacoes: "🔴 PRIORIDADE MÁXIMA — obrigatório desde ago/2024, o sistema não permite entrada sem horário marcado (diferente da maioria dos outros ingressos). Comprar para 10h00 (abertura) do dia 16/10 assim que possível, antes que esgote esse horário específico.",
   },
   {
     id: "i08",

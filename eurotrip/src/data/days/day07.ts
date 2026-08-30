@@ -48,7 +48,7 @@ export const day07: DiaRoteiro = {
       destino: "Napoli Centrale",
       pessoas: ["Marcos", "Fernanda"],
       alerta: "🧳 ATENÇÃO — 3ª MALA: existe uma 3ª mala e pode haver cobrança adicional por ela.",
-      observacoes: "Transfer organizado para permitir a conexão com o trem.",
+      observacoes: "Transfer organizado para permitir a conexão com o trem. ✅ Já entramos em contato direto com a Enjoy Travelling sobre a 3ª mala — o responsável confirmou por WhatsApp e disse que é bom manter essa conversa salva como garantia (mostrar no dia, se precisar).",
     },
     {
       id: "d07-e04",
