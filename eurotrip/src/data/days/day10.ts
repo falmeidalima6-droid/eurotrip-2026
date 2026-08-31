@@ -178,11 +178,12 @@ export const day10: DiaRoteiro = {
       cidade: "Barcelona",
       pais: "Espanha",
       categoria: "passeio",
-      titulo: "La Rambla (+ Mercado de La Boqueria, se conveniente)",
+      titulo: "La Rambla — artistas de rua, Mosaico de Miró, parada pra um gelato",
       horarioInicial: "17:30",
       horarioFinal: "19:00",
       status: "futuro",
       confirmado: true,
+      observacoes: "O Mercat de la Boqueria fica pra o dia 14/10 de manhã, no horário certo (esse aqui já ficaria tarde demais pra pegar o mercado no auge). Hoje é só um passeio leve pela Rambla — vale uma paradinha numa gelateria no caminho.",
     },
     {
       id: "d10-e12",
