@@ -61,11 +61,18 @@ export const day11: DiaRoteiro = {
       cidade: "Barcelona",
       pais: "Espanha",
       categoria: "restaurante",
-      titulo: "Almoço",
-      horarioInicial: "13:30",
-      horarioFinal: "14:30",
+      titulo: "Almoço no Mercat de la Boqueria",
+      horarioInicial: "11:15",
+      horarioFinal: "13:00",
       status: "futuro",
       confirmado: false,
+      endereco: "La Rambla 91, Barcelona",
+      observacoes:
+        "🥭 Melhor horário confirmado: logo depois da Sagrada Família, ANTES das 11h30 — é quando o mercado está mais autêntico (peixeiros organizando o gelo, ainda sem os grupos de turismo) e antes do pico de lotação (11h30-14h00). Dá pra almoçar por lá mesmo — vários bares dentro do mercado (o mais famoso é o El Pinotxo, à direita da entrada), além de sucos naturais e petiscos.",
+      dicaMetro: "🚇 Estação Liceu (Linha L3) — o mercado fica bem na Rambla.",
+      links: [
+        { label: "Ver localização no Maps", url: "https://www.google.com/maps/search/?api=1&query=Mercat+de+la+Boqueria+La+Rambla+91+Barcelona" },
+      ],
     },
     {
       id: "d11-e06",
@@ -110,11 +117,7 @@ export const day11: DiaRoteiro = {
         { label: "🚰 Font de Canaletes (água grátis, icônica da Rambla)", url: "https://www.google.com/maps/search/?api=1&query=Font+de+Canaletes+La+Rambla+Barcelona" },
         { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+La+Rambla+Barcelona" },
         { label: "🛍️ Lefties (roupas baratinhas)", url: "https://www.google.com/maps/search/?api=1&query=Lefties+near+La+Rambla+Barcelona" },
-        { label: "🥭 Mercat de la Boqueria (mercado)", url: "https://www.google.com/maps/search/?api=1&query=Mercat+de+la+Boqueria+La+Rambla+91+Barcelona" },
       ],
-      opcaoAlternativaTitulo: "🥭 Antes do Flamenco: Mercat de la Boqueria",
-      opcaoAlternativaDescricao:
-        "O mercado mais famoso de Barcelona (La Rambla 91) fica literalmente no meio do caminho — bancas de frutas, sucos, presunto, doces, frutos do mar. Segunda a sábado, 8h-20h30 (fecha domingo — 14/10 é quarta, então está aberto). Entrada grátis, estação Liceu (mesma do Flamenco).",
     },
     {
       id: "d11-e08",
