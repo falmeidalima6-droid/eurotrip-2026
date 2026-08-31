@@ -118,6 +118,9 @@ export const day11: DiaRoteiro = {
         { label: "🚻 Banheiro por perto (grátis ou pago)", url: "https://www.google.com/maps/search/?api=1&query=public+toilet+near+La+Rambla+Barcelona" },
         { label: "🛍️ Lefties (roupas baratinhas)", url: "https://www.google.com/maps/search/?api=1&query=Lefties+near+La+Rambla+Barcelona" },
       ],
+      opcaoAlternativaTitulo: "🌅 Opção: noite tranquila no Poblenou (sem Flamenco)",
+      opcaoAlternativaDescricao:
+        "Pesquisei e não existe tablao de flamenco de qualidade perto do hotel — os bons ficam todos do lado oposto da cidade (Rambla, Eixample, Poble Espanyol). Achei um no litoral (Toc de Mar, Barceloneta), mas só funciona aos sábados, não bate com quarta-feira. Se preferirem não fazer esse deslocamento, a alternativa é ficar no próprio Poblenou: Rambla del Poblenou (bem mais tranquila e local que a do centro, cafés e restaurantes) + fim de tarde na Praia de Bogatell, pertinho do hotel, sem precisar de metrô.",
     },
     {
       id: "d11-e08",
