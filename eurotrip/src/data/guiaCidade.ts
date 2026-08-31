@@ -106,7 +106,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Batedores de carteira são o principal risco em Las Ramblas, Sagrada Família e praias, especialmente em grupo (um distrai, outro furta).",
       "Ingressos de atrações (Sagrada Família etc.) esgotam rápido — já resolvido no app, mas vale lembrar.",
-      "🚻 Banheiro público grátis é escasso — contem com cafés (o normal é pedir consumindo algo) ou as atrações do roteiro.",
+      "🚻 Banheiro público grátis é escasso — contem com cafés (o normal é pedir consumindo algo) ou as atrações do roteiro. Quando aceitam sem consumir, costuma custar €0,50 a €1 — vale levar moedas trocadas.",
     ],
   },
   {
@@ -122,7 +122,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Elétrico 28 é o ponto clássico de batedor de carteira em Lisboa — mochila na frente, celular guardado.",
       "Cidade é bem inclinada (muitas ladeiras) — vale usar metrô/elevadores para poupar as pernas.",
-      "🚻 Lisboa está reduzindo os banheiros públicos grátis ao longo dos anos, mas ainda tem alguns sem cancela — cafés e as atrações do roteiro são o mais confiável.",
+      "🚻 Lisboa está reduzindo os banheiros públicos grátis ao longo dos anos, mas ainda tem alguns sem cancela — cafés e as atrações do roteiro são o mais confiável. Quando é pago, costuma ficar entre €0,50 e €1.",
     ],
   },
   {
@@ -134,7 +134,7 @@ export const guiasCidade: GuiaCidade[] = [
     golpes: ["Nenhum golpe elaborado reportado com frequência — atenção padrão basta."],
     particularidades: [
       "Quinta da Regaleira fica cheia rápido — desde 2024 o sistema exige horário de entrada marcado, comprar com antecedência (já no app).",
-      "🚻 Igual ao resto de Portugal: banheiro grátis é limitado, cafés e a própria Regaleira/estação são as opções mais garantidas.",
+      "🚻 Igual ao resto de Portugal: banheiro grátis é limitado, cafés e a própria Regaleira/estação são as opções mais garantidas. Quando pago, €0,50-1.",
     ],
   },
 ];
