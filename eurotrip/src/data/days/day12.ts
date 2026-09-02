@@ -90,7 +90,7 @@ export const day12: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes:
-        "🎉 Sorte boa: a estação de metrô da praça do próprio hotel se chama 'Martim Moniz' — mesmo nome! Linha Vermelha (Aeroporto) até Alameda, trocar para a Linha Verde (Martim Moniz) — só 1 troca, desce literalmente na praça do hotel. Bilhete único €1,90-1,92, sem sobretaxa de aeroporto. Alternativa com malas: táxi/Uber, ~15-20 min, mais simples se estiverem cansados.",
+        "🎉 Sorte boa: a estação de metrô da praça do próprio hotel se chama 'Martim Moniz' — mesmo nome! Linha Vermelha (Aeroporto) até Alameda, trocar para a Linha Verde (Martim Moniz) — só 1 troca, desce literalmente na praça do hotel. Alternativa com malas: táxi/Uber, ~15-20 min, mais simples se estiverem cansados.\n\n🎫 BILHETE CERTO: comprem 1 cartão Viva Viagem cada (€0,50 o cartão, pago 1 vez só) numa máquina da estação, e carreguem no modo 'Zapping' (pré-pago, desconta o valor certo a cada viagem, sem precisar escolher passe fechado). Esse MESMO cartão serve pro metrô de hoje, pro trem de Sintra (16/10) e pro Elétrico 28 — não precisa comprar bilhete separado em cada um. Viagem de metrô sai a ~€1,50 no Zapping (mais barato que o avulso de €1,90-1,92).",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Aeroporto+Humberto+Delgado+Lisboa&destination=Praca+Martim+Moniz+2+Lisboa&travelmode=transit" },
       ],

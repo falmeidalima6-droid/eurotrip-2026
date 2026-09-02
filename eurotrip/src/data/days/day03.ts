@@ -34,11 +34,12 @@ export const day03: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes:
-        "⚠️ A pé são 6,4 km — mais de 1h de caminhada, não vale a pena logo de manhã. O metrô (com 1 troca) é bem mais rápido.",
+        "⚠️ A pé são 6,4 km — mais de 1h de caminhada, não vale a pena logo de manhã. O metrô (com 1 troca) é bem mais rápido.\n\n🎫 BILHETE CERTO: comprem 2 bilhetes BIT (€1,50 cada, €3 total) numa tabacaria (tabacchi, placa 'T') ou máquina da estação — um pra ida, outro pra volta da noite. Não compensa passe de 24h (€7) pra só 2 viagens no dia. Alternativa sem comprar nada: contactless (cartão do banco ou celular) direto na catraca, mesmo preço, sem fila.",
       dicaMetro:
-        "🚇 Compre o bilhete BIT (€1,50, vale 100 min) numa tabacaria ou máquina — ou use cartão/celular contactless direto na catraca. Entrem na estação Ottaviano-San Pietro (Linha A, laranja), a mais próxima do hotel. Peguem direção Anagnina até Termini, troquem para a Linha B (azul) direção Laurentina, e desçam em Colosseo — a saída já deixa vocês de frente pro Coliseu.",
+        "🚇 Entrem na estação Ottaviano-San Pietro (Linha A, laranja), a mais próxima do hotel. Peguem direção Anagnina até Termini, troquem para a Linha B (azul) direção Laurentina, e desçam em Colosseo — a saída já deixa vocês de frente pro Coliseu.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9109,12.4644&destination=41.8902,12.4922&travelmode=transit" },
+        { label: "Ver rota no Citymapper", url: "https://citymapper.com/directions?endcoord=41.8902,12.4922&endname=Coliseu" },
       ],
     },
     {

@@ -33,11 +33,12 @@ export const day09: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes:
-        "A pé seriam uns 3,6 km / 45-50 min — não compensa arriscar com o horário marcado do Louvre (09h). O metrô garante chegar com folga.",
+        "A pé seriam uns 3,6 km / 45-50 min — não compensa arriscar com o horário marcado do Louvre (09h). O metrô garante chegar com folga.\n\n🎫 BILHETE CERTO: comprem 1 carnê de 10 bilhetes t+ (€17,35 total, ~€1,74 cada) numa máquina da estação ou tabac — vocês vão fazer uns 8-10 trajetos de metrô juntos nesses 2 dias em Paris (Louvre, Trocadéro, volta ao hotel, etc.), então 1 carnê pra dividir entre os dois já cobre praticamente tudo, e sai mais barato que comprar avulso toda vez (€2,15 cada se comprado individual). Cada bilhete vale pra 1 viagem com trocas incluídas em até 90 min.",
       dicaMetro:
         "🚇 Faidherbe-Chaligny (Linha 8, direção Balard) até Bastille (2 estações, ~4 min) → trocar para a Linha 1 (direção La Défense) até Palais Royal-Musée du Louvre (5 estações, ~10 min). Total porta-a-porta: 25-30 min com folga — saindo 08h00, chegam por volta de 08h30, ~30 min de sobra antes da entrada.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=48.8467,2.3822&destination=48.8606,2.3376&travelmode=transit" },
+        { label: "Ver rota no Citymapper", url: "https://citymapper.com/directions?endcoord=48.8606,2.3376&endname=Louvre" },
       ],
     },
     {
