@@ -17,7 +17,6 @@ export default function FrasesPage() {
   const [idioma, setIdioma] = useState<(typeof IDIOMAS)[number]["code"]>("it");
   const [selecionada, setSelecionada] = useState<{ pt: string; traducao: string } | null>(null);
   const categorias = Array.from(new Set(frases.map((f) => f.categoria)));
-  const idiomaAtual = IDIOMAS.find((i) => i.code === idioma)!;
 
   return (
     <div className="px-4 pt-4 pb-6 space-y-4">
@@ -27,16 +26,17 @@ export default function FrasesPage() {
 
       <div className="rounded-2xl bg-brass/10 border border-brass/30 p-3 text-sm">
         <p className="text-ink-soft mb-2">
-          As frases abaixo funcionam 100% offline. Para qualquer outra coisa que surgir na conversa (falada ou escrita, nos
-          dois sentidos), use o Modo Conversa do Google Tradutor — precisa de internet:
+          As frases abaixo funcionam 100% offline. Para conversar de verdade (voz, nos dois sentidos), use o tradutor
+          próprio de vocês — já sabe o idioma certo pra cada cidade da viagem e tem frases de emergência com o
+          endereço do hotel:
         </p>
         <a
-          href={`https://translate.google.com/?sl=pt&tl=${idiomaAtual.googleCode}&op=translate`}
+          href="https://tradutor-voz-deploy.vercel.app/"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-1.5 text-sm font-medium bg-ink text-paper rounded-full px-4 py-2"
         >
-          <ExternalLink size={14} /> Modo Conversa (PT ⇄ {idiomaAtual.label.split(" ")[1]})
+          <ExternalLink size={14} /> Abrir Tradutor de Voz
         </a>
       </div>
 

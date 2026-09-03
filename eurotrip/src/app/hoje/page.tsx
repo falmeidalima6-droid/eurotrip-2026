@@ -57,6 +57,18 @@ export default function HojePage() {
         <ChevronRight size={18} className="text-ink-soft" />
       </Link>
 
+      <a
+        href="https://tradutor-voz-deploy.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4"
+      >
+        <span className="font-medium flex items-center gap-2">
+          🗣️ Tradutor de Voz
+        </span>
+        <ChevronRight size={18} className="text-ink-soft" />
+      </a>
+
       {estado === "depois" && (
         <div className="rounded-2xl bg-ink text-paper p-5 text-center">
           <p className="text-lg font-medium">Viagem concluída 🎉</p>
