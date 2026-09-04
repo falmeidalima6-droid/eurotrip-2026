@@ -116,13 +116,14 @@ export const day09: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes: "Entrada da catedral gratuita. Substitui Sainte-Chapelle como roteiro principal (Sainte-Chapelle fica como alternativa).",
-      alerta: "🎟️ TESOURO — pagar SÓ na hora, sem reserva online: €12/adulto, dinheiro ou cartão direto na entrada do Tesouro (escada no lado sul da nave). É lá que fica a Coroa de Espinhos, exposta permanentemente. Aberto seg-sex 9h30-18h — o horário de vocês (14h-15h) está tranquilo dentro disso.",
+      alerta: "🎟️ TESOURO — pagar SÓ na hora, sem reserva online: €12/adulto, dinheiro ou cartão direto na entrada do Tesouro (escada no lado sul da nave). É lá que fica a Coroa de Espinhos, exposta permanentemente. Aberto seg-sex 9h30-18h — o horário de vocês (14h-15h) está tranquilo dentro disso. ⚠️ Vale checar o site oficial nos dias antes da visita — a catedral já teve fechamento excepcional avisado com antecedência (ex: visita papal em setembro/2026), então sempre confirme perto da data.",
       dicaMetro:
         "🚇 Do almoço (Concorde/Tuileries) até Notre-Dame: a pé são uns 30-35 min pela Rue de Rivoli, ou de metrô — Linha 1 (direção Château de Vincennes) de Concorde até Châtelet (5 estações), depois 5 min a pé até a Île de la Cité.",
       links: [
         { label: "Rota até Notre-Dame", url: "https://www.google.com/maps/dir/?api=1&origin=48.8656,2.3212&destination=48.8530,2.3499&travelmode=walking" },
         { label: "🛍️ Loja Normal (Rue de Rivoli 74)", url: "https://www.google.com/maps/search/?api=1&query=Normal+74+Rue+de+Rivoli+Paris" },
-        { label: "Site oficial (Tesouro/horários)", url: "https://www.notredamedeparis.fr/faq/quels-sont-les-horaires-du-tresor/" },
+        { label: "Site oficial (Tesouro/horários)", url: "https://www.notredamedeparis.fr/visiter/visiter-le-tresor/" },
+        { label: "⚠️ Avisos de fechamento excepcional", url: "https://www.notredamedeparis.fr/" },
       ],
       opcaoAlternativaTitulo: "🛍️ Opção: comprinhas baratinhas na Normal",
       opcaoAlternativaDescricao: "A loja Normal (74 Rue de Rivoli, 75004) fica bem no meio desse trajeto a pé até Notre-Dame — dá pra entrar rapidinho sem sair do caminho.",
