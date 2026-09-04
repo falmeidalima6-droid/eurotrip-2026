@@ -76,7 +76,11 @@ export const day09: DiaRoteiro = {
       links: [
         { label: "🚰 Fontaine Wallace (água grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=Fontaine+Wallace+Jardin+des+Tuileries+Paris" },
         { label: "🚻 Sanisette (banheiro público grátis) por perto", url: "https://www.google.com/maps/search/?api=1&query=sanisette+public+toilet+near+Jardin+des+Tuileries+Paris" },
+        { label: "🪞 Glasswalk / Galeries Lafayette", url: "https://haussmann.galerieslafayette.com/events/glasswalk/" },
       ],
+      opcaoAlternativaTitulo: "🪞 Opção: Galeries Lafayette + Glasswalk (se sobrar tempo)",
+      opcaoAlternativaDescricao:
+        "Melhor momento pra encaixar, se topar: daqui (Concorde) até a Lafayette (9º arrondissement, perto da Ópera Garnier) é só seguir de metrô — a mesma Linha 8 que já passa pelo hotel segue direto até Madeleine ou Opéra, na porta da loja. Terraço panorâmico grátis (8º andar, sem reserva). O Glasswalk (passarela de vidro suspensa sob a cúpula, 3º andar) também é grátis, mas precisa se inscrever antes em haussmann.galerieslafayette.com/events/glasswalk/ — mesmo assim, a inscrição não garante vaga (capacidade limitada). Não é um compromisso fixo do roteiro — só vale se o ritmo do dia permitir o desvio.",
     },
     {
       id: "d09-e05",
@@ -105,18 +109,20 @@ export const day09: DiaRoteiro = {
       cidade: "Paris",
       pais: "Franca",
       categoria: "passeio",
-      titulo: "Notre-Dame",
+      titulo: "Notre-Dame + Tesouro (Coroa de Espinhos)",
       horarioInicial: "14:00",
-      horarioFinal: "14:40",
-      duracaoPrevista: "30–45 min",
+      horarioFinal: "15:15",
+      duracaoPrevista: "1h-1h15 (catedral 30-45 min + Tesouro 30-45 min)",
       status: "futuro",
       confirmado: true,
-      observacoes: "Entrada gratuita. Substitui Sainte-Chapelle como roteiro principal (Sainte-Chapelle fica como alternativa).",
+      observacoes: "Entrada da catedral gratuita. Substitui Sainte-Chapelle como roteiro principal (Sainte-Chapelle fica como alternativa).",
+      alerta: "🎟️ TESOURO — pagar SÓ na hora, sem reserva online: €12/adulto, dinheiro ou cartão direto na entrada do Tesouro (escada no lado sul da nave). É lá que fica a Coroa de Espinhos, exposta permanentemente. Aberto seg-sex 9h30-18h — o horário de vocês (14h-15h) está tranquilo dentro disso.",
       dicaMetro:
         "🚇 Do almoço (Concorde/Tuileries) até Notre-Dame: a pé são uns 30-35 min pela Rue de Rivoli, ou de metrô — Linha 1 (direção Château de Vincennes) de Concorde até Châtelet (5 estações), depois 5 min a pé até a Île de la Cité.",
       links: [
         { label: "Rota até Notre-Dame", url: "https://www.google.com/maps/dir/?api=1&origin=48.8656,2.3212&destination=48.8530,2.3499&travelmode=walking" },
         { label: "🛍️ Loja Normal (Rue de Rivoli 74)", url: "https://www.google.com/maps/search/?api=1&query=Normal+74+Rue+de+Rivoli+Paris" },
+        { label: "Site oficial (Tesouro/horários)", url: "https://www.notredamedeparis.fr/faq/quels-sont-les-horaires-du-tresor/" },
       ],
       opcaoAlternativaTitulo: "🛍️ Opção: comprinhas baratinhas na Normal",
       opcaoAlternativaDescricao: "A loja Normal (74 Rue de Rivoli, 75004) fica bem no meio desse trajeto a pé até Notre-Dame — dá pra entrar rapidinho sem sair do caminho.",
@@ -128,12 +134,12 @@ export const day09: DiaRoteiro = {
       pais: "Franca",
       categoria: "caminhada",
       titulo: "Île de la Cité → Pont Neuf → margens do Sena → Trocadéro",
-      horarioInicial: "14:45",
-      horarioFinal: "15:40",
+      horarioInicial: "15:20",
+      horarioFinal: "16:15",
       status: "futuro",
       confirmado: true,
       observacoes:
-        "⚠️ CORREÇÃO: a distância real é de ~5 km — a pé, num ritmo tranquilo com paradas para fotos, são uns 50-55 min (não 30 min como uma versão anterior deste roteiro chegou a estimar). Se estiverem com pressa ou cansados, dá pra encurtar: caminhem só até a Torre Eiffel/Champ de Mars e peguem a Linha 6 (Bir-Hakeim ou Trocadéro) para o restante — mas o passeio a pé pela margem é bonito e vale a pena se o tempo permitir.",
+        "⚠️ CORREÇÃO: a distância real é de ~5 km — a pé, num ritmo tranquilo com paradas para fotos, são uns 50-55 min. Como a Notre-Dame+Tesouro agora ocupa até 15h15, esse horário já foi ajustado. Se estiverem com pressa ou cansados, dá pra encurtar: caminhem só até a Torre Eiffel/Champ de Mars e peguem a Linha 6 (Bir-Hakeim ou Trocadéro) para o restante — mas o passeio a pé pela margem é bonito e vale a pena se o tempo permitir.",
       links: [
         { label: "Rota a pé (cênica)", url: "https://www.google.com/maps/dir/?api=1&origin=48.8530,2.3499&destination=48.8637,2.2870&travelmode=walking" },
       ],
