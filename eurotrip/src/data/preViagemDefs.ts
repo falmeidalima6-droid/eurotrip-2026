@@ -35,6 +35,18 @@ export const preViagemDefs: ChecklistDef[] = [
   },
   {
     categoria: "🛍️ Compras Pendentes",
-    itens: [],
+    itens: [
+      "Cordão marrom para celular",
+      "Cordão crossbody cinza para celular",
+      "Capas de chuva",
+      "Bastão selfie/tripé",
+      "Câmera de ação SJCAM C300",
+      "2 adaptadores de tomada",
+      "Fone Soundcore P30",
+      "Power bank",
+      "Cartão MicroSD SanDisk 128GB",
+      "Kit de potes/frascos de viagem",
+      "Saquinho transparente resselável para líquidos (1 de 1L pra Fernanda + 1 de 1L pro Marcos)",
+    ],
   },
 ];
