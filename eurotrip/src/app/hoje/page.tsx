@@ -9,9 +9,10 @@ import { CATEGORIA_EMOJI } from "@/lib/categorias";
 import RelogioDuplo from "@/components/RelogioDuplo";
 import Semaforo from "@/components/Semaforo";
 import PrepararAmanha from "@/components/PrepararAmanha";
-import ResumoPendencias from "@/components/ResumoPendencias";
+import SecaoPreparacao from "@/components/SecaoPreparacao";
+import SecaoFerramentas from "@/components/SecaoFerramentas";
 import OQueOAppOferece from "@/components/OQueOAppOferece";
-import { MapPin, ChevronRight, Search, Users, CalendarDays } from "lucide-react";
+import { MapPin, ChevronRight, Search, CalendarDays } from "lucide-react";
 
 export default function HojePage() {
   const { dia, amanha, estado, diasParaComeco } = useHoje();
@@ -45,45 +46,9 @@ export default function HojePage() {
         <CalendarDays size={22} /> Ver roteiro completo
       </Link>
 
-      <ResumoPendencias />
+      <SecaoPreparacao />
 
-      <Link
-        href="/mais/antes-da-viagem"
-        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4"
-      >
-        <span className="font-medium flex items-center gap-2">🧾 Antes da Viagem</span>
-        <ChevronRight size={18} className="text-ink-soft" />
-      </Link>
-
-      <Link
-        href="/mais/checklist"
-        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4"
-      >
-        <span className="font-medium flex items-center gap-2">🧳 Checklist — Dia da Viagem/Mala</span>
-        <ChevronRight size={18} className="text-ink-soft" />
-      </Link>
-
-      <Link
-        href="/mais/familia"
-        className="flex items-center justify-between rounded-2xl bg-brass/10 border border-brass/30 p-4"
-      >
-        <span className="font-medium flex items-center gap-2">
-          <Users size={18} className="text-brass" /> Compartilhamento Família
-        </span>
-        <ChevronRight size={18} className="text-ink-soft" />
-      </Link>
-
-      <a
-        href="https://tradutor-voz-deploy.vercel.app/"
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4"
-      >
-        <span className="font-medium flex items-center gap-2">
-          🗣️ Tradutor de Voz
-        </span>
-        <ChevronRight size={18} className="text-ink-soft" />
-      </a>
+      <SecaoFerramentas />
 
       {estado === "depois" && (
         <div className="rounded-2xl bg-ink text-paper p-5 text-center">
