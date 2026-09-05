@@ -119,6 +119,24 @@ export default function DinheiroPage() {
       <h1 className="font-display text-xl font-bold">💶 Dinheiro</h1>
 
       <div className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2">
+        <p className="font-medium text-sm">🏨 Taxas turísticas — pagas no local, em euros</p>
+        <table className="w-full text-sm">
+          <tbody>
+            <tr className="border-b border-line"><td className="py-1">Roma (3 noites)</td><td className="py-1 text-right font-ticket">€36,00</td></tr>
+            <tr className="border-b border-line"><td className="py-1">Sorrento (2 noites)</td><td className="py-1 text-right font-ticket">€16,00</td></tr>
+            <tr className="border-b border-line"><td className="py-1">Veneza (1 noite)</td><td className="py-1 text-right font-ticket">€7,00</td></tr>
+            <tr className="border-b border-line"><td className="py-1">Paris (2 noites)</td><td className="py-1 text-right font-ticket">€13,00</td></tr>
+            <tr className="border-b border-line"><td className="py-1">Barcelona (2 noites)</td><td className="py-1 text-right font-ticket">€36,96</td></tr>
+            <tr><td className="py-1">Lisboa (2 noites)</td><td className="py-1 text-right font-ticket">€16,00</td></tr>
+          </tbody>
+          <tfoot>
+            <tr className="border-t-2 border-ink font-bold"><td className="py-1.5">Total (2 pessoas)</td><td className="py-1.5 text-right font-ticket">€124,96</td></tr>
+          </tfoot>
+        </table>
+        <p className="text-xs text-ink-soft">Sempre em dinheiro ou cartão direto na propriedade — nunca vem na fatura já paga.</p>
+      </div>
+
+      <div className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2">
         <p className="font-medium text-sm">Conversor EUR ↔ BRL (manual, offline)</p>
         <div className="flex items-center gap-2">
           <span className="text-xs text-ink-soft">1 EUR =</span>

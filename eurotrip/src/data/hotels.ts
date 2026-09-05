@@ -14,7 +14,7 @@ export const hotels: Hotel[] = [
     horarioCheckout: "11:00",
     telefone: "+39 06 39754640",
     numeroReserva: "72077188237717",
-    taxaTuristica: "€6/pessoa/noite (paga na propriedade)",
+    taxaTuristica: "€6/pessoa/noite × 2 pessoas × 3 noites = €36,00 total (paga na propriedade)",
     observacoes: "Recepção aberta das 10h às 22h. Avisar a propriedade com 48h de antecedência sobre o horário de chegada. Levar cópia do passaporte para o check-in. Check-in tardio pode ter cobrança extra.",
   },
   {
@@ -30,7 +30,7 @@ export const hotels: Hotel[] = [
     horarioCheckout: "11:00",
     telefone: "+39 081 9223999",
     numeroReserva: "72077189139148",
-    taxaTuristica: "€4/pessoa/noite, abril–outubro (paga na propriedade)",
+    taxaTuristica: "€4/pessoa/noite, abril–outubro × 2 pessoas × 2 noites = €16,00 total (paga na propriedade)",
     observacoes: "Sem recepção permanente — combinar chegada com pelo menos 24h de antecedência. O proprietário recebe os hóspedes na chegada.",
   },
   {
@@ -46,7 +46,8 @@ export const hotels: Hotel[] = [
     horarioCheckout: "10:30",
     telefone: "+39 041 2688128",
     numeroReserva: "72077190186930",
-    observacoes: "Recepção aberta das 8h às 20h. Avisar com 72h de antecedência. Turistas em Veneza podem precisar de voucher de isenção da taxa de acesso à cidade em certas datas — verificar cda.ve.it.",
+    taxaTuristica: "€3,50/pessoa/noite × 2 pessoas × 1 noite = €7,00 total (paga na propriedade)",
+    observacoes: "Recepção aberta das 8h às 20h. Avisar com 72h de antecedência. ✅ RESOLVIDO: a taxa de acesso à cidade de Veneza (Contributo di Accesso) só rodou em datas específicas de abril a julho/2026 e terminou de vez em 27/07/2026 — não se aplica mais em 2026. Não precisa de voucher de isenção nem nada pra outubro. Vale só confirmar de novo perto da data em cda.ve.it, caso o município reative algo pra 2027.",
   },
   {
     id: "h-paris",
@@ -61,6 +62,7 @@ export const hotels: Hotel[] = [
     horarioCheckout: "11:00",
     telefone: "+33 1 43436345",
     numeroReserva: "72077177256103",
+    taxaTuristica: "€3,25/pessoa/noite × 2 pessoas × 2 noites = €13,00 total (paga na propriedade)",
     observacoes: "Recepção 24 horas. Cancelamento grátis até 9/10 às 12h (horário local).",
   },
   {
@@ -76,6 +78,7 @@ export const hotels: Hotel[] = [
     horarioCheckout: "12:00",
     telefone: "+34 93 243 8800",
     numeroReserva: "72077352794731",
+    taxaTuristica: "€9,24/pessoa/noite × 2 pessoas × 2 noites = €36,96 total (paga na propriedade) — bem mais alta que as outras cidades",
     observacoes: "Cancelamento grátis até 10/10 às 0h01 (horário local). Zona de baixa emissão — veículos de fora da Espanha precisam registrar a placa.",
   },
   {
@@ -91,6 +94,7 @@ export const hotels: Hotel[] = [
     horarioCheckout: "12:00",
     telefone: "+351 21 8842000",
     numeroReserva: "72077544382199",
+    taxaTuristica: "€4,00/pessoa/noite × 2 pessoas × 2 noites = €16,00 total (paga na propriedade)",
     observacoes: "Obras no hotel até fim de 2027 (seg–sáb, 10h–20h; maior impacto 11h30–12h e 13h–17h).",
   },
 ];
