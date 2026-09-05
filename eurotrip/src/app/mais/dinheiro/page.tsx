@@ -118,22 +118,31 @@ export default function DinheiroPage() {
       <VoltarMais />
       <h1 className="font-display text-xl font-bold">💶 Dinheiro</h1>
 
-      <div className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2">
-        <p className="font-medium text-sm">🏨 Taxas turísticas — pagas no local, em euros</p>
-        <table className="w-full text-sm">
+      <div className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2 overflow-x-auto">
+        <p className="font-medium text-sm">🏨 Hospedagens — visão completa, em euros</p>
+        <table className="w-full text-xs">
+          <thead>
+            <tr className="border-b border-ink text-ink-soft text-left">
+              <th className="py-1 font-medium">Hotel</th>
+              <th className="py-1 font-medium text-center">Noites</th>
+              <th className="py-1 font-medium text-right">Taxa/pessoa/noite</th>
+              <th className="py-1 font-medium text-right">A pagar no local</th>
+              <th className="py-1 font-medium text-right">Hospedagem (já pago)</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr className="border-b border-line"><td className="py-1">Roma (3 noites)</td><td className="py-1 text-right font-ticket">€36,00</td></tr>
-            <tr className="border-b border-line"><td className="py-1">Sorrento (2 noites)</td><td className="py-1 text-right font-ticket">€16,00</td></tr>
-            <tr className="border-b border-line"><td className="py-1">Veneza (1 noite)</td><td className="py-1 text-right font-ticket">€7,00</td></tr>
-            <tr className="border-b border-line"><td className="py-1">Paris (2 noites)</td><td className="py-1 text-right font-ticket">€13,00</td></tr>
-            <tr className="border-b border-line"><td className="py-1">Barcelona (2 noites)</td><td className="py-1 text-right font-ticket">€36,96</td></tr>
-            <tr><td className="py-1">Lisboa (2 noites)</td><td className="py-1 text-right font-ticket">€16,00</td></tr>
+            <tr className="border-b border-line"><td className="py-1.5">MDM Guesthouse (Roma)</td><td className="py-1.5 text-center">3</td><td className="py-1.5 text-right font-ticket">€6,00</td><td className="py-1.5 text-right font-ticket">€36,00</td><td className="py-1.5 text-right font-ticket">€411,16</td></tr>
+            <tr className="border-b border-line"><td className="py-1.5">Orange Suites (Sorrento)</td><td className="py-1.5 text-center">2</td><td className="py-1.5 text-right font-ticket">€4,00</td><td className="py-1.5 text-right font-ticket">€16,00</td><td className="py-1.5 text-right font-ticket">€329,13</td></tr>
+            <tr className="border-b border-line"><td className="py-1.5">Hotel Leone (Veneza)</td><td className="py-1.5 text-center">1</td><td className="py-1.5 text-right font-ticket">€3,50</td><td className="py-1.5 text-right font-ticket">€7,00</td><td className="py-1.5 text-right font-ticket">€259,21</td></tr>
+            <tr className="border-b border-line"><td className="py-1.5">Hôtel de Venise (Paris)</td><td className="py-1.5 text-center">2</td><td className="py-1.5 text-right font-ticket">€3,25</td><td className="py-1.5 text-right font-ticket">€13,00</td><td className="py-1.5 text-right font-ticket">€285,05</td></tr>
+            <tr className="border-b border-line"><td className="py-1.5">Hotel ILUNION (Barcelona)</td><td className="py-1.5 text-center">2</td><td className="py-1.5 text-right font-ticket">€9,24</td><td className="py-1.5 text-right font-ticket">€36,96</td><td className="py-1.5 text-right font-ticket">€369,63</td></tr>
+            <tr><td className="py-1.5">Hotel Mundial (Lisboa)</td><td className="py-1.5 text-center">2</td><td className="py-1.5 text-right font-ticket">€4,00</td><td className="py-1.5 text-right font-ticket">€16,00</td><td className="py-1.5 text-right font-ticket">€415,66</td></tr>
           </tbody>
           <tfoot>
-            <tr className="border-t-2 border-ink font-bold"><td className="py-1.5">Total (2 pessoas)</td><td className="py-1.5 text-right font-ticket">€124,96</td></tr>
+            <tr className="border-t-2 border-ink font-bold"><td className="py-1.5">TOTAL</td><td className="py-1.5 text-center">12</td><td className="py-1.5"></td><td className="py-1.5 text-right font-ticket">€124,96</td><td className="py-1.5 text-right font-ticket">€2.069,84</td></tr>
           </tfoot>
         </table>
-        <p className="text-xs text-ink-soft">Sempre em dinheiro ou cartão direto na propriedade — nunca vem na fatura já paga.</p>
+        <p className="text-xs text-ink-soft">"A pagar no local" é sempre em dinheiro ou cartão direto na propriedade — nunca vem na fatura já paga. "Hospedagem" já foi debitada no cartão (valor convertido de reais pela cotação da Hoteis.com na compra, ~R$5,78/€).</p>
       </div>
 
       <div className="rounded-2xl bg-paper-raised border border-line p-4 space-y-2">
