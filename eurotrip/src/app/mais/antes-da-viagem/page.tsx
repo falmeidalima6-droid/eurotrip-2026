@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import VoltarMais from "@/components/VoltarMais";
 import ChecklistGrupo from "@/components/ChecklistGrupo";
-import { checklistDefs, checklistDiario } from "@/data/checklistDefs";
+import { preViagemDefs } from "@/data/preViagemDefs";
 import { db, ItemPersonalizado } from "@/lib/db";
 
-export default function ChecklistPage() {
+export default function AntesDaViagemPage() {
   const [marcados, setMarcados] = useState<Record<string, boolean>>({});
   const [extras, setExtras] = useState<ItemPersonalizado[]>([]);
   const [pronto, setPronto] = useState(false);
@@ -45,24 +45,13 @@ export default function ChecklistPage() {
   return (
     <div className="px-4 pt-4 pb-6 space-y-4">
       <VoltarMais />
-      <h1 className="font-display text-xl font-bold">🧳 Dia da Viagem — Mala</h1>
+      <h1 className="font-display text-xl font-bold">🧾 Antes da Viagem</h1>
       <p className="text-xs text-ink-soft">
-        Pode adicionar itens seus em qualquer lista. Fica salvo no celular.
+        Providências e compras a resolver com antecedência — internet, farmácia, documentos, financeiro. Marque à
+        medida que for resolvendo, fica salvo no celular.
       </p>
 
-      <ChecklistGrupo
-        titulo="Antes de sair do hotel (diário)"
-        categoria="Diário"
-        itens={checklistDiario}
-        extras={extras.filter((e) => e.categoria === "Diário")}
-        marcados={marcados}
-        onToggle={toggle}
-        onAdicionar={adicionarItem}
-        onRemover={removerItem}
-        pronto={pronto}
-      />
-
-      {checklistDefs.map((g) => (
+      {preViagemDefs.map((g) => (
         <ChecklistGrupo
           key={g.categoria}
           titulo={g.categoria}

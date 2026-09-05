@@ -48,6 +48,22 @@ export default function HojePage() {
       <ResumoPendencias />
 
       <Link
+        href="/mais/antes-da-viagem"
+        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4"
+      >
+        <span className="font-medium flex items-center gap-2">🧾 Antes da Viagem</span>
+        <ChevronRight size={18} className="text-ink-soft" />
+      </Link>
+
+      <Link
+        href="/mais/checklist"
+        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4"
+      >
+        <span className="font-medium flex items-center gap-2">🧳 Checklist — Dia da Viagem/Mala</span>
+        <ChevronRight size={18} className="text-ink-soft" />
+      </Link>
+
+      <Link
         href="/mais/familia"
         className="flex items-center justify-between rounded-2xl bg-brass/10 border border-brass/30 p-4"
       >
