@@ -151,7 +151,7 @@ export const checklistDefs: ChecklistDef[] = [
       "Câmera de ação SJCAM C300",
       "2 adaptadores de tomada",
       "Fone Soundcore P30",
-      "Power bank",
+      "Power bank (2x Basike, 37Wh e 74Wh — confirmado dentro do limite de 100Wh, sem autorização)",
       "Cartão MicroSD SanDisk 128GB",
       "Cabos",
     ],
