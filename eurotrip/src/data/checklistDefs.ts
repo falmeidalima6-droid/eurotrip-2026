@@ -25,7 +25,7 @@ export const checklistDefs: ChecklistDef[] = [
       "Cordão crossbody cinza para celular",
       "Capas de chuva",
       "Bastão selfie/tripé",
-      "Câmera de ação SJCAM C400",
+      "Câmera de ação SJCAM C300",
       "2 adaptadores de tomada",
       "Fone Soundcore P30",
       "Power bank",
