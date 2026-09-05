@@ -14,8 +14,45 @@ export const checklistDefs: ChecklistDef[] = [
       "Mala despachada",
       "Mala de cabine",
       "Mochila",
+      "Mochila/bolsa de passeio",
       "Medicamentos",
       "Itens pessoais",
+    ],
+  },
+  {
+    categoria: "Roupas",
+    itens: ["Pijama", "Roupa íntima", "Sutiãs/tops confortáveis", "Camisetas"],
+  },
+  {
+    categoria: "Higiene — Banho e cabelo",
+    itens: [
+      "Shampoo — frasco até 100 ml",
+      "Condicionador — frasco até 100 ml",
+      "Sabonete líquido — frasco pequeno",
+      "Creme/leave-in para cabelo — pote pequeno",
+    ],
+  },
+  {
+    categoria: "Higiene — Pessoal",
+    itens: [
+      "Creme dental — embalagem pequena",
+      "Enxaguante bucal — frasco pequeno, se quiser levar",
+      "Desodorante",
+      "Hidratante corporal — frasco pequeno",
+      "Hidratante facial",
+      "Protetor solar",
+    ],
+  },
+  {
+    categoria: "Higiene — Pés",
+    itens: ["Antichulé", "Tuff para os pés", "Talco/pó para pés, se necessário"],
+  },
+  {
+    categoria: "Higiene — Outros",
+    itens: [
+      "Perfume — decant/frasco pequeno",
+      "Álcool em gel pequeno",
+      "Demaquilante/água micelar, se usar",
     ],
   },
   {
