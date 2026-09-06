@@ -6,6 +6,8 @@ export interface GuiaCidade {
   agua: string;
   golpes: string[];
   particularidades: string[];
+  comidaBarata?: string[];
+  supermercados?: string[];
 }
 
 // Pesquisado em agosto/2026 a partir de fontes de viagem — informação prática,
@@ -31,6 +33,13 @@ export const guiasCidade: GuiaCidade[] = [
       "Muitas lojas pequenas fecham para o almoço (riposo), normalmente 13h-16h.",
       "🚻 Banheiro público de graça é raro na Itália — o normal é usar o de bares/cafés (às vezes cobram €0,50-1 mesmo sem consumir) ou contar com museus/atrações que já estão no roteiro.",
     ],
+    comidaBarata: [
+      "Pizza al taglio (fatia, vendida por peso): €3-6 a fatia — dá pra fazer uma refeição completa por €6-10. Ex: Alice Pizza (via delle Sette Sale).",
+      "Trattoria simples: prato de massa €8-10, vinho da casa €4 (ex: Trattoria Luzzi).",
+      "Mercato Centrale (perto da Termini): vários estandes temáticos (massa, peixe, sushi), aberto até meia-noite — bom pra ir cada um comer uma coisa diferente.",
+      "Supplì (bolinho de arroz frito, tipo um risoto empanado): ótimo lanche de rua, poucos euros.",
+    ],
+    supermercados: ["Conad", "Conad City", "Carrefour Express", "Despar / Eurospar", "Todis (o mais barato)"],
   },
   {
     cidade: "Nápoles",
@@ -43,6 +52,11 @@ export const guiasCidade: GuiaCidade[] = [
       "Furtos (não assaltos violentos) são o principal risco, especialmente em áreas turísticas — fiquem atentos a bolsos e mochilas.",
       "Evitem áreas afastadas do centro à noite.",
     ],
+    comidaBarata: [
+      "Pizza napolitana original: berço da pizza — uma unidade em pizzaria simples costuma sair €5-8, serve bem uma pessoa.",
+      "Fritatta/cuoppo napoletano (cone de frituras — arancini, bolinhos): lanche de rua por poucos euros.",
+    ],
+    supermercados: ["Conad", "Conad City", "Carrefour Express", "Despar", "Todis"],
   },
   {
     cidade: "Sorrento / Positano / Amalfi",
@@ -55,6 +69,11 @@ export const guiasCidade: GuiaCidade[] = [
       "Alta temporada lota rápido — cheguem aos ferries com a antecedência recomendada (30 min).",
       "🚻 Igual ao resto da Itália: banheiro grátis é raro, contem com bares (às vezes pagos) e as próprias atrações do roteiro.",
     ],
+    comidaBarata: [
+      "Panino/focaccia recheada em alimentari (mercearia local): €4-7, comum nas ruas centrais de Sorrento.",
+      "Gelato artesanal: vale mais a pena em gelaterias afastadas da praça principal (mesma qualidade, preço mais honesto).",
+    ],
+    supermercados: ["Conad", "Despar", "Carrefour Express (opções mais limitadas que nas cidades grandes)"],
   },
   {
     cidade: "Veneza",
@@ -71,6 +90,11 @@ export const guiasCidade: GuiaCidade[] = [
       "Curiosidade: tudo flutua em Veneza — até a polícia e a ambulância andam de barco.",
       "🚻 Igual ao resto da Itália: banheiro grátis é raro, contem com bares/cafés (às vezes pagos) e as atrações do roteiro.",
     ],
+    comidaBarata: [
+      "Cicchetti (tapas venezianas) em bacari (bares tradicionais): €1,50-3 cada, ótimo pra beliscar vários tipos com um spritz (~€3-5).",
+      "Longe de Rialto/São Marcos, os preços caem bastante — vale se afastar 1-2 quarteirões da área mais turística.",
+    ],
+    supermercados: ["Coop", "Despar", "Carrefour Express (poucas unidades, ilha é cara em geral)"],
   },
   {
     cidade: "Paris",
@@ -93,6 +117,13 @@ export const guiasCidade: GuiaCidade[] = [
       "Metrô nos horários de pico e estações muito turísticas são onde mais acontece furto — mochila na frente.",
       "🚻 Boa notícia rara: Paris tem ~400 'sanisettes' — banheiros públicos grátis, autolimpantes, espalhados pela cidade, a maioria aberta 6h-22h (alguns 24h). Bem mais fácil que no resto da Europa.",
     ],
+    comidaBarata: [
+      "Baguete/croissant em boulangerie: €1-1,50 simples, sanduíche completo €4,90-8.",
+      "Crêperie (crepe doce ou salgado/galette): €3,50-10, boa opção de refeição rápida e barata.",
+      "Kebab: um dos mais em conta de Paris, ~€6-9 com batata e bebida.",
+      "'Formule du jour' (menu do dia) em creperies/bistrôs: prato + bebida por preço fechado, geralmente mais em conta que pedir à la carte.",
+    ],
+    supermercados: ["Carrefour Express", "Franprix", "Monoprix", "Auchan", "Lidl", "Picard (só congelados, mas com opções prontas boas e baratas)"],
   },
   {
     cidade: "Barcelona",
@@ -113,6 +144,13 @@ export const guiasCidade: GuiaCidade[] = [
       "Ingressos de atrações (Sagrada Família etc.) esgotam rápido — já resolvido no app, mas vale lembrar.",
       "🚻 Banheiro público grátis é escasso — contem com cafés (o normal é pedir consumindo algo) ou as atrações do roteiro. Quando aceitam sem consumir, costuma custar €0,50 a €1 — vale levar moedas trocadas.",
     ],
+    comidaBarata: [
+      "Menú del día (só no almoço, dias úteis): entrada + prato principal + sobremesa/café + bebida por €11-18 — a forma mais em conta de comer bem sentado.",
+      "Bocadillos (sanduíches) em bares de bairro: €1,50-6, muito comum como almoço rápido dos próprios espanhóis.",
+      "Pinchos/tapas fora do circuito turístico central (ex: Poble-sec, Carrer de Blai): €1-3 cada.",
+      "Evitem menus com foto e em vários idiomas perto de Sagrada Família/Rambla — costumam ser mais caros e piores.",
+    ],
+    supermercados: ["Mercadona", "Dia", "Carrefour Express", "Consum", "Bonpreu"],
   },
   {
     cidade: "Lisboa",
@@ -130,6 +168,13 @@ export const guiasCidade: GuiaCidade[] = [
       "Cidade é bem inclinada (muitas ladeiras) — vale usar metrô/elevadores para poupar as pernas.",
       "🚻 Lisboa está reduzindo os banheiros públicos grátis ao longo dos anos, mas ainda tem alguns sem cancela — cafés e as atrações do roteiro são o mais confiável. Quando é pago, costuma ficar entre €0,50 e €1.",
     ],
+    comidaBarata: [
+      "Tasca de bairro (restaurante pequeno, tradicional): prato do dia €7-13, geralmente com pão/azeitonas de entrada — evitem Alfama/Belém, onde o preço sobe bem.",
+      "Menu de almoço completo (pão + prato + sobremesa + bebida): costuma caber nos €10 fora de zona turística.",
+      "Mercados de bairro (Alvalade, Arroios, Intendente): pratos do dia €6-9, mais em conta que praça de alimentação turística.",
+      "Pastel de nata de padaria de bairro (não das famosas turísticas): igualmente bom e mais barato.",
+    ],
+    supermercados: ["Pingo Doce", "Continente / Continente Bom Dia", "Minipreço", "Lidl"],
   },
   {
     cidade: "Sintra",

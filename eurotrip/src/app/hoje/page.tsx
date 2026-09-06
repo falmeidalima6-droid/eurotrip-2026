@@ -12,6 +12,7 @@ import PrepararAmanha from "@/components/PrepararAmanha";
 import SecaoPreparacao from "@/components/SecaoPreparacao";
 import SecaoFerramentas from "@/components/SecaoFerramentas";
 import OQueOAppOferece from "@/components/OQueOAppOferece";
+import SupermercadosHoje from "@/components/SupermercadosHoje";
 import { MapPin, ChevronRight, Search, CalendarDays } from "lucide-react";
 
 export default function HojePage() {
@@ -85,6 +86,8 @@ export default function HojePage() {
           </Link>
 
           <OndeDormimos data={dia.data} />
+
+          <SupermercadosHoje cidade={dia.cidade} />
 
           {amanha && amanha.cidade !== dia.cidade && (
             <section className="rounded-2xl bg-brass/10 border border-brass/30 p-4">

@@ -34,6 +34,21 @@ export default function GuiaCidadePage() {
 
       <Secao titulo="🚇 Transporte" itens={guia.transporte} />
 
+      {guia.comidaBarata && <Secao titulo="🍽️ Onde comer barato" itens={guia.comidaBarata} />}
+
+      {guia.supermercados && (
+        <div className="rounded-2xl bg-paper-raised border border-line p-4">
+          <p className="text-xs font-medium text-ink-soft uppercase mb-1.5">🛒 Supermercados</p>
+          <div className="flex flex-wrap gap-1.5">
+            {guia.supermercados.map((s, i) => (
+              <span key={i} className="text-xs bg-paper border border-line rounded-full px-2.5 py-1">
+                {s}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className="rounded-2xl bg-paper-raised border border-line p-4">
         <p className="text-xs font-medium text-ink-soft uppercase mb-1.5">💶 Gorjeta</p>
         <p className="text-sm">{guia.gorjeta}</p>
