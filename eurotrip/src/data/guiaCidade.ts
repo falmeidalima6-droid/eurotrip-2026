@@ -35,7 +35,7 @@ export const guiasCidade: GuiaCidade[] = [
   {
     cidade: "Nápoles",
     emoji: "🇮🇹",
-    transporte: ["Do aeroporto ao centro: ônibus Alibus, tarifa fixa. Nápoles↔Sorrento: Circumvesuviana ou Campania Express."],
+    transporte: ["Nápoles↔Sorrento já está resolvido pelo Campania Express reservado — não precisam comprar bilhete de transporte público na cidade."],
     gorjeta: "Free tour a pé: ~€10 é considerado justo. Serviço de mesa em restaurantes: €1,50-3.",
     agua: "Água da torneira é potável e gratuita.",
     golpes: ["Abordagens de 'ajuda amigável' ou venda insistente perto de pontos turísticos e na Termini/Garibaldi."],
@@ -47,7 +47,7 @@ export const guiasCidade: GuiaCidade[] = [
   {
     cidade: "Sorrento / Positano / Amalfi",
     emoji: "🇮🇹",
-    transporte: ["Estrada costeira pode ficar congestionada — o ferry entre Sorrento/Positano/Amalfi costuma ser mais tranquilo e às vezes mais rápido."],
+    transporte: ["Ferries entre Sorrento/Positano/Amalfi já estão reservados (Alilauro) — não precisam comprar bilhete de transporte público na região."],
     gorjeta: "Igual ao resto da Itália — não obrigatória, serviço às vezes já incluso.",
     agua: "Água da torneira é potável na região.",
     golpes: ["Nenhum golpe específico frequente reportado — atenção padrão com pertences em áreas cheias basta."],
@@ -60,8 +60,7 @@ export const guiasCidade: GuiaCidade[] = [
     cidade: "Veneza",
     emoji: "🇮🇹",
     transporte: [
-      "Vaporetto (barco-ônibus): bilhete avulso ~€9,50, vale 75 min. Compensa passe diário se for usar mais de 2x.",
-      "🎫 Pra estadia curta de vocês (chegada 10/10 à noite + manhã de 11/10), o mais provável é sair mais em conta bilhete avulso ou contactless direto no leitor (calcula sozinho a tarifa mais vantajosa) — só vale o passe 24h (€25) se passarem de 3 viagens de barco no mesmo dia.",
+      "Vaporetto (barco-ônibus): bilhete avulso ~€9,50, vale 75 min.",
       "Gôndola: preço tabelado pela prefeitura, ~€80-90 por 30-40 min de dia (sobe à noite). Ofertas bem mais baratas de vendedores de rua costumam ser golpe — prefiram o ponto oficial de embarque.",
     ],
     gorjeta: "Não obrigatória, como no resto da Itália.",
