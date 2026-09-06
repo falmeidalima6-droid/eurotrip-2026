@@ -87,14 +87,17 @@ export const day11: DiaRoteiro = {
       status: "futuro",
       confirmado: false,
       observacoes:
-        "Sem atração definida ainda (Parc Güell, El Born e Hospital de Sant Pau foram removidos do roteiro a pedido de vocês). Dica prática: se o Flamenco for no Tablao Cordobés/La Rambla, vale terminar a tarde livre por ali perto (Bairro Gótico, Plaça Catalunya) — evita ir e voltar duas vezes na mesma região.",
+        "Sem atração fixa (Parc Güell, El Born e Hospital de Sant Pau tinham sido removidos antes; Bunkers del Carmel também foi removido a pedido de vocês). 3 opções levantadas, na ordem de distância a partir da Boqueria:\n\n1) Palau Güell — ~5 min a pé (370m), na mesma rua da Boqueria. Mansão de Gaudí menos turística que Sagrada Família/Park Güell, com mosaicos e chaminés coloridas no telhado. Ingresso pago, sem fila grande.\n\n2) El Born + Museu Picasso — ~15-20 min a pé (ou Metro L3 até Liceu + L4 até Jaume I, ~1,3km). Bairro medieval charmoso pra passear sem pressa; museu com mais de 4.000 obras da juventude do Picasso em Barcelona.\n\n3) Barceloneta (praia) — ~30-35 min a pé, ou Metro L3 (Drassanes/Liceu) até Barceloneta, ~15 min (~2,7km). Passeio tranquilo na orla, sem monumento pra visitar — bom contraponto depois de uma manhã cheia.\n\nDica: se o Flamenco for no Tablao Cordobés/La Rambla, terminar a tarde por ali perto evita ir e voltar duas vezes na mesma região.",
       opcaoAlternativaTitulo: "⚽ Opção: Camp Nou Immersive Tour",
       opcaoAlternativaDescricao:
         "Como nenhum dos três times de futebol (PSG, Barcelona, Real Madrid) joga em casa durante a viagem de vocês, essa é a forma de 'quase' viver o clube: museu do FC Barcelona + sala imersiva 360° + mirante pra ver a obra do estádio de perto (o Camp Nou está em reforma, não dá pra entrar no gramado/vestiário ainda). ~€28-31/adulto. Horário 14/10: 10h-18h (última entrada 17h15) — cabe tranquilo na tarde livre. Fica em Les Corts, um pouco longe do resto do roteiro (~20-25 min de metrô do hotel).",
       dicaMetro: "🚇 Da região do hotel (Poblenou): Linha L4 até Passeig de Gràcia, trocar Linha L3 (verde) direção Zona Universitària, descer em Palau Reial ou Les Corts — a entrada do museu fica pertinho da saída.",
       links: [
-        { label: "Ver localização no Maps", url: "https://www.google.com/maps/search/?api=1&query=Camp+Nou+FC+Barcelona+Museum+Barcelona" },
-        { label: "Comprar ingresso oficial", url: "https://www.fcbarcelona.com/en/tickets-and-experiences/museum-and-tour" },
+        { label: "Palau Güell — site oficial", url: "https://www.palauguell.cat/en" },
+        { label: "Museu Picasso — site oficial", url: "https://www.museupicasso.bcn.cat/en" },
+        { label: "Ver Barceloneta no Maps", url: "https://www.google.com/maps/search/?api=1&query=Barceloneta+Beach+Barcelona" },
+        { label: "Ver localização Camp Nou no Maps", url: "https://www.google.com/maps/search/?api=1&query=Camp+Nou+FC+Barcelona+Museum+Barcelona" },
+        { label: "Comprar ingresso oficial Camp Nou", url: "https://www.fcbarcelona.com/en/tickets-and-experiences/museum-and-tour" },
       ],
     },
     {
