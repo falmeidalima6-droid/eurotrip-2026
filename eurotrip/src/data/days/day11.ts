@@ -149,7 +149,7 @@ export const day11: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       alerta: "⚠️ Não deixar para arrumar as malas no dia seguinte.",
-      dicaMetro: "🚇 Da região da Rambla/Bairro Gótico: Linha L3 até Catalunya, trocar para a Linha L4 direto até Poblenou/Llacuna — mesma combinação de linhas do dia anterior.",
+      dicaMetro: "🚇 Da região da Rambla/Bairro Gótico: Linha L3 até Passeig de Gràcia (a troca real com a L4 é aqui, não em Catalunya), trocar para a Linha L4 direto até Poblenou/Llacuna — mesma combinação de linhas do dia anterior.",
     },
   ],
 };
