@@ -63,6 +63,11 @@ export const day02: DiaRoteiro = {
       horarioFinal: "21:30",
       status: "futuro",
       confirmado: true,
+      observacoes:
+        "🚕 Táxi oficial (branco, fila organizada no terminal) — tarifa fixa Fiumicino↔centro de Roma: €50 (vale pra qualquer ponto dentro das Muralhas Aureliano, MDM Guesthouse incluso). Chegando à noite com malas, é a opção mais simples: sem trocar de linha, sem escada, sem esperar trem regional. Peçam o recibo com o valor combinado antes de entrar, prática comum e válida em Fiumicino.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Rome+Fiumicino+Airport&destination=MDM+Guesthouse+Rome&travelmode=driving" },
+      ],
     },
     {
       id: "d02-e05",

@@ -43,7 +43,7 @@ export const day12: DiaRoteiro = {
       horarioRecomendadoSaida: "08:45",
       status: "futuro",
       confirmado: true,
-      observacoes: "Com bagagem, transporte direto (não transporte público). Meta: chegar ao aeroporto por volta de 09h30–09h45.",
+      observacoes: "Com bagagem, transporte direto (não transporte público). Meta: chegar ao aeroporto por volta de 09h30–09h45. 🚕 Táxi/Uber, mesma faixa da ida: ~€26-45 até o Aeroporto El Prat (taxímetro, sem tarifa fixa).",
     },
     {
       id: "d12-e04",

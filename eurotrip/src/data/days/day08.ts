@@ -119,6 +119,11 @@ export const day08: DiaRoteiro = {
       horarioFinal: "19:45",
       status: "futuro",
       confirmado: true,
+      observacoes:
+        "🚕 Chegando à noite com malas, táxi/Uber é o mais simples — Orly não tem metrô direto (a alternativa de transporte público envolveria OrlyBus + trocar de linha, mais demorado e mais cansativo depois de um dia de viagem). Táxi oficial de Orly pro centro/leste de Paris: tarifa aproximada €35-55 (varia com trânsito, sem tarifa fixa como em Roma). Uber costuma ficar numa faixa parecida ou um pouco menor fora de horário de pico.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Paris+Orly+Airport&destination=4+Rue+de+Chaligny+Paris&travelmode=driving" },
+      ],
     },
     {
       id: "d08-e09",

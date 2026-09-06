@@ -46,7 +46,7 @@ export const day14: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes:
-        "⚠️ O metrô de Lisboa só abre às 6h30 — muito em cima da hora pro checkout de vocês, e ainda precisaria de 1 troca (Martim Moniz → Alameda → Aeroporto). Táxi/Uber direto é a escolha certa aqui: sem espera, sem troca, ~15-20 min até o aeroporto.",
+        "⚠️ O metrô de Lisboa só abre às 6h30 — muito em cima da hora pro checkout de vocês, e ainda precisaria de 1 troca (Martim Moniz → Alameda → Aeroporto). Táxi/Uber direto é a escolha certa aqui: sem espera, sem troca, ~15-20 min até o aeroporto. 🚕 Tarifa de táxi em Lisboa é por taxímetro (não fixa): bandeirada €3,25 + €0,47/km — pra esse trajeto (~7-8km), esperem algo em torno de €10-15.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Praca+Martim+Moniz+2+Lisboa&destination=Aeroporto+Humberto+Delgado+Lisboa&travelmode=driving" },
       ],
