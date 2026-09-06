@@ -76,6 +76,25 @@ export const day11: DiaRoteiro = {
       ],
     },
     {
+      id: "d11-e05b",
+      data: "2026-10-14",
+      cidade: "Barcelona",
+      pais: "Espanha",
+      categoria: "passeio",
+      titulo: "Bunkers del Carmel",
+      horarioInicial: "13:15",
+      horarioFinal: "14:45",
+      duracaoPrevista: "1h30 (com deslocamento)",
+      status: "futuro",
+      confirmado: false,
+      observacoes:
+        "Vista panorâmica de 360° de Barcelona (inclui a Sagrada Família) do alto do Turó de la Rovira, em antigas fortificações antiaéreas da Guerra Civil. Gratuito. Visita rápida no topo: 20-30 min. ⚠️ Foram logo depois do almoço de propósito — em outubro o horário de funcionamento pode já estar na faixa de inverno (9h-17h30) em vez de verão (9h-19h30), então ir cedo evita o risco de chegar e estar fechado. Subida a pé íngreme até o topo, sem elevador/escada rolante.",
+      dicaMetro: "🚇 Do Mercat de la Boqueria (Liceu, L3): pegar a L3 até Verdaguer, trocar para a L5 (azul) até El Carmel, ou seguir até Alfons X pela L4 — dos dois, uma caminhada de subida até o topo do morro.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Mercat+de+la+Boqueria+Barcelona&destination=Bunkers+del+Carmel+Barcelona&travelmode=transit" },
+      ],
+    },
+    {
       id: "d11-e06",
       data: "2026-10-14",
       cidade: "Barcelona",
