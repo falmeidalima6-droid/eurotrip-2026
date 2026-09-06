@@ -16,7 +16,7 @@ export const guiasCidade: GuiaCidade[] = [
     emoji: "🇮🇹",
     transporte: [
       "Bilhete BIT: €1,50, vale 100 min em metrô/ônibus/tram — valide na maquininha amarela ao entrar (ônibus/tram) ou na catraca (metrô).",
-      "Cartão/celular contactless (tap & go) também funciona direto na catraca e já aplica a tarifa mais vantajosa do dia.",
+      "💳 Não precisam comprar nada com antecedência: usem contactless (cartão ou celular) direto na catraca — o sistema já calcula sozinho e trava num teto de €8,50/dia a partir da 6ª viagem, sem vocês terem que fazer conta.",
       "Só usem táxi branco oficial. Trajeto Fiumicino↔centro tem tarifa fixa de €50 — se cobrarem mais, é golpe.",
     ],
     gorjeta: "Não é obrigatória — muitos lugares já cobram 'coperto' (serviço) na conta.",
@@ -61,6 +61,7 @@ export const guiasCidade: GuiaCidade[] = [
     emoji: "🇮🇹",
     transporte: [
       "Vaporetto (barco-ônibus): bilhete avulso ~€9,50, vale 75 min. Compensa passe diário se for usar mais de 2x.",
+      "🎫 Pra estadia curta de vocês (chegada 10/10 à noite + manhã de 11/10), o mais provável é sair mais em conta bilhete avulso ou contactless direto no leitor (calcula sozinho a tarifa mais vantajosa) — só vale o passe 24h (€25) se passarem de 3 viagens de barco no mesmo dia.",
       "Gôndola: preço tabelado pela prefeitura, ~€80-90 por 30-40 min de dia (sobe à noite). Ofertas bem mais baratas de vendedores de rua costumam ser golpe — prefiram o ponto oficial de embarque.",
     ],
     gorjeta: "Não obrigatória, como no resto da Itália.",
@@ -76,7 +77,9 @@ export const guiasCidade: GuiaCidade[] = [
     cidade: "Paris",
     emoji: "🇫🇷",
     transporte: [
+      "🎫 Comprem 1 cartão Navigo Easy (€2, físico, dá pra reaproveitar nas DUAS passagens de vocês por Paris — a conexão de 05/10 e a estadia principal 11-13/10). Carreguem bilhetes avulsos (€2,55 cada, chamados t+) pros dias mais tranquilos, e um Forfait Navigo Jour (€12,30, viagens ilimitadas no dia) pro dia mais puxado de metrô — pelo roteiro de vocês, é o 12/10 (Louvre + Torre Eiffel + Cruzeiro), com bem mais de 5 trajetos.",
       "Bilhete avulso de metrô: €2,10. Pacote de 10 (carnet): €16,90 — compensa se forem usar bastante.",
+      "⚠️ Trem do aeroporto (CDG/Orly) usa bilhete diferente do metrô normal — o Navigo Easy só guarda um tipo por vez, não dá pra ter os dois juntos no cartão.",
       "No RER (ex: linha do aeroporto), validem o bilhete também na SAÍDA, não só na entrada.",
     ],
     gorjeta: "Serviço de 15% já incluso na conta dos restaurantes. Deixar 2-5% de troco é só um gesto, não obrigatório.",
@@ -95,7 +98,10 @@ export const guiasCidade: GuiaCidade[] = [
   {
     cidade: "Barcelona",
     emoji: "🇪🇸",
-    transporte: ["Táxi oficial é preto e amarelo — ou usem Cabify/FreeNow/Uber. Nunca aceitem 'táxi' sem identificação."],
+    transporte: [
+      "🎫 Comprem 1 T-Casual cada (€13, 10 viagens em metrô/ônibus/tram) nas máquinas do metrô. É individual — não dá pra compartilhar na mesma viagem entre vocês dois, então precisa 1 cartão por pessoa. Não vale pro trajeto do aeroporto (bilhete à parte, €4,60).",
+      "Táxi oficial é preto e amarelo — ou usem Cabify/FreeNow/Uber. Nunca aceitem 'táxi' sem identificação.",
+    ],
     gorjeta: "Não obrigatória — arredondar a conta já é gentileza suficiente.",
     agua: "As 'fonts' (chafarizes públicos) em parques e praças são gratuitas e potáveis — Barcelona é a 2ª cidade da Europa em densidade de fontes públicas (atrás só de Zurique), tragam garrafa reutilizável.",
     golpes: [
@@ -113,7 +119,8 @@ export const guiasCidade: GuiaCidade[] = [
     cidade: "Lisboa",
     emoji: "🇵🇹",
     transporte: [
-      "Pagar ao motorista do elétrico/ônibus custa quase o dobro (~€3 no elétrico) — melhor usar cartão Viva Viagem (~€1,90 por viagem).",
+      "🎫 Comprem o cartão Navegante (antigo Viva Viagem, €0,50 o cartão) e carreguem 'Zapping' (~€10-15 de saldo cada) — o mesmo cartão cobre metrô/elétrico/ônibus em Lisboa E o trem pra Sintra (~€1,80-2,05 por trecho), sem precisar de bilhete separado pra esse dia.",
+      "Pagar ao motorista do elétrico/ônibus custa quase o dobro (~€3 no elétrico) — melhor usar o cartão Navegante no Zapping.",
       "Metrô fecha por volta da 1h da manhã — depois disso, só táxi/Uber/Bolt.",
     ],
     gorjeta: "Não obrigatória — arredondar já é bem visto.",
