@@ -20,8 +20,8 @@ export const day02: DiaRoteiro = {
       confirmado: true,
       duracaoPrevista: "Conexão de 2h45",
       prioridade: "alta",
-      alerta: "🔴 EES (novo sistema biométrico de fronteira da UE) está totalmente ativo no CDG desde abril/2026. Reportes recentes mostram filas de imigração de 2 a 4 horas no Terminal 2E (onde chegam a maioria dos voos de longa distância) — muito acima da margem de 2h45 que vocês têm.",
-      observacoes: "Esta é a primeira entrada no espaço Schengen — o registro biométrico (foto + 4 digitais) só é feito uma vez e demora mais nessa primeira vez. Dicas: mantenham os passaportes em mãos (sem capinha), usem os quiosques de autoatendimento se disponíveis (mais rápidos que o guichê com agente), e sigam direto para o controle de fronteira ao desembarcar, sem parar no caminho.",
+      alerta: "🔴 EES (novo sistema biométrico de fronteira da UE) está totalmente ativo no CDG desde abril/2026 — confirmado ainda ativo e problemático em relatos de agosto/2026. Filas de imigração de 1 a 4 horas no Terminal 2E (onde chegam a maioria dos voos de longa distância) são comuns — pode facilmente estourar a margem de 2h45 que vocês têm.",
+      observacoes: "Esta é a primeira entrada no espaço Schengen — o registro biométrico (foto + 4 digitais) só é feito uma vez e demora mais nessa primeira vez. Dicas: mantenham os passaportes em mãos (sem capinha), usem os quiosques de autoatendimento se disponíveis (mais rápidos que o guichê com agente), e sigam direto para o controle de fronteira ao desembarcar, sem parar no caminho. 🆕 Desde junho/2026 o Terminal 2E tem 'pods' de pré-cadastro — cabines onde dá pra escanear passaporte, tirar foto e digitais ANTES de chegar no guichê do agente, agilizando bastante o resto da fila. Procurem por eles assim que desembarcarem.",
       planoB: "Se perceberem que vão perder o voo AF1404 (17h00), procurem um funcionário da Air France assim que possível — como é a mesma reserva/companhia, normalmente reacomodam no próximo voo Paris→Roma sem custo extra. Guardem o cartão de embarque/comprovante da conexão como prova caso precisem justificar.",
     },
     {

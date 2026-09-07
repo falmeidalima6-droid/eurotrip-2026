@@ -47,6 +47,14 @@ export default function HojePage() {
         <CalendarDays size={22} /> Ver roteiro completo
       </Link>
 
+      <Link
+        href="/mais/guia-cidade"
+        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4 active:scale-[0.98] transition-transform"
+      >
+        <span className="font-medium">🏙️ Guia rápido da cidade</span>
+        <ChevronRight size={18} className="text-ink-soft" />
+      </Link>
+
       <SecaoPreparacao />
 
       <SecaoFerramentas />
