@@ -5,6 +5,7 @@ import BloqueioPin from "@/components/BloqueioPin";
 import AnexosDocumento from "@/components/AnexosDocumento";
 import { hotels } from "@/data/hotels";
 import { transportes } from "@/data/transportes";
+import { FileText, ExternalLink } from "lucide-react";
 
 const CATEGORIAS_UPLOAD = [
   { id: "doc-passaporte-fernanda", label: "Passaporte — Fernanda" },
@@ -26,6 +27,18 @@ export default function DocumentosPage() {
         Anexe fotos ou PDFs — ficam salvos só neste celular (IndexedDB local), nunca são enviados a nenhum servidor. Para
         cada reserva específica (hotel/voo/trem/van), o anexo fica na própria aba Reservas.
       </p>
+
+      <a
+        href="/documentos/border-crossing-dossier.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-center justify-between rounded-2xl bg-brass/10 border border-brass/30 p-4"
+      >
+        <span className="flex items-center gap-2 font-medium">
+          <FileText size={18} className="text-brass" /> Dossiê de imigração (PDF, em inglês)
+        </span>
+        <ExternalLink size={16} className="text-ink-soft shrink-0" />
+      </a>
 
       {CATEGORIAS_UPLOAD.map((c) => (
         <div key={c.id} className="rounded-2xl bg-paper-raised border border-line p-4">

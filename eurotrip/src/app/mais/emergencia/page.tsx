@@ -54,6 +54,16 @@ export default function EmergenciaPage() {
       <VoltarMais />
       <h1 className="font-display text-xl font-bold text-alert">🆘 Emergência</h1>
 
+      <a
+        href="/documentos/border-crossing-dossier.pdf"
+        target="_blank"
+        rel="noreferrer"
+        className="flex items-center justify-between rounded-2xl bg-paper-raised border border-line p-4"
+      >
+        <span className="font-medium">📄 Dossiê de imigração (PDF, em inglês)</span>
+        <span className="text-ink-soft text-sm">abrir</span>
+      </a>
+
       {infoPais && (
         <div className="rounded-2xl bg-alert text-white p-4 space-y-1">
           <p className="text-xs uppercase tracking-wide opacity-80">Emergência geral — {dia?.pais}</p>
