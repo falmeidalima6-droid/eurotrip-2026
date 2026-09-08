@@ -72,7 +72,7 @@ export const ingressos: Ingresso[] = [
     urgencia: "verde",
     dataNecessaria: "2026-10-12",
     comprado: true,
-    observacoes: "✅ Comprado — Bateaux Parisiens, Port de la Bourdonnais. Sem horário marcado (ingresso aberto), sugestão ~20h30, sem jantar.",
+    observacoes: "✅ Comprado — Compagnie des Bateaux Mouches, Port de la Conférence, 75008 Paris (€34,00 total TTC, 2 adultos). Sem horário marcado (ingresso aberto), sugestão ~20h30, sem jantar.",
   },
   {
     id: "i10",

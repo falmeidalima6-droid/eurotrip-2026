@@ -7,7 +7,7 @@ export const day09: DiaRoteiro = {
   pais: "Franca",
   titulo: "Louvre + Notre-Dame + Torre Eiffel + Cruzeiro",
   emoji: "🇫🇷",
-  planoChuva: "Trocar a caminhada pela Île de la Cité e margens do Sena por percurso mais curto de metrô; manter Louvre, Notre-Dame, Torre Eiffel e cruzeiro (o cruzeiro Bateaux Parisiens tem área coberta).",
+  planoChuva: "Trocar a caminhada pela Île de la Cité e margens do Sena por percurso mais curto de metrô; manter Louvre, Notre-Dame, Torre Eiffel e cruzeiro (o cruzeiro Bateaux Mouches tem área coberta).",
   planoCansaco: "Cortar Montmartre é a Opção B; se o cansaço vier depois do Louvre, reduzir Trocadéro para só fotos rápidas e ir direto para a Torre Eiffel mais cedo.",
   eventos: [
     {
@@ -211,7 +211,7 @@ export const day09: DiaRoteiro = {
       cidade: "Paris",
       pais: "Franca",
       categoria: "passeio",
-      titulo: "Cruzeiro pelo Sena — Bateaux Parisiens",
+      titulo: "Cruzeiro pelo Sena — Bateaux Mouches",
       horarioInicial: "20:30",
       duracaoPrevista: "1h",
       status: "futuro",
