@@ -83,6 +83,9 @@ export const day06: DiaRoteiro = {
       confirmado: false,
       observacoes:
         "Final da manhã. ⚠️ A CONFIRMAR: horário exato — em outubro os ferries entre Positano e Amalfi rodam bem menos que no verão (poucas saídas por dia, não é serviço de hora em hora). Recomendado: comprar o bilhete direto no quiosque do porto de Positano ao chegar de manhã (não precisa comprar com antecedência), mirando sair perto de 11h30-12h para ter manhã livre em Positano e ainda almoçar em Amalfi com calma. Travessia leva uns 15-30 min.",
+      links: [
+        { label: "Ver porto de Positano no Maps", url: "https://www.google.com/maps/search/?api=1&query=Positano+ferry+port" },
+      ],
     },
     {
       id: "d06-e06",
@@ -110,6 +113,9 @@ export const day06: DiaRoteiro = {
       status: "futuro",
       confirmado: false,
       observacoes: "⚠️ Horário aproximado — comprar no quiosque do porto de Amalfi. Pegar esse ferry até no máximo ~15h30-16h00, já que o de volta Positano→Sorrento (17h05) já está pago e reservado, e os ferries de outubro rodam com menos frequência.",
+      links: [
+        { label: "Ver porto de Amalfi no Maps", url: "https://www.google.com/maps/search/?api=1&query=Amalfi+ferry+port" },
+      ],
     },
     {
       id: "d06-e07b",
@@ -133,6 +139,9 @@ export const day06: DiaRoteiro = {
       horarioInicial: "16:30",
       status: "futuro",
       confirmado: true,
+      links: [
+        { label: "Ver porto de Positano no Maps", url: "https://www.google.com/maps/search/?api=1&query=Positano+ferry+port" },
+      ],
     },
     {
       id: "d06-e09",

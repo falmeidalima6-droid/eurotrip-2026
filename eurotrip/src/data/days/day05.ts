@@ -126,6 +126,9 @@ export const day05: DiaRoteiro = {
       horarioInicial: "13:15",
       status: "futuro",
       confirmado: true,
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&destination=Piazza+Giuseppe+Garibaldi+Napoli&travelmode=walking" },
+      ],
     },
     {
       id: "d05-e07",

@@ -71,6 +71,9 @@ export const day03: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes: "Chegar com 15 min de antecedência do horário marcado (13h), como pedem as regras do ingresso.",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&destination=Colosseum+entrance+Piazza+del+Colosseo+Roma&travelmode=walking" },
+      ],
     },
     {
       id: "d03-e05",
