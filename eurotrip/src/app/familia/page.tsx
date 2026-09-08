@@ -27,6 +27,7 @@ import {
 } from "@/lib/familia";
 import { urlMiniatura, urlExibicao } from "@/lib/cloudinary";
 import { MapPin, Heart, ExternalLink, Lock } from "lucide-react";
+import VisaoGeralFamilia from "@/components/VisaoGeralFamilia";
 
 function formatarDataExtensa(iso: string): string {
   const [ano, mes, dia] = iso.split("-").map(Number);
@@ -167,6 +168,8 @@ function ConteudoFamilia() {
         <h1 className="font-display text-xl font-bold">{TRIP_INFO.titulo}</h1>
         <p className="text-ink-soft text-sm">{TRIP_INFO.viajantes}</p>
       </header>
+
+      <VisaoGeralFamilia />
 
       <div className="text-center">
         <p className="text-xs font-medium text-brass">
