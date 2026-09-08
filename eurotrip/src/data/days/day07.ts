@@ -102,6 +102,7 @@ export const day07: DiaRoteiro = {
       pais: "Italia",
       categoria: "passeio",
       titulo: "Grande Canal → Ponte Rialto → Praça São Marcos → Basílica (externa) → Ponte dos Suspiros → Riva degli Schiavoni",
+      horarioInicial: "16:00",
       status: "futuro",
       confirmado: false,
       observacoes: "Do hotel até a Ponte Rialto são uns 20-25 min a pé (ou vaporetto, que passa bem perto do hotel).",
