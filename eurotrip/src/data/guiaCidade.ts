@@ -32,6 +32,7 @@ export const guiasCidade: GuiaCidade[] = [
       "Ônibus 64 (Termini↔Vaticano) e a Linha A do metrô nos fins de semana são pontos clássicos de batedores de carteira — mochila na frente.",
       "Muitas lojas pequenas fecham para o almoço (riposo), normalmente 13h-16h.",
       "🚻 Banheiro público de graça é raro na Itália — o normal é usar o de bares/cafés (às vezes cobram €0,50-1 mesmo sem consumir) ou contar com museus/atrações que já estão no roteiro.",
+      "🚕 Uber/Bolt NÃO funcionam como em outros lugares na Itália: o Bolt praticamente não opera aqui, e o Uber só redireciona pra táxi comum cobrando €2,50-3 a mais, sem economizar nada. O certo é usar apps de táxi local (ItTaxi, FreeNow) ou parar táxi na rua/ponto.",
     ],
     comidaBarata: [
       "Pizza al taglio (fatia, vendida por peso): €3-6 a fatia — dá pra fazer uma refeição completa por €6-10. Ex: Alice Pizza (via delle Sette Sale).",
@@ -68,6 +69,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Alta temporada lota rápido — cheguem aos ferries com a antecedência recomendada (30 min).",
       "🚻 Igual ao resto da Itália: banheiro grátis é raro, contem com bares (às vezes pagos) e as próprias atrações do roteiro.",
+      "🚕 Mesma regra da Itália toda: Uber/Bolt não compensam aqui — use táxi de ponto ou app de táxi local se precisar.",
     ],
     comidaBarata: [
       "Panino/focaccia recheada em alimentari (mercearia local): €4-7, comum nas ruas centrais de Sorrento.",
@@ -89,6 +91,7 @@ export const guiasCidade: GuiaCidade[] = [
       "Boa notícia: como vocês estão hospedados na cidade, NÃO pagam a taxa de acesso ao centro histórico (essa taxa é só para quem visita sem pernoitar).",
       "Curiosidade: tudo flutua em Veneza — até a polícia e a ambulância andam de barco.",
       "🚻 Igual ao resto da Itália: banheiro grátis é raro, contem com bares/cafés (às vezes pagos) e as atrações do roteiro.",
+      "🚕 Mesma regra da Itália toda: Uber/Bolt não compensam aqui — use táxi de ponto ou app de táxi local se precisar (fora dos trajetos de barco, que já estão todos reservados).",
     ],
     comidaBarata: [
       "Cicchetti (tapas venezianas) em bacari (bares tradicionais): €1,50-3 cada, ótimo pra beliscar vários tipos com um spritz (~€3-5).",
@@ -116,6 +119,7 @@ export const guiasCidade: GuiaCidade[] = [
     particularidades: [
       "Metrô nos horários de pico e estações muito turísticas são onde mais acontece furto — mochila na frente.",
       "🚻 Boa notícia rara: Paris tem ~400 'sanisettes' — banheiros públicos grátis, autolimpantes, espalhados pela cidade, a maioria aberta 6h-22h (alguns 24h). Bem mais fácil que no resto da Europa.",
+      "🚕 Bolt funciona bem em Paris e costuma sair 10-25% mais barato que o Uber — vale comparar os dois antes de chamar.",
     ],
     comidaBarata: [
       "Baguete/croissant em boulangerie: €1-1,50 simples, sanduíche completo €4,90-8.",
@@ -143,6 +147,7 @@ export const guiasCidade: GuiaCidade[] = [
       "Batedores de carteira são o principal risco em Las Ramblas, Sagrada Família e praias, especialmente em grupo (um distrai, outro furta).",
       "Ingressos de atrações (Sagrada Família etc.) esgotam rápido — já resolvido no app, mas vale lembrar.",
       "🚻 Banheiro público grátis é escasso — contem com cafés (o normal é pedir consumindo algo) ou as atrações do roteiro. Quando aceitam sem consumir, costuma custar €0,50 a €1 — vale levar moedas trocadas.",
+      "🚕 Bolt funciona bem em Barcelona e costuma sair 10-25% mais barato que o Uber — vale comparar os dois antes de chamar.",
     ],
     comidaBarata: [
       "Menú del día (só no almoço, dias úteis): entrada + prato principal + sobremesa/café + bebida por €11-18 — a forma mais em conta de comer bem sentado.",
@@ -167,6 +172,7 @@ export const guiasCidade: GuiaCidade[] = [
       "Elétrico 28 é o ponto clássico de batedor de carteira em Lisboa — mochila na frente, celular guardado.",
       "Cidade é bem inclinada (muitas ladeiras) — vale usar metrô/elevadores para poupar as pernas.",
       "🚻 Lisboa está reduzindo os banheiros públicos grátis ao longo dos anos, mas ainda tem alguns sem cancela — cafés e as atrações do roteiro são o mais confiável. Quando é pago, costuma ficar entre €0,50 e €1.",
+      "🚕 Bolt funciona bem em Lisboa e costuma sair 10-25% mais barato que o Uber — segundo relatos, ganha em ~80% das comparações diretas de preço. Vale abrir os dois apps e comparar antes de chamar.",
     ],
     comidaBarata: [
       "Tasca de bairro (restaurante pequeno, tradicional): prato do dia €7-13, geralmente com pão/azeitonas de entrada — evitem Alfama/Belém, onde o preço sobe bem.",
