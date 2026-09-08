@@ -54,7 +54,7 @@ export const ingressos: Ingresso[] = [
     urgencia: "vermelho",
     dataNecessaria: "2026-10-16",
     comprado: false,
-    observacoes: "🔴 PRIORIDADE MÁXIMA — obrigatório desde ago/2024, o sistema não permite entrada sem horário marcado (diferente da maioria dos outros ingressos). Comprar para 10h00 (abertura) do dia 16/10 assim que possível, antes que esgote esse horário específico.",
+    observacoes: "🔴 PRIORIDADE MÁXIMA — obrigatório desde ago/2024, o sistema não permite entrada sem horário marcado (diferente da maioria dos outros ingressos). Comprar para 10h00 (abertura) do dia 16/10 assim que possível, antes que esgote esse horário específico. 💰 Preço oficial confirmado (tarifário jan/2026): Adulto (18-64 anos) €20,00 cada = €40,00 total. Site oficial: regaleira.byblueticket.pt (único canal autorizado).",
   },
   {
     id: "i08",
@@ -82,14 +82,5 @@ export const ingressos: Ingresso[] = [
     dataNecessaria: "2026-10-07",
     comprado: true,
     observacoes: "✅ CONFIRMADA oficialmente — reserva nº 2189_UG_07.10/2026 (e-mail de 27/08/2026), 2 bilhetes (Fernanda + Marcos), 07/10/2026, Audiência Geral às 10h00. Retirada: véspera (06/10) 8h30-13h00 e 15h00-19h00, ou no próprio dia (07/10) a partir das 7h30 — Portone di Bronzo, Vaticano.",
-  },
-  {
-    id: "i11",
-    nome: "Mosteiro dos Jerónimos (+ Torre de Belém, se possível combinado)",
-    cidade: "Lisboa",
-    urgencia: "laranja",
-    dataNecessaria: "2026-10-16",
-    comprado: false,
-    observacoes: "Visita marcada para a tarde de 16/10, logo após Sintra. Comprar ingresso combinado Jerónimos + Torre de Belém se disponível — economiza tempo de fila.",
   },
 ];
