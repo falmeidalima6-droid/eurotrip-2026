@@ -172,7 +172,8 @@ export const day06: DiaRoteiro = {
       horarioInicial: "19:30",
       status: "futuro",
       confirmado: false,
-      observacoes: "🍋 Restaurante com vista para o mar (a definir).",
+      endereco: "Ristorante Vesuvio (Hotel Mediterraneo), Corso M. Crawford 85, Sorrento",
+      observacoes: "🍋 Terraço com vista pro Golfo de Nápoles. Menu degustação ~€55/pessoa (bebida à parte) — vale reservar com antecedência.",
     },
     {
       id: "d06-e11",

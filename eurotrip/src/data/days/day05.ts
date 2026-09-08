@@ -40,13 +40,13 @@ export const day05: DiaRoteiro = {
       categoria: "caminhada",
       titulo: "Saída para Roma Termini",
       horarioInicial: "06:00",
-      duracaoPrevista: "25–30 min (metrô) ou ~15 min (táxi/Uber)",
+      duracaoPrevista: "25–30 min (metrô) ou ~15 min (táxi)",
       status: "futuro",
       confirmado: true,
       destino: "Roma Termini",
-      alerta: "⚠️ São 3,3 km até Termini — NÃO dá a pé com malas nessa janela de tempo. Escolham metrô ou táxi/Uber antes de sair do hotel.",
+      alerta: "⚠️ São 3,3 km até Termini — NÃO dá a pé com malas nessa janela de tempo. Escolham metrô ou táxi antes de sair do hotel.",
       dicaMetro:
-        "🚕 Recomendado, dado o horário crítico (trem às 06h55, sem margem pra imprevisto): táxi/Uber direto do hotel até Roma Termini, ~15 min sem trocas nem escadas com bagagem — sobra bastante folga. 🚇 O metrô (abre 05h30) tecnicamente dá, mas ficaria muito em cima da hora somando caminhada+espera+trecho até a plataforma — não é mais recomendado com esse novo horário mais cedo.",
+        "🚕 Recomendado, dado o horário crítico (trem às 06h55, sem margem pra imprevisto): táxi direto do hotel até Roma Termini (parar na rua ou app de táxi local — Uber/Bolt não compensam na Itália), ~15 min sem trocas nem escadas com bagagem — sobra bastante folga. 🚇 O metrô (abre 05h30) tecnicamente dá, mas ficaria muito em cima da hora somando caminhada+espera+trecho até a plataforma — não é mais recomendado com esse novo horário mais cedo.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=41.9109,12.4644&destination=41.9010,12.5015&travelmode=transit" },
       ],

@@ -60,7 +60,7 @@ export const day10: DiaRoteiro = {
       horarioRecomendadoSaida: "06:50",
       status: "futuro",
       confirmado: true,
-      observacoes: "Com bagagem e duas pessoas, transporte direto (táxi/Uber) em vez de metrô+RER. Chegada ao CDG prevista para 07h45–08h00.",
+      observacoes: "Com bagagem e duas pessoas, transporte direto (táxi/Uber/Bolt) em vez de metrô+RER. 💰 Compare Bolt e Uber — o Bolt costuma sair 10-25% mais barato em Paris. Chegada ao CDG prevista para 07h45–08h00.",
     },
     {
       id: "d10-e05",
@@ -107,7 +107,7 @@ export const day10: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes:
-        "O aeroporto fica longe do hotel (~13km) e não tem transporte público direto até o Poblenou sem trocar de linha (metrô + troca levaria 50-60 min). Com malas e só 30 min de folga até o check-in, táxi/Uber é a opção certa aqui — táxi oficial de Barcelona usa taxímetro (não é tarifa fixa), esperado ~€26-45 até o Poblenou. Se pedirem Uber com antecedência (assim que pousar), ganham tempo na fila do táxi do aeroporto.",
+        "O aeroporto fica longe do hotel (~13km) e não tem transporte público direto até o Poblenou sem trocar de linha (metrô + troca levaria 50-60 min). Com malas e só 30 min de folga até o check-in, táxi/Uber é a opção certa aqui — táxi oficial de Barcelona usa taxímetro (não é tarifa fixa), esperado ~€26-45 até o Poblenou. 💰 Vale abrir Bolt e Uber lado a lado — o Bolt costuma sair 10-25% mais barato em Barcelona. Se pedirem com antecedência (assim que pousar), ganham tempo na fila do táxi do aeroporto.",
       alerta: "⚠️ A janela de 30 min até o check-in é apertada — se pegarem trânsito ou fila de táxi, o check-in pode atrasar um pouco. Sem problema, só não é hora de se apressar demais.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Barcelona+El+Prat+Airport&destination=Calle+Ramon+Turo+196+Barcelona&travelmode=driving" },

@@ -121,8 +121,8 @@ export const day04: DiaRoteiro = {
       status: "futuro",
       confirmado: false,
       observacoes: "Trastevere: bairro mais agradável para terminar o dia.",
-      alerta: "🚕 Volta ao hotel à noite: Trastevere NÃO tem estação de metrô. A pé são uns 30-35 min (2km) — tranquilo se estiverem dispostos, mas é bastante depois de um dia inteiro andando. O mais prático é pedir um Uber/táxi (~10-15 min de carro). Alternativa mais barata: ônibus 23 ou 271, que cruzam o rio e param perto da estação Ottaviano, mas exige checar o ponto certo e o intervalo entre ônibus à noite.",
-      dicaMetro: "🚕 Recomendado à noite: Uber/táxi direto do restaurante até o hotel — mais simples e seguro do que tentar achar o ônibus certo depois do jantar.",
+      alerta: "🚕 Volta ao hotel à noite: Trastevere NÃO tem estação de metrô. A pé são uns 30-35 min (2km) — tranquilo se estiverem dispostos, mas é bastante depois de um dia inteiro andando. O mais prático é pedir um táxi (parar na rua ou app de táxi local, tipo ItTaxi/FreeNow — Uber/Bolt não compensam na Itália, ~10-15 min de carro). Alternativa mais barata: ônibus 23 ou 271, que cruzam o rio e param perto da estação Ottaviano, mas exige checar o ponto certo e o intervalo entre ônibus à noite.",
+      dicaMetro: "🚕 Recomendado à noite: táxi direto do restaurante até o hotel (app de táxi local ou parar na rua — Uber/Bolt não funcionam bem na Itália) — mais simples e seguro do que tentar achar o ônibus certo depois do jantar.",
       links: [
         { label: "Rota a pé (se preferirem)", url: "https://www.google.com/maps/dir/?api=1&origin=41.8896,12.4694&destination=41.9109,12.4644&travelmode=walking" },
         { label: "Rota de ônibus/transporte", url: "https://www.google.com/maps/dir/?api=1&origin=41.8896,12.4694&destination=41.9109,12.4644&travelmode=transit" },

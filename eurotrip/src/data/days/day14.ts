@@ -46,7 +46,7 @@ export const day14: DiaRoteiro = {
       status: "futuro",
       confirmado: true,
       observacoes:
-        "⚠️ O metrô de Lisboa só abre às 6h30 — muito em cima da hora pro checkout de vocês, e ainda precisaria de 1 troca (Martim Moniz → Alameda → Aeroporto). Táxi/Uber direto é a escolha certa aqui: sem espera, sem troca, ~15-20 min até o aeroporto. 🚕 Tarifa de táxi em Lisboa é por taxímetro (não fixa): bandeirada €3,25 + €0,47/km — pra esse trajeto (~7-8km), esperem algo em torno de €10-15. 📱 Essa é a saída do Schengen pelo Portugal — diferente da entrada em Paris, o app 'Travel to Europe' está CONFIRMADO funcionando pra Portugal. Preencham o pré-cadastro até 72h antes (a partir de 14/10) pra agilizar de verdade essa passagem.",
+        "⚠️ O metrô de Lisboa só abre às 6h30 — muito em cima da hora pro checkout de vocês, e ainda precisaria de 1 troca (Martim Moniz → Alameda → Aeroporto). Táxi/Uber/Bolt direto é a escolha certa aqui: sem espera, sem troca, ~15-20 min até o aeroporto. 🚕 Tarifa de táxi em Lisboa é por taxímetro (não fixa): bandeirada €3,25 + €0,47/km — pra esse trajeto (~7-8km), esperem algo em torno de €10-15. 💰 Bolt costuma sair 10-25% mais barato que o Uber em Lisboa — vale abrir os dois e comparar. 📱 Essa é a saída do Schengen pelo Portugal — diferente da entrada em Paris, o app 'Travel to Europe' está CONFIRMADO funcionando pra Portugal. Preencham o pré-cadastro até 72h antes (a partir de 14/10) pra agilizar de verdade essa passagem.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Praca+Martim+Moniz+2+Lisboa&destination=Aeroporto+Humberto+Delgado+Lisboa&travelmode=driving" },
       ],
