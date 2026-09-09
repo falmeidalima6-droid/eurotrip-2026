@@ -80,10 +80,11 @@ export const day13: DiaRoteiro = {
       horarioFinal: "12:00",
       duracaoPrevista: "2h",
       status: "futuro",
-      confirmado: false,
+      confirmado: true,
       prioridade: "alta",
       horarioAbandono: "12:30",
-      observacoes: "🎟️ Abre às 10h00 em outubro (fecha 18h30, última entrada 17h30). Comprar ingresso com horário de entrada antecipado — desde ago/2024 o sistema exige horário marcado.",
+      numeroReserva: "Compra nº 38712987 (MEO Blueticket)",
+      observacoes: "✅ COMPRADO — €42,95 total (2x adulto €20 + comissão de serviço). Abre às 10h00 em outubro (fecha 18h30, última entrada 17h30). Horário de entrada 10h00 já marcado.",
     },
     {
       id: "d13-e06",

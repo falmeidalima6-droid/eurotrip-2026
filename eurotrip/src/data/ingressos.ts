@@ -51,10 +51,10 @@ export const ingressos: Ingresso[] = [
     id: "i07",
     nome: "Quinta da Regaleira",
     cidade: "Sintra",
-    urgencia: "vermelho",
+    urgencia: "verde",
     dataNecessaria: "2026-10-16",
-    comprado: false,
-    observacoes: "🔴 PRIORIDADE MÁXIMA — obrigatório desde ago/2024, o sistema não permite entrada sem horário marcado (diferente da maioria dos outros ingressos). Comprar para 10h00 (abertura) do dia 16/10 assim que possível, antes que esgote esse horário específico. 💰 Preço oficial confirmado (tarifário jan/2026): Adulto (18-64 anos) €20,00 cada = €40,00 total. Site oficial: regaleira.byblueticket.pt (único canal autorizado).",
+    comprado: true,
+    observacoes: "✅ COMPRADO — compra nº 38712987, via MEO Blueticket, 09/09/2026. 2x Adulto (€20,00 cada) + comissão de serviço (6%) + IVA = €42,95 total. Horário marcado: 10h00 (abertura) do dia 16/10, como planejado.",
   },
   {
     id: "i08",
