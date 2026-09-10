@@ -125,6 +125,13 @@ export const day08: DiaRoteiro = {
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Paris+Orly+Airport&destination=4+Rue+de+Chaligny+Paris&travelmode=driving" },
       ],
+      opcaoAlternativaTitulo: "🚇 Se não conseguirem táxi/Uber: OrlyBus + metrô",
+      opcaoAlternativaDescricao:
+        "OrlyBus até Denfert-Rochereau (~30 min) → trocar pro Metrô Linha 8 direção Créteil, descer em Faidherbe-Chaligny (~15-20 min, 2 estações do hotel). Bilhete t+ (ou carnê já comprado) — valida uma vez em cada trecho, sem validar saída. Com malas grandes à noite, essa opção é bem mais cansativa (2 trocas + escadas) que o táxi.",
+      linksAlternativa: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Paris+Orly+Airport&destination=4+Rue+de+Chaligny+Paris&travelmode=transit" },
+        { label: "Ver rota no Citymapper", url: "https://citymapper.com/directions?endcoord=48.8467,2.3822&endname=H%C3%B4tel%20de%20Venise" },
+      ],
     },
     {
       id: "d08-e09",

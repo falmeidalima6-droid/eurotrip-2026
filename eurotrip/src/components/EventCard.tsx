@@ -120,9 +120,24 @@ export default function EventCard({ evento, onEditar }: { evento: EventoComputad
             </details>
           )}
           {evento.opcaoAlternativaTitulo && (
-            <div className="rounded-lg bg-brass/10 p-2">
+            <div className="rounded-lg bg-brass/10 p-2 space-y-2">
               <p className="font-medium text-ink">{evento.opcaoAlternativaTitulo}</p>
               {evento.opcaoAlternativaDescricao && <p>{evento.opcaoAlternativaDescricao}</p>}
+              {evento.linksAlternativa && (
+                <div className="flex flex-wrap gap-2">
+                  {evento.linksAlternativa.map((l) => (
+                    <a
+                      key={l.url}
+                      href={l.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-medium bg-brass text-white rounded-full px-3 py-1.5"
+                    >
+                      <MapPin size={12} /> {l.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           )}
           {evento.planoB && (

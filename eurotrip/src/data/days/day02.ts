@@ -68,6 +68,13 @@ export const day02: DiaRoteiro = {
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Rome+Fiumicino+Airport&destination=MDM+Guesthouse+Rome&travelmode=driving" },
       ],
+      opcaoAlternativaTitulo: "🚇 Se não conseguirem táxi: trem + metrô",
+      opcaoAlternativaDescricao:
+        "Leonardo Express (trem direto Fiumicino→Roma Termini, ~32 min, €14/pessoa, sem paradas) → trocar pra Metrô Linha A (laranja) direção Battistini, descer em Ottaviano-San Pietro (~10 min, mais perto do hotel que Termini). Valida cada bilhete só na entrada (uma vez cada), sem validar saída — mesma lógica do resto da Itália. Com malas grandes à noite, essa opção é mais cansativa que o táxi (2 trocas + escadas), mas funciona se o táxi não for viável.",
+      linksAlternativa: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Rome+Fiumicino+Airport&destination=MDM+Guesthouse+Rome&travelmode=transit" },
+        { label: "Ver rota no Citymapper", url: "https://citymapper.com/directions?endcoord=41.9109,12.4644&endname=MDM%20Guesthouse" },
+      ],
     },
     {
       id: "d02-e05",

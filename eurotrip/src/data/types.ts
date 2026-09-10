@@ -76,6 +76,7 @@ export interface TripEvent {
   levar?: string[]; // "o que preciso levar agora"
   opcaoAlternativaTitulo?: string; // ex: "Opção B: Montmartre"
   opcaoAlternativaDescricao?: string;
+  linksAlternativa?: { label: string; url: string }[];
 }
 
 export interface DiaRoteiro {
