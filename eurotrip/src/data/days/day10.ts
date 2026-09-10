@@ -112,6 +112,13 @@ export const day10: DiaRoteiro = {
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Barcelona+El+Prat+Airport&destination=Calle+Ramon+Turo+196+Barcelona&travelmode=driving" },
       ],
+      opcaoAlternativaTitulo: "🚇 Comparativo: metrô é bem mais lento aqui",
+      opcaoAlternativaDescricao:
+        "Metrô/Aerobús + troca de linha: ~50-60 min, ~€10,50 (Aerobús €7,25 + T-Casual). Táxi/Uber/Bolt: ~20-40 min, ~€26-45. Ou seja, o metrô economiza uns €15-35, mas custa 20-30 min extras — com malas e pouca folga até o check-in, não compensa aqui. Só valeria se topassem chegar mais tarde no hotel, sem pressa nenhuma.",
+      linksAlternativa: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Barcelona+El+Prat+Airport&destination=Calle+Ramon+Turo+196+Barcelona&travelmode=transit" },
+        { label: "Ver rota no Citymapper", url: "https://citymapper.com/directions?endcoord=41.4085,2.2100&endname=Hotel%20ILUNION" },
+      ],
     },
     {
       id: "d10-e07",

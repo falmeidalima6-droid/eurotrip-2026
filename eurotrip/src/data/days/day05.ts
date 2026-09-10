@@ -147,6 +147,23 @@ export const day05: DiaRoteiro = {
       destino: "Sorrento",
     },
     {
+      id: "d05-e07b",
+      data: "2026-10-08",
+      cidade: "Sorrento",
+      pais: "Italia",
+      categoria: "caminhada",
+      titulo: "Estação de Sorrento → Orange Suites",
+      horarioInicial: "15:35",
+      horarioFinal: "15:50",
+      status: "futuro",
+      confirmado: true,
+      observacoes: "~700m, 10-15 min a pé — estação é central, sem necessidade de táxi/Uber pra essa distância (Sorrento não tem metrô, é cidade pequena o suficiente pra ir a pé mesmo com malas).",
+      links: [
+        { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=Sorrento+Train+Station&destination=Via+degli+Aranci+35+Sorrento&travelmode=walking" },
+        { label: "Ver rota no Citymapper", url: "https://citymapper.com/directions?endcoord=40.6263,14.3757&endname=Orange%20Suites" },
+      ],
+    },
+    {
       id: "d05-e08",
       data: "2026-10-08",
       cidade: "Sorrento",

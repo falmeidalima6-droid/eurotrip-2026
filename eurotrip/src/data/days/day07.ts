@@ -92,7 +92,7 @@ export const day07: DiaRoteiro = {
       empresa: "Hotel Leone",
       numeroReserva: "72077190186930 (Hoteis.com)",
       observacoes: "Check-in a partir das 14h. Checkout referência: 10h30. Tel: +39 041 2688128. Recepção 8h–20h; avisar com 72h de antecedência.",
-      links: [{ label: "Mapa", url: "https://maps.google.com/?q=Hotel+Leone+Fondamenta+Cannaregio+1250+Venice" }, { label: "Rota a pé da estação", url: "https://www.google.com/maps/dir/?api=1&origin=Venezia+Santa+Lucia&destination=Hotel+Leone+Fondamenta+Cannaregio+1250+Venezia&travelmode=walking" }],
+      links: [{ label: "Mapa", url: "https://maps.google.com/?q=Hotel+Leone+Fondamenta+Cannaregio+1250+Venice" }, { label: "Rota a pé da estação", url: "https://www.google.com/maps/dir/?api=1&origin=Venezia+Santa+Lucia&destination=Hotel+Leone+Fondamenta+Cannaregio+1250+Venezia&travelmode=walking" }, { label: "Ver rota no Citymapper", url: "https://citymapper.com/directions?endcoord=45.4444,12.3267&endname=Hotel%20Leone" }],
       planoB: "🧳 Boa notícia: da Santa Lucia até o Hotel Leone são só 6-10 min a pé, cruzando UMA única ponte (Ponte delle Guglie) — bem mais tranquilo do que outras partes de Veneza. Fora desse trecho específico, a cidade em geral tem várias pontes com escada; se decidirem se deslocar mais depois, opções sem custo: pedir ajuda da recepção do Hotel Leone, dividir o peso entre os dois. Opção paga: carregador avulso ou táxi aquático.",
     },
     {
