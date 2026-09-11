@@ -91,17 +91,23 @@ export const day05: DiaRoteiro = {
       cidade: "Nápoles",
       pais: "Italia",
       categoria: "passeio",
-      titulo: "Passeio por Nápoles",
+      titulo: "Passeio por Nápoles — Spaccanapoli, Quartieri Spagnoli, Tandem",
       horarioInicial: "08:30",
       horarioFinal: "13:00",
       status: "futuro",
       confirmado: true,
-      observacoes: "Sugestão: Piazza del Plebiscito, Galleria Umberto, Via Toledo, almoço com pizza napolitana.",
+      observacoes:
+        "Roteiro sugerido: Piazza del Plebiscito → Galleria Umberto → Via Toledo → Quartieri Spagnoli (bairro histórico vibrante, mural do Maradona) → Spaccanapoli (a rua que corta o centro histórico) → busto de Pulcinella no Vico del Fico al Purgatorio (esfregar o nariz dá sorte, tradição local, grátis) → almoço no Tandem Ragù (Via Paladino 51 — especializado no ragù napolitano tradicional; peçam o 'cuzzetiello', pão recheado, €5-7, se quiserem algo mais rápido).",
       dicaMetro:
         "🚇 A pé são ~2km/25-30 min até a Piazza del Plebiscito — tranquilo dentro da janela de 4h30 que vocês têm. Se preferirem economizar tempo/pernas: Metrô Linha 1, estação Garibaldi (dentro da própria Napoli Centrale) até Toledo (~5 min) — a própria estação Toledo é considerada uma das mais bonitas do mundo, vale a visita.",
       links: [
         { label: "Ver rota no Google Maps", url: "https://www.google.com/maps/dir/?api=1&origin=40.8524,14.2721&destination=40.8384,14.2488&travelmode=walking" },
+        { label: "Busto de Pulcinella no Maps", url: "https://www.google.com/maps/search/?api=1&query=Vico+del+Fico+al+Purgatorio+Napoli" },
+        { label: "Tandem Ragù no Maps", url: "https://www.google.com/maps/search/?api=1&query=Tandem+Ragu+Via+Paladino+51+Napoli" },
       ],
+      opcaoAlternativaTitulo: "🏛️ Se sobrar tempo: Napoli Sotterranea",
+      opcaoAlternativaDescricao:
+        "Tour guiado de 90 min pelos túneis subterrâneos de Nápoles (aquedutos romanos, abrigos da 2ª Guerra), €15-18/pessoa, saídas de hora em hora (10h-18h), Piazza San Gaetano 68. Atenção: passagens estreitas (70cm) e escuras, iluminadas só por vela — não recomendado pra quem tem claustrofobia. Ocupa boa parte da manhã, então ou isso ou o passeio completo acima, dificilmente os dois com folga.",
     },
     {
       id: "d05-e05b",
