@@ -166,7 +166,7 @@ export const day10: DiaRoteiro = {
         { label: "🛍️ Lefties (roupas baratinhas)", url: "https://www.google.com/maps/search/?api=1&query=Lefties+near+Passeig+de+Gracia+Barcelona" },
       ],
       opcaoAlternativaTitulo: "🛍️ Opção: comprinhas baratinhas na Lefties",
-      opcaoAlternativaDescricao: "Tem uma loja Lefties a só 7 min a pé da Passeig de Gràcia (3 min da estação Catalunya) — bem no caminho de vocês. Primark não tem loja central em Barcelona (só em Diagonal Mar/L'Illa), não vale o desvio.",
+      opcaoAlternativaDescricao: "Tem uma loja Lefties a só 7 min a pé da Passeig de Gràcia (3 min da estação Catalunya) — bem no caminho de vocês. E a Primark, ao contrário do que eu tinha dito antes, TEM sim loja bem central — é a flagship deles, na esquina da própria Plaça de Catalunya, 23 (perto da entrada da Rambla) — corrigido mais adiante no roteiro de hoje.",
     },
     {
       id: "d10-e10",
@@ -178,7 +178,7 @@ export const day10: DiaRoteiro = {
       horarioInicial: "17:15",
       status: "futuro",
       confirmado: true,
-      observacoes: "🛍️ Lojas que ficam bem na praça ou na rua Portal de l'Àngel (que liga a praça ao Bairro Gótico): El Corte Inglés (moda, perfumes, eletrônicos), Primark Catalunya, e mais adiante na mesma rua a Lefties (mesma dona da Zara, preços menores).",
+      observacoes: "🛍️ Lojas que ficam bem na praça ou na rua Portal de l'Àngel (que liga a praça ao Bairro Gótico): El Corte Inglés (moda, perfumes, eletrônicos), Primark Catalunya (loja flagship, Plaça de Catalunya 23, na esquina com a Rambla — aberta até 22h em dias de semana), e mais adiante na mesma rua a Lefties (mesma dona da Zara, preços menores).",
     },
     {
       id: "d10-e11",
