@@ -178,6 +178,7 @@ export const day10: DiaRoteiro = {
       horarioInicial: "17:15",
       status: "futuro",
       confirmado: true,
+      observacoes: "🛍️ Lojas que ficam bem na praça ou na rua Portal de l'Àngel (que liga a praça ao Bairro Gótico): El Corte Inglés (moda, perfumes, eletrônicos), Primark Catalunya, e mais adiante na mesma rua a Lefties (mesma dona da Zara, preços menores).",
     },
     {
       id: "d10-e11",
@@ -190,7 +191,7 @@ export const day10: DiaRoteiro = {
       horarioFinal: "19:00",
       status: "futuro",
       confirmado: true,
-      observacoes: "O Mercat de la Boqueria fica pra o dia 14/10 de manhã, no horário certo (esse aqui já ficaria tarde demais pra pegar o mercado no auge). Hoje é só um passeio leve pela Rambla — vale uma paradinha numa gelateria no caminho.",
+      observacoes: "O Mercat de la Boqueria fica pra o dia 14/10 de manhã, no horário certo (esse aqui já ficaria tarde demais pra pegar o mercado no auge). Hoje é só um passeio leve pela Rambla — vale uma paradinha numa gelateria no caminho. 🛍️ Tem uma Druni (perfumes/cosméticos importados) direto na Rambla, nº 24, e outra na Carrer de Pelai 7 (pertinho da Plaça Catalunya).",
     },
     {
       id: "d10-e12",
@@ -203,6 +204,7 @@ export const day10: DiaRoteiro = {
       horarioFinal: "20:30",
       status: "futuro",
       confirmado: true,
+      observacoes: "🛍️ Mais uma Druni na Carrer de la Portaferrissa, bem na entrada do bairro — mesma rede da Rambla, caso não tenham parado na primeira.",
     },
     {
       id: "d10-e13",
