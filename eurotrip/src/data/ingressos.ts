@@ -30,15 +30,6 @@ export const ingressos: Ingresso[] = [
     observacoes: "✅ COMPRADO — reserva OCO4723320, 06/10 às 13h00 (75 min). Ingresso básico: 1º e 2º nível do Coliseu + Fórum Romano + Monte Palatino. NÃO inclui Arena/Subterrâneo/Ático. Levar documento de identificação.",
   },
   {
-    id: "i04b",
-    nome: "Coliseu — Subterrâneo/Arena (complemento, ainda tentando)",
-    cidade: "Roma",
-    urgencia: "laranja",
-    dataNecessaria: "2026-10-06",
-    comprado: false,
-    observacoes: "Tentativa separada em andamento — liberação oficial é 30 dias antes de cada data (8h30 horário de Roma = 3h30 Brasília), com uma segunda chance à meia-noite de Roma (19h Brasília) quando cancelamentos voltam ao sistema. Tentando também em 05, 07 e 08/10 — o primeiro dia que der certo vira o novo 'dia do Subterrâneo', complementar ao ingresso básico já garantido.",
-  },
-  {
     id: "i05",
     nome: "Louvre",
     cidade: "Paris",

@@ -4,9 +4,6 @@ import { useEffect, useState } from "react";
 import { dias, BANDEIRAS, TRIP_INFO } from "@/data/trip";
 import { computarEventosDoDia } from "@/lib/time";
 import {
-  conferirPin,
-  sessaoFamiliaAtiva,
-  marcarSessaoFamilia,
   apelidoFamilia,
   salvarApelidoFamilia,
   getConfigFamilia,
@@ -26,7 +23,7 @@ import {
   ComentarioFamilia,
 } from "@/lib/familia";
 import { urlMiniatura, urlExibicao } from "@/lib/cloudinary";
-import { MapPin, Heart, ExternalLink, Lock } from "lucide-react";
+import { MapPin, Heart, ExternalLink } from "lucide-react";
 import VisaoGeralFamilia from "@/components/VisaoGeralFamilia";
 
 function formatarDataExtensa(iso: string): string {
@@ -50,53 +47,6 @@ function tempoAtras(iso: string): string {
 }
 
 export default function AreaFamiliaPage() {
-  const [autenticado, setAutenticado] = useState(false);
-  const [checandoSessao, setChecandoSessao] = useState(true);
-  const [pinDigitado, setPinDigitado] = useState("");
-  const [erroLogin, setErroLogin] = useState("");
-
-  useEffect(() => {
-    if (sessaoFamiliaAtiva()) setAutenticado(true);
-    setChecandoSessao(false);
-  }, []);
-
-  async function tentarEntrar() {
-    setErroLogin("");
-    const ok = await conferirPin(pinDigitado);
-    if (ok) {
-      marcarSessaoFamilia();
-      setAutenticado(true);
-    } else {
-      setErroLogin("PIN incorreto.");
-    }
-  }
-
-  if (checandoSessao) return null;
-
-  if (!autenticado) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center px-6 gap-4 bg-paper">
-        <Lock size={28} className="text-ink-soft" />
-        <p className="font-display text-lg font-bold text-center">Área Família — Eurotrip 2026</p>
-        <p className="text-sm text-ink-soft text-center">Digite o PIN que Fernanda e Marcos compartilharam com você.</p>
-        <input
-          value={pinDigitado}
-          onChange={(e) => setPinDigitado(e.target.value)}
-          onKeyDown={(e) => e.key === "Enter" && tentarEntrar()}
-          type="tel"
-          inputMode="numeric"
-          placeholder="PIN"
-          className="w-40 text-center text-2xl tracking-widest rounded-xl border border-line px-3 py-2"
-          autoFocus
-        />
-        {erroLogin && <p className="text-alert text-sm">{erroLogin}</p>}
-        <button onClick={tentarEntrar} className="rounded-full bg-ink text-paper font-medium px-6 py-2.5">
-          Entrar
-        </button>
-      </div>
-    );
-  }
-
   return <ConteudoFamilia />;
 }
 
